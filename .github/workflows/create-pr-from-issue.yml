@@ -37,7 +37,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               message: `Initial commit for issue #${issue.number}`,
-              tree: mainBranch.data.commit.tree.sha,
+              tree: mainBranch.data.commit.commit.tree.sha,
               parents: [mainBranch.data.commit.sha]
             });
             
