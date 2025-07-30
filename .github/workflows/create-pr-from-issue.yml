@@ -1,0 +1,46 @@
+name: Create PR from Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Pull Request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            
+            // Create a new branch name based on the issue number
+            const branchName = `issue-${issue.number}`;
+            
+            // Create the branch
+            await github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/heads/${branchName}`,
+              sha: context.sha
+            });
+            
+            // Create the pull request
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: issue.title,
+              body: issue.body || `Closes #${issue.number}`,
+              head: branchName,
+              base: 'main'
+            });
+            
+            // Add a comment to the issue linking to the PR
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `PR created: #${pr.data.number}`
+            });
+            
+            console.log(`Created PR #${pr.data.number} for issue #${issue.number}`); 
