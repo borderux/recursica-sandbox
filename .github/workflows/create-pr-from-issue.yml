@@ -17,12 +17,43 @@ jobs:
             // Create a new branch name based on the issue number
             const branchName = `issue-${issue.number}`;
             
+            // Get the latest commit from the main branch
+            const mainBranch = await github.rest.repos.getBranch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              branch: 'main'
+            });
+            
             // Create the branch
             await github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
               ref: `refs/heads/${branchName}`,
-              sha: context.sha
+              sha: mainBranch.data.commit.sha
+            });
+            
+            // Create an initial commit on the new branch to make it different from main
+            const tree = await github.rest.git.getTree({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tree_sha: mainBranch.data.commit.sha,
+              recursive: false
+            });
+            
+            const commit = await github.rest.git.createCommit({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              message: `Initial commit for issue #${issue.number}`,
+              tree: tree.data.sha,
+              parents: [mainBranch.data.commit.sha]
+            });
+            
+            // Update the branch to point to the new commit
+            await github.rest.git.updateRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `heads/${branchName}`,
+              sha: commit.data.sha
             });
             
             // Create the pull request
