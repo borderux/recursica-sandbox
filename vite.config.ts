@@ -14,6 +14,13 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/recursica-sandbox/' : '/',
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.dev.html')
+      }
+    }
+  },
   test: {
     projects: [{
       extends: true,
