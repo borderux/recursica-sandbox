@@ -85,3 +85,5 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/ 
+*storybook.log
+storybook-static
