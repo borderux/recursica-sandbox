@@ -7,9 +7,16 @@ interface FormData {
   priority: 'low' | 'medium' | 'high';
 }
 
-const REPO_OWNER = import.meta.env.VITE_GITHUB_OWNER;
-const REPO_NAME = import.meta.env.VITE_GITHUB_REPO;
+const REPO_OWNER = import.meta.env.VITE_GITHUB_OWNER || 'borderux';
+const REPO_NAME = import.meta.env.VITE_GITHUB_REPO || 'recursica-sandbox';
 const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+
+// Debug environment variables
+console.log('Environment variables:', {
+  REPO_OWNER,
+  REPO_NAME,
+  GITHUB_TOKEN: GITHUB_TOKEN ? '***SET***' : 'NOT SET'
+});
 
 function App() {
   const [formData, setFormData] = useState<FormData>({
@@ -20,22 +27,38 @@ function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [prUrl, setPrUrl] = useState<string>('');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
+
+    // Check if required environment variables are set
+    if (!GITHUB_TOKEN) {
+      setErrorMessage('GitHub token is not configured. Please set VITE_GITHUB_TOKEN environment variable.');
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       // 1. Create a new branch from main
       const branchName = `change-request-${Date.now()}`;
+      console.log(`Creating branch: ${branchName} in ${REPO_OWNER}/${REPO_NAME}`);
+      
       // Get the latest commit SHA from main
       const mainRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/main`, {
         headers: { Authorization: `token ${GITHUB_TOKEN}` }
       });
-      if (!mainRefResp.ok) throw new Error('Failed to get main branch ref');
+      if (!mainRefResp.ok) {
+        const errorText = await mainRefResp.text();
+        throw new Error(`Failed to get main branch ref: ${mainRefResp.status} ${errorText}`);
+      }
       const mainRef = await mainRefResp.json();
       const mainSha = mainRef.object.sha;
+      
       // Create the new branch
       const createRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, {
         method: 'POST',
@@ -45,7 +68,10 @@ function App() {
           sha: mainSha
         })
       });
-      if (!createRefResp.ok) throw new Error('Failed to create branch');
+      if (!createRefResp.ok) {
+        const errorText = await createRefResp.text();
+        throw new Error(`Failed to create branch: ${createRefResp.status} ${errorText}`);
+      }
 
       // 2. Create the change file in the new branch
       const changeData = {
@@ -65,7 +91,10 @@ function App() {
           branch: branchName
         })
       });
-      if (!createFileResp.ok) throw new Error('Failed to create change file');
+      if (!createFileResp.ok) {
+        const errorText = await createFileResp.text();
+        throw new Error(`Failed to create change file: ${createFileResp.status} ${errorText}`);
+      }
 
       // 3. Create the PR
       const prResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`, {
@@ -78,13 +107,17 @@ function App() {
           base: 'main',
         })
       });
-      if (!prResp.ok) throw new Error('Failed to create PR');
+      if (!prResp.ok) {
+        const errorText = await prResp.text();
+        throw new Error(`Failed to create PR: ${prResp.status} ${errorText}`);
+      }
       const pr = await prResp.json();
       setPrUrl(pr.html_url);
       setSubmitStatus('success');
       setFormData({ changeDescription: '', changeType: 'content', priority: 'medium' });
     } catch (error) {
       console.error('Error creating PR:', error);
+      setErrorMessage(error instanceof Error ? error.message : 'Unknown error occurred');
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -112,6 +145,14 @@ function App() {
             Use this form to submit changes you'd like to see in the Storybook builds. 
             Your request will be created as a GitHub pull request with a JSON file attached.
           </p>
+
+          {!GITHUB_TOKEN && (
+            <div className="error-message">
+              <h3>⚠️ Configuration Required</h3>
+              <p>GitHub token is not configured. Please set the VITE_GITHUB_TOKEN environment variable.</p>
+              <p><strong>Repository:</strong> {REPO_OWNER}/{REPO_NAME}</p>
+            </div>
+          )}
 
           <form onSubmit={handleSubmit} className="change-form">
             <div className="form-group">
@@ -157,7 +198,7 @@ function App() {
 
             <button 
               type="submit" 
-              disabled={isSubmitting || !formData.changeDescription.trim()}
+              disabled={isSubmitting || !formData.changeDescription.trim() || !GITHUB_TOKEN}
               className="submit-button"
             >
               {isSubmitting ? 'Submitting...' : 'Submit Change Request'}
@@ -182,6 +223,11 @@ function App() {
             <div className="error-message">
               <h3>❌ Error Submitting Request</h3>
               <p>There was an error submitting your change request. Please try again.</p>
+              {errorMessage && (
+                <p className="error-details">
+                  <strong>Error details:</strong> {errorMessage}
+                </p>
+              )}
             </div>
           )}
         </div>
