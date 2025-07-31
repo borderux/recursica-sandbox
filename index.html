@@ -15,9 +15,26 @@
         return;
       }
       
+      // For GitHub Pages, the first segment might be the repository name
+      // Check if we're at the root of the site (just the repo name)
+      if (pathSegments.length === 1 && pathSegments[0] === 'recursica-sandbox') {
+        return; // This is the root, serve the main app
+      }
+      
+      // Get the actual path after the repository name
+      let actualPathSegments = pathSegments;
+      if (pathSegments[0] === 'recursica-sandbox') {
+        actualPathSegments = pathSegments.slice(1);
+      }
+      
+      // If no actual path segments after removing repo name, serve main app
+      if (actualPathSegments.length === 0) {
+        return;
+      }
+      
       // Check if the first segment matches a build folder
-      const buildFolder = pathSegments[0];
-      const buildPath = `/builds/${buildFolder}/index.html`;
+      const buildFolder = actualPathSegments[0];
+      const buildPath = `/recursica-sandbox/builds/${buildFolder}/index.html`;
       
       // Try to fetch the build's index.html to see if it exists
       fetch(buildPath, { method: 'HEAD' })
