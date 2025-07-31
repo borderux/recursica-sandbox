@@ -23,6 +23,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug PR trigger
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "PR number: ${{ github.event.pull_request.number }}"
+          echo "PR title: ${{ github.event.pull_request.title }}"
+          echo "PR head: ${{ github.event.pull_request.head.ref }}"
+          echo "PR base: ${{ github.event.pull_request.base.ref }}"
       - name: Checkout
         uses: actions/checkout@v4
       
