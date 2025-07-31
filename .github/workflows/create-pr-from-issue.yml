@@ -94,6 +94,10 @@ jobs:
             
             // Store PR number for later use
             core.setOutput('pr-number', pr.data.number);
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
       
       - name: Build Storybook
         run: npm run build-storybook
