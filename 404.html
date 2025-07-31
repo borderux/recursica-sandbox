@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recursica Sandbox</title>
   <script>
-    // Check if the current path matches a Storybook build folder
-    function checkForStorybookBuild() {
+    // GitHub Pages 404.html routing
+    // This handles direct navigation to Storybook builds
+    
+    function handleRouting() {
       const path = window.location.pathname;
       const pathSegments = path.split('/').filter(segment => segment);
       
@@ -37,11 +39,11 @@
         });
     }
     
-    // Run the check when the page loads
-    checkForStorybookBuild();
+    // Run the routing check
+    handleRouting();
   </script>
 </head>
 <body>
   <div>Redirecting...</div>
 </body>
-</html>
+</html> 
