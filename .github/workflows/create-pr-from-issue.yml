@@ -94,6 +94,7 @@ jobs:
             
             // Store PR number for later use
             core.setOutput('pr-number', pr.data.number);
+      
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Actions"
@@ -107,19 +108,22 @@ jobs:
       
       - name: Prepare PR preview deployment
         run: |
+          # Get PR number from previous step
+          PR_NUMBER=${{ steps.create-pr.outputs.pr-number }}
+          
           # Create a clean deployment directory
           mkdir -p deployment
           
           # Create PR-specific directory structure
-          mkdir -p deployment/pr-preview
+          mkdir -p deployment/pr-$PR_NUMBER
           
-          # Copy the latest Storybook build to PR preview
+          # Copy the latest Storybook build to PR-specific preview
           if [ -d "builds" ]; then
             # Get the most recent build (last modified)
             LATEST_BUILD=$(ls -t builds/ | head -1)
             if [ -n "$LATEST_BUILD" ]; then
               echo "Using latest build: $LATEST_BUILD"
-              cp -r builds/$LATEST_BUILD/* deployment/pr-preview/
+              cp -r builds/$LATEST_BUILD/* deployment/pr-$PR_NUMBER/
             else
               echo "No builds found"
               exit 1
@@ -129,8 +133,8 @@ jobs:
             exit 1
           fi
           
-          # Create a redirect from root to PR preview
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-preview/"></head><body>Redirecting to <a href="./pr-preview/">PR Preview</a></body></html>' > deployment/index.html
+          # Create a redirect from root to PR-specific preview
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-'$PR_NUMBER'/"></head><body>Redirecting to <a href="./pr-'$PR_NUMBER'/">PR Preview</a></body></html>' > deployment/index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -146,7 +150,7 @@ jobs:
         with:
           script: |
             const prNumber = ${{ steps.create-pr.outputs.pr-number }};
-            const previewUrl = 'https://borderux.github.io/recursica-sandbox/pr-preview/';
+            const previewUrl = `https://borderux.github.io/recursica-sandbox/pr-${prNumber}/`;
             
             await github.rest.issues.createComment({
               owner: context.repo.owner,
