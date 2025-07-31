@@ -7,6 +7,10 @@ interface FormData {
   priority: 'low' | 'medium' | 'high';
 }
 
+const REPO_OWNER = import.meta.env.VITE_GITHUB_OWNER;
+const REPO_NAME = import.meta.env.VITE_GITHUB_REPO;
+const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+
 function App() {
   const [formData, setFormData] = useState<FormData>({
     changeDescription: '',
@@ -15,7 +19,7 @@ function App() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [issueUrl, setIssueUrl] = useState<string>('');
+  const [prUrl, setPrUrl] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,43 +27,64 @@ function App() {
     setSubmitStatus('idle');
 
     try {
-      // Create the JSON payload
-      const payload = {
+      // 1. Create a new branch from main
+      const branchName = `change-request-${Date.now()}`;
+      // Get the latest commit SHA from main
+      const mainRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/main`, {
+        headers: { Authorization: `token ${GITHUB_TOKEN}` }
+      });
+      if (!mainRefResp.ok) throw new Error('Failed to get main branch ref');
+      const mainRef = await mainRefResp.json();
+      const mainSha = mainRef.object.sha;
+      // Create the new branch
+      const createRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, {
+        method: 'POST',
+        headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ref: `refs/heads/${branchName}`,
+          sha: mainSha
+        })
+      });
+      if (!createRefResp.ok) throw new Error('Failed to create branch');
+
+      // 2. Create the change file in the new branch
+      const changeData = {
         change: formData.changeDescription,
         type: formData.changeType,
         priority: formData.priority,
         timestamp: new Date().toISOString(),
-        user: 'anonymous' // Could be enhanced with user authentication
+        user: 'anonymous'
       };
-
-      // Call the GitHub API to create an issue
-      // Note: In a real implementation, you'd need to set up a backend service
-      // or use GitHub's API with proper authentication
-      const response = await fetch('/api/create-issue', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload)
+      const filePath = `change-requests/change-${branchName}.json`;
+      const createFileResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`, {
+        method: 'PUT',
+        headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `Add change request: ${formData.changeType}`,
+          content: btoa(JSON.stringify(changeData, null, 2)),
+          branch: branchName
+        })
       });
+      if (!createFileResp.ok) throw new Error('Failed to create change file');
 
-      if (response.ok) {
-        const result = await response.json();
-        setIssueUrl(result.issueUrl);
-        setSubmitStatus('success');
-        
-        // Reset form
-        setFormData({
-          changeDescription: '',
-          changeType: 'content',
-          priority: 'medium'
-        });
-      } else {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
+      // 3. Create the PR
+      const prResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`, {
+        method: 'POST',
+        headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: `Change Request: ${formData.changeType} - ${formData.priority} priority`,
+          body: `**Change Type:** ${formData.changeType}\n**Priority:** ${formData.priority}\n**Description:** ${formData.changeDescription}\n\nThis PR was created automatically from the main application form.`,
+          head: branchName,
+          base: 'main',
+        })
+      });
+      if (!prResp.ok) throw new Error('Failed to create PR');
+      const pr = await prResp.json();
+      setPrUrl(pr.html_url);
+      setSubmitStatus('success');
+      setFormData({ changeDescription: '', changeType: 'content', priority: 'medium' });
     } catch (error) {
-      console.error('Error submitting change request:', error);
+      console.error('Error creating PR:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -85,7 +110,7 @@ function App() {
           <h2>Submit a Change Request</h2>
           <p className="form-description">
             Use this form to submit changes you'd like to see in the Storybook builds. 
-            Your request will be created as a GitHub issue with a JSON file attachment.
+            Your request will be created as a GitHub pull request with a JSON file attached.
           </p>
 
           <form onSubmit={handleSubmit} className="change-form">
@@ -142,11 +167,11 @@ function App() {
           {submitStatus === 'success' && (
             <div className="success-message">
               <h3>✅ Change Request Submitted!</h3>
-              <p>Your change request has been created as a GitHub issue.</p>
-              {issueUrl && (
+              <p>Your change request has been created as a GitHub pull request.</p>
+              {prUrl && (
                 <p>
-                  <a href={issueUrl} target="_blank" rel="noopener noreferrer">
-                    View Issue on GitHub
+                  <a href={prUrl} target="_blank" rel="noopener noreferrer">
+                    View Pull Request on GitHub
                   </a>
                 </p>
               )}
@@ -157,10 +182,6 @@ function App() {
             <div className="error-message">
               <h3>❌ Error Submitting Request</h3>
               <p>There was an error submitting your change request. Please try again.</p>
-              <p className="error-details">
-                Note: This feature requires a backend service to be set up. 
-                For now, this is a demonstration of the UI.
-              </p>
             </div>
           )}
         </div>
