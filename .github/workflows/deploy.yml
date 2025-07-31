@@ -49,6 +49,14 @@ jobs:
           cp -r dist/assets .
           # Ensure builds directory is included
           mkdir -p builds
+          # Update the root index.html with the correct asset references
+          # Get the actual asset filenames from the built index.html
+          JS_FILE=$(grep -o 'assets/index-[^"]*\.js' dist/index.html | head -1)
+          CSS_FILE=$(grep -o 'assets/index-[^"]*\.css' dist/index.html | head -1)
+          # Replace the src/main.tsx reference with the built JS file
+          sed -i "s|src=\"/src/main.tsx\"|src=\"/$JS_FILE\"|" index.html
+          # Add the CSS link in the head section
+          sed -i "s|</script>|</script>\n  <link rel=\"stylesheet\" crossorigin href=\"/$CSS_FILE\">|" index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
