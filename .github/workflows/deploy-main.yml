@@ -26,13 +26,7 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
-      
-      - name: Debug environment variables
-        run: |
-          echo "GITHUB_OWNER: ${{ github.repository_owner }}"
-          echo "GITHUB_REPO: ${{ github.event.repository.name }}"
-          echo "ISSUE_TOKEN exists: ${{ secrets.ISSUE_TOKEN != '' }}"
-      
+        
       - name: Build main app
         env:
           VITE_GITHUB_TOKEN: ${{ secrets.ISSUE_TOKEN }}
