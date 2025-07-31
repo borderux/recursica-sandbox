@@ -38,30 +38,29 @@ jobs:
       - name: Build main app
         run: npm run build
       
+      - name: Build Storybook
+        run: npm run build-storybook
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
       - name: Prepare deployment files
         run: |
-          # Copy built files to root
-          cp -r dist/* .
-          # Copy assets directory to root
-          cp -r dist/assets .
-          # Ensure builds directory is included
-          mkdir -p builds
-          # Update the root index.html with the correct asset references
-          # Get the actual asset filenames from the built index.html
-          JS_FILE=$(grep -o 'assets/index-[^"]*\.js' dist/index.html | head -1)
-          CSS_FILE=$(grep -o 'assets/index-[^"]*\.css' dist/index.html | head -1)
-          # Replace the src/main.tsx reference with the built JS file
-          sed -i "s|src=\"/src/main.tsx\"|src=\"/$JS_FILE\"|" index.html
-          # Add the CSS link in the head section
-          sed -i "s|</script>|</script>\n  <link rel=\"stylesheet\" crossorigin href=\"/$CSS_FILE\">|" index.html
+          # Create a clean deployment directory
+          mkdir -p deployment
+          # Copy built files to deployment root
+          cp -r dist/* deployment/
+          # Copy assets directory to deployment root
+          cp -r dist/assets deployment/
+          # Copy Storybook builds preserving directory structure
+          if [ -d "builds" ]; then
+            cp -r builds deployment/
+          fi
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './deployment'
 
   # Deployment job
   deploy:
