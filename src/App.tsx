@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './App.css'
 
 interface FormData {
-  changeDescription: string;
-  changeType: 'content' | 'styling' | 'layout' | 'other';
-  priority: 'low' | 'medium' | 'high';
+  name: string;
+  email: string;
+  buttonColor: string;
 }
 
 const REPO_OWNER = import.meta.env.VITE_GITHUB_OWNER || 'borderux';
@@ -20,9 +20,9 @@ console.log('Environment variables:', {
 
 function App() {
   const [formData, setFormData] = useState<FormData>({
-    changeDescription: '',
-    changeType: 'content',
-    priority: 'medium'
+    name: '',
+    email: '',
+    buttonColor: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -43,20 +43,28 @@ function App() {
       return;
     }
 
+    // Validate hex color format
+    const hexColorRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+    if (!hexColorRegex.test(formData.buttonColor)) {
+      setErrorMessage('Please enter a valid hex color (e.g., #FF0000 or #F00)');
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Create the change data
       const changeData = {
-        change: formData.changeDescription,
-        type: formData.changeType,
-        priority: formData.priority,
-        timestamp: new Date().toISOString(),
-        user: 'anonymous'
+        name: formData.name,
+        email: formData.email,
+        buttonColor: formData.buttonColor,
+        timestamp: new Date().toISOString()
       };
 
       // Create the issue with JSON data embedded in the body
-      const issueBody = `**Change Type:** ${formData.changeType}
-**Priority:** ${formData.priority}
-**Description:** ${formData.changeDescription}
+      const issueBody = `**Name:** ${formData.name}
+**Email:** ${formData.email}
+**New Button Color:** ${formData.buttonColor}
 
 ## Change Request Data
 \`\`\`json
@@ -69,9 +77,9 @@ This issue was created automatically from the main application form. A pull requ
         method: 'POST',
         headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          title: `Change Request: ${formData.changeType} - ${formData.priority} priority`,
+          title: `Button Color Request: ${formData.buttonColor}`,
           body: issueBody,
-          labels: ['change-request', formData.changeType, formData.priority]
+          labels: ['button-color-request']
         })
       });
       
@@ -83,7 +91,7 @@ This issue was created automatically from the main application form. A pull requ
       const issue = await issueResp.json();
       setPrUrl(issue.html_url);
       setSubmitStatus('success');
-      setFormData({ changeDescription: '', changeType: 'content', priority: 'medium' });
+      setFormData({ name: '', email: '', buttonColor: '' });
     } catch (error) {
       console.error('Error creating issue:', error);
       setErrorMessage(error instanceof Error ? error.message : 'Unknown error occurred');
@@ -104,15 +112,14 @@ This issue was created automatically from the main application form. A pull requ
     <div className="app">
       <header className="app-header">
         <h1>Recursica Sandbox</h1>
-        <p>Submit Change Requests</p>
+        <p>Request Button Color Changes</p>
       </header>
       
       <main className="app-main">
         <div className="form-container">
-          <h2>Submit a Change Request</h2>
+          <h2>Request a New Button Color</h2>
           <p className="form-description">
-            Use this form to submit changes you'd like to see in the Storybook builds. 
-            Your request will be created as a GitHub issue, and a pull request will be created automatically with a JSON file attached.
+            Submit a hex color value for the button. Your request will be created as a GitHub issue.
           </p>
 
           {!GITHUB_TOKEN && (
@@ -125,59 +132,56 @@ This issue was created automatically from the main application form. A pull requ
 
           <form onSubmit={handleSubmit} className="change-form">
             <div className="form-group">
-              <label htmlFor="changeType">Change Type:</label>
-              <select
-                id="changeType"
-                value={formData.changeType}
-                onChange={(e) => handleInputChange('changeType', e.target.value)}
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                value={formData.name}
+                onChange={(e) => handleInputChange('name', e.target.value)}
+                placeholder="Enter your name"
                 required
-              >
-                <option value="content">Content</option>
-                <option value="styling">Styling</option>
-                <option value="layout">Layout</option>
-                <option value="other">Other</option>
-              </select>
+              />
             </div>
 
             <div className="form-group">
-              <label htmlFor="priority">Priority:</label>
-              <select
-                id="priority"
-                value={formData.priority}
-                onChange={(e) => handleInputChange('priority', e.target.value)}
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                value={formData.email}
+                onChange={(e) => handleInputChange('email', e.target.value)}
+                placeholder="Enter your email"
                 required
-              >
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-              </select>
+              />
             </div>
 
             <div className="form-group">
-              <label htmlFor="changeDescription">Change Description:</label>
-              <textarea
-                id="changeDescription"
-                value={formData.changeDescription}
-                onChange={(e) => handleInputChange('changeDescription', e.target.value)}
-                placeholder="Describe the change you'd like to see..."
-                rows={5}
+              <label htmlFor="buttonColor">New Button Color:</label>
+              <input
+                type="text"
+                id="buttonColor"
+                value={formData.buttonColor}
+                onChange={(e) => handleInputChange('buttonColor', e.target.value)}
+                placeholder="#FF0000"
+                pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+                title="Please enter a valid hex color (e.g., #FF0000 or #F00)"
                 required
               />
             </div>
 
             <button 
               type="submit" 
-              disabled={isSubmitting || !formData.changeDescription.trim() || !GITHUB_TOKEN}
+              disabled={isSubmitting || !formData.name.trim() || !formData.email.trim() || !formData.buttonColor.trim() || !GITHUB_TOKEN}
               className="submit-button"
             >
-              {isSubmitting ? 'Submitting...' : 'Submit Change Request'}
+              {isSubmitting ? 'Submitting...' : 'Submit Color Request'}
             </button>
           </form>
 
           {submitStatus === 'success' && (
             <div className="success-message">
-              <h3>✅ Change Request Submitted!</h3>
-              <p>Your change request has been created as a GitHub issue. A pull request will be created automatically.</p>
+              <h3>✅ Color Request Submitted!</h3>
+              <p>Your button color request has been created as a GitHub issue.</p>
               {prUrl && (
                 <p>
                   <a href={prUrl} target="_blank" rel="noopener noreferrer">
@@ -191,7 +195,7 @@ This issue was created automatically from the main application form. A pull requ
           {submitStatus === 'error' && (
             <div className="error-message">
               <h3>❌ Error Submitting Request</h3>
-              <p>There was an error submitting your change request. Please try again.</p>
+              <p>There was an error submitting your color request. Please try again.</p>
               {errorMessage && (
                 <p className="error-details">
                   <strong>Error details:</strong> {errorMessage}
