@@ -38,40 +38,56 @@ jobs:
       - name: Build main app
         run: npm run build
       
+      - name: Build Storybook for PR
+        if: github.event_name == 'pull_request'
+        run: npm run build-storybook
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
       - name: Prepare deployment files
         run: |
-          # Debug: List current directory contents
-          echo "Current directory contents:"
-          ls -la
-          echo ""
-          
           # Create a clean deployment directory
           mkdir -p deployment
           
-          # Copy built files to deployment root
-          cp -r dist/* deployment/
-          
-          # Copy assets directory to deployment root
-          cp -r dist/assets deployment/
-          
-          # Debug: Check if builds directory exists
-          echo "Checking builds directory:"
-          ls -la builds/ || echo "builds directory not found"
-          echo ""
-          
-          # Copy Storybook builds preserving directory structure
-          if [ -d "builds" ]; then
-            echo "Copying builds directory to deployment..."
-            cp -r builds deployment/
-            echo "Deployment directory contents after copying builds:"
-            ls -la deployment/
-            echo "Builds subdirectory contents:"
-            ls -la deployment/builds/ || echo "builds subdirectory not found"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "Preparing PR preview deployment..."
+            
+            # For PRs, create a PR-specific directory structure
+            mkdir -p deployment/pr-preview
+            
+            # Copy the latest Storybook build to PR preview
+            if [ -d "builds" ]; then
+              # Get the most recent build (last modified)
+              LATEST_BUILD=$(ls -t builds/ | head -1)
+              if [ -n "$LATEST_BUILD" ]; then
+                echo "Using latest build: $LATEST_BUILD"
+                cp -r builds/$LATEST_BUILD/* deployment/pr-preview/
+              else
+                echo "No builds found"
+                exit 1
+              fi
+            else
+              echo "No builds directory found"
+              exit 1
+            fi
+            
+            # Create a redirect from root to PR preview
+            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-preview/"></head><body>Redirecting to <a href="./pr-preview/">PR Preview</a></body></html>' > deployment/index.html
+            
           else
-            echo "builds directory not found, skipping"
+            echo "Preparing main branch deployment..."
+            
+            # Copy built files to deployment root
+            cp -r dist/* deployment/
+            
+            # Copy assets directory to deployment root
+            cp -r dist/assets deployment/
+            
+            # Copy Storybook builds preserving directory structure
+            if [ -d "builds" ]; then
+              cp -r builds deployment/
+            fi
           fi
       
       - name: Upload artifact
@@ -90,4 +106,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
