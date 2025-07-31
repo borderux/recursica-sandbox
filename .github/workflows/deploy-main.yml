@@ -28,6 +28,10 @@ jobs:
         run: npm ci
       
       - name: Build main app
+        env:
+          VITE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VITE_GITHUB_OWNER: ${{ github.repository_owner }}
+          VITE_GITHUB_REPO: ${{ github.event.repository.name }}
         run: npm run build
       
       - name: Setup Pages

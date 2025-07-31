@@ -42,6 +42,19 @@ jobs:
           script: |
             const issue = context.payload.issue;
             
+            // Extract JSON data from issue body
+            const jsonMatch = issue.body.match(/```json\s*([\s\S]*?)\s*```/);
+            let changeData = null;
+            
+            if (jsonMatch) {
+              try {
+                changeData = JSON.parse(jsonMatch[1]);
+                console.log('Extracted change data:', changeData);
+              } catch (error) {
+                console.error('Failed to parse JSON from issue body:', error);
+              }
+            }
+            
             // Create a new branch name based on the issue number
             const branchName = `issue-${issue.number}`;
             
@@ -60,29 +73,29 @@ jobs:
               sha: mainBranch.data.commit.sha
             });
             
-            // Create an initial commit on the new branch to make it different from main
-            const commit = await github.rest.git.createCommit({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              message: `Initial commit for issue #${issue.number}`,
-              tree: mainBranch.data.commit.commit.tree.sha,
-              parents: [mainBranch.data.commit.sha]
-            });
-            
-            // Update the branch to point to the new commit
-            await github.rest.git.updateRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: `heads/${branchName}`,
-              sha: commit.data.sha
-            });
+            // If we have change data, create the JSON file
+            if (changeData) {
+              const filePath = `change-requests/change-issue-${issue.number}.json`;
+              const fileContent = JSON.stringify(changeData, null, 2);
+              
+              await github.rest.repos.createOrUpdateFileContents({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: filePath,
+                message: `Add change request file for issue #${issue.number}`,
+                content: Buffer.from(fileContent).toString('base64'),
+                branch: branchName
+              });
+              
+              console.log(`Created change request file: ${filePath}`);
+            }
             
             // Create the pull request
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: issue.title,
-              body: issue.body || `Closes #${issue.number}`,
+              body: `${issue.body}\n\nCloses #${issue.number}`,
               head: branchName,
               base: 'main'
             });

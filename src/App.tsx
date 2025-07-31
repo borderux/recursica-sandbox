@@ -44,36 +44,7 @@ function App() {
     }
 
     try {
-      // 1. Create a new branch from main
-      const branchName = `change-request-${Date.now()}`;
-      console.log(`Creating branch: ${branchName} in ${REPO_OWNER}/${REPO_NAME}`);
-      
-      // Get the latest commit SHA from main
-      const mainRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/main`, {
-        headers: { Authorization: `token ${GITHUB_TOKEN}` }
-      });
-      if (!mainRefResp.ok) {
-        const errorText = await mainRefResp.text();
-        throw new Error(`Failed to get main branch ref: ${mainRefResp.status} ${errorText}`);
-      }
-      const mainRef = await mainRefResp.json();
-      const mainSha = mainRef.object.sha;
-      
-      // Create the new branch
-      const createRefResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, {
-        method: 'POST',
-        headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ref: `refs/heads/${branchName}`,
-          sha: mainSha
-        })
-      });
-      if (!createRefResp.ok) {
-        const errorText = await createRefResp.text();
-        throw new Error(`Failed to create branch: ${createRefResp.status} ${errorText}`);
-      }
-
-      // 2. Create the change file in the new branch
+      // Create the change data
       const changeData = {
         change: formData.changeDescription,
         type: formData.changeType,
@@ -81,42 +52,40 @@ function App() {
         timestamp: new Date().toISOString(),
         user: 'anonymous'
       };
-      const filePath = `change-requests/change-${branchName}.json`;
-      const createFileResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`, {
-        method: 'PUT',
-        headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: `Add change request: ${formData.changeType}`,
-          content: btoa(JSON.stringify(changeData, null, 2)),
-          branch: branchName
-        })
-      });
-      if (!createFileResp.ok) {
-        const errorText = await createFileResp.text();
-        throw new Error(`Failed to create change file: ${createFileResp.status} ${errorText}`);
-      }
 
-      // 3. Create the PR
-      const prResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`, {
+      // Create the issue with JSON data embedded in the body
+      const issueBody = `**Change Type:** ${formData.changeType}
+**Priority:** ${formData.priority}
+**Description:** ${formData.changeDescription}
+
+## Change Request Data
+\`\`\`json
+${JSON.stringify(changeData, null, 2)}
+\`\`\`
+
+This issue was created automatically from the main application form. A pull request will be created automatically.`;
+
+      const issueResp = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/issues`, {
         method: 'POST',
         headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({
           title: `Change Request: ${formData.changeType} - ${formData.priority} priority`,
-          body: `**Change Type:** ${formData.changeType}\n**Priority:** ${formData.priority}\n**Description:** ${formData.changeDescription}\n\nThis PR was created automatically from the main application form.`,
-          head: branchName,
-          base: 'main',
+          body: issueBody,
+          labels: ['change-request', formData.changeType, formData.priority]
         })
       });
-      if (!prResp.ok) {
-        const errorText = await prResp.text();
-        throw new Error(`Failed to create PR: ${prResp.status} ${errorText}`);
+      
+      if (!issueResp.ok) {
+        const errorText = await issueResp.text();
+        throw new Error(`Failed to create issue: ${issueResp.status} ${errorText}`);
       }
-      const pr = await prResp.json();
-      setPrUrl(pr.html_url);
+      
+      const issue = await issueResp.json();
+      setPrUrl(issue.html_url);
       setSubmitStatus('success');
       setFormData({ changeDescription: '', changeType: 'content', priority: 'medium' });
     } catch (error) {
-      console.error('Error creating PR:', error);
+      console.error('Error creating issue:', error);
       setErrorMessage(error instanceof Error ? error.message : 'Unknown error occurred');
       setSubmitStatus('error');
     } finally {
@@ -143,7 +112,7 @@ function App() {
           <h2>Submit a Change Request</h2>
           <p className="form-description">
             Use this form to submit changes you'd like to see in the Storybook builds. 
-            Your request will be created as a GitHub pull request with a JSON file attached.
+            Your request will be created as a GitHub issue, and a pull request will be created automatically with a JSON file attached.
           </p>
 
           {!GITHUB_TOKEN && (
@@ -208,11 +177,11 @@ function App() {
           {submitStatus === 'success' && (
             <div className="success-message">
               <h3>✅ Change Request Submitted!</h3>
-              <p>Your change request has been created as a GitHub pull request.</p>
+              <p>Your change request has been created as a GitHub issue. A pull request will be created automatically.</p>
               {prUrl && (
                 <p>
                   <a href={prUrl} target="_blank" rel="noopener noreferrer">
-                    View Pull Request on GitHub
+                    View Issue on GitHub
                   </a>
                 </p>
               )}
