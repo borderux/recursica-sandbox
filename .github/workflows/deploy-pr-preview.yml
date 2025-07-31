@@ -71,7 +71,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './deployment'
-          name: 'pr-preview-${{ github.event.pull_request.number }}'
+
 
   # Deployment job for PRs using GitHub Environments
   deploy:

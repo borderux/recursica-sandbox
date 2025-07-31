@@ -145,7 +145,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './deployment'
-          name: 'deployment-pr-${{ steps.create-pr.outputs.pr-number }}'
+
       
       - name: Deploy to GitHub Pages
         id: deployment
