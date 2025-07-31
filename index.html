@@ -10,9 +10,8 @@
       const path = window.location.pathname;
       const pathSegments = path.split('/').filter(segment => segment);
       
-      // If we're at the root, serve the main app
+      // If we're at the root, serve the main app (do nothing, let it load)
       if (pathSegments.length === 0) {
-        window.location.href = '/dist/index.html';
         return;
       }
       
@@ -26,22 +25,21 @@
           if (response.ok) {
             // Build exists, redirect to it
             window.location.href = buildPath;
-          } else {
-            // Build doesn't exist, serve main app
-            window.location.href = '/dist/index.html';
           }
+          // If build doesn't exist, stay on the main app
         })
         .catch(() => {
-          // Error occurred, serve main app
-          window.location.href = '/dist/index.html';
+          // Error occurred, stay on the main app
         });
     }
     
     // Run the check when the page loads
     checkForStorybookBuild();
   </script>
+  <script type="module" crossorigin src="/assets/index-B1A0nq1N.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CUHw36h2.css">
 </head>
 <body>
-  <div>Redirecting...</div>
+  <div id="root"></div>
 </body>
 </html>

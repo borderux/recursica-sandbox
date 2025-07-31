@@ -14,7 +14,7 @@
       
       // If we're at the root, serve the main app
       if (pathSegments.length === 0) {
-        window.location.href = '/dist/index.html';
+        window.location.href = '/app.html';
         return;
       }
       
@@ -30,12 +30,12 @@
             window.location.href = buildPath;
           } else {
             // Build doesn't exist, serve main app
-            window.location.href = '/dist/index.html';
+            window.location.href = '/app.html';
           }
         })
         .catch(() => {
           // Error occurred, serve main app
-          window.location.href = '/dist/index.html';
+          window.location.href = '/app.html';
         });
     }
     

@@ -41,6 +41,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
+      - name: Prepare deployment files
+        run: |
+          # Copy built files to root
+          cp -r dist/* .
+          # Copy assets directory to root
+          cp -r dist/assets .
+          # Ensure builds directory is included
+          mkdir -p builds
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
