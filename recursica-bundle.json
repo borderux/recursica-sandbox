@@ -1,0 +1,5431 @@
+{
+  "pluginVersion": "0.0.7",
+  "tokens": {},
+  "themes": {},
+  "uiKit": {
+    "[UI-Kit][Desktop][accordion/color/label]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/color/label",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][accordion/color/chevron]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/color/chevron",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][accordion/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][accordion/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][accordion/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/5x"
+      }
+    },
+    "[UI-Kit][Desktop][accordion/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/min-width",
+      "type": "float",
+      "value": 220
+    },
+    "[UI-Kit][Desktop][accordion/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/max-width",
+      "type": "float",
+      "value": 464
+    },
+    "[UI-Kit][Desktop][accordion/size/height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/height",
+      "type": "float",
+      "value": 56
+    },
+    "[UI-Kit][Desktop][accordion/size/chevron]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "accordion/size/chevron",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][action-bar/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "action-bar/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][action-bar/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "action-bar/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][action-bar/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "action-bar/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][action-bar/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "action-bar/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][action-bar/size/action-button-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "action-bar/size/action-button-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/background-countdown]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/background-countdown",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/text-subtle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/text-subtle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/text-countdown]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/text-countdown",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/horizontal-padding-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/horizontal-padding-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/horizontal-padding-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/horizontal-padding-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/desktop-min-width",
+      "type": "float",
+      "value": 520
+    },
+    "[UI-Kit][Desktop][arise-monthly-challenge-card/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-monthly-challenge-card/size/mobile-min-width",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][arise-offers/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/color/text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/color/text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/4x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-offers/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/desktop-min-width",
+      "type": "float",
+      "value": 696
+    },
+    "[UI-Kit][Desktop][arise-offers/size/min-width-mobile]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-offers/size/min-width-mobile",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/reward-progress-base]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/reward-progress-base",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/reward-progress]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/reward-progress",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/selected"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/color/text-subtle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/color/text-subtle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/desktop-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/desktop-max-width",
+      "type": "float",
+      "value": 600
+    },
+    "[UI-Kit][Desktop][arise-rewards-card/size/mobile-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-rewards-card/size/mobile-max-width",
+      "type": "float",
+      "value": 300
+    },
+    "[UI-Kit][Desktop][arise-welcome/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/50"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/color/background-perks]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/color/background-perks",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/100"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/050/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/color/text-perks]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/color/text-perks",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/100/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/color/icon-color]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/color/icon-color",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/100/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/desktop-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/desktop-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/4x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/mobile-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/mobile-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "elevation/y-axis/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/vertical-padding-perks]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/vertical-padding-perks",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/spacing-perks-mobile]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/spacing-perks-mobile",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/icon-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/desktop-min-width",
+      "type": "float",
+      "value": 696
+    },
+    "[UI-Kit][Desktop][arise-welcome/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "arise-welcome/size/mobile-min-width",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][avatar/color/background-contained]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/background-contained",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/color/background-outline]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/background-outline",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/color/stroke-contained]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/stroke-contained",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/color/stroke-outline]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/stroke-outline",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/color/label-contained]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/label-contained",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/color/label-outline]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/color/label-outline",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][avatar/size/small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/size/small",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][avatar/size/default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/size/default",
+      "type": "float",
+      "value": 32
+    },
+    "[UI-Kit][Desktop][avatar/size/large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/size/large",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][avatar/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "avatar/size/icon-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][badge/color/background-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/background-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/background-primary]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/background-primary",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/background-accent]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/background-accent",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/4-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/background-alert]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/background-alert",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/alert/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/background-success]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/background-success",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/success/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/stroke-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/stroke-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/label-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/label-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/label-primary]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/label-primary",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/label-accent]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/label-accent",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/4-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/label-alert]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/label-alert",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][badge/color/label-success]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/color/label-success",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/counter-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/counter-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/message-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/message-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/large-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/large-vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/status-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/status-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/counter-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/counter-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/2x"
+      }
+    },
+    "[UI-Kit][Desktop][badge/size/default-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/default-height",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][badge/size/large-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/large-height",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][badge/size/default-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/default-min-width",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][badge/size/large-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "badge/size/large-min-width",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][banner/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][banner/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][banner/color/text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/color/text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][banner/size/content-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/size/content-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][banner/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][breadcrumb/color/clickable]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "breadcrumb/color/clickable",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][breadcrumb/color/unclickable]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "breadcrumb/color/unclickable",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][breadcrumb/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "breadcrumb/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][breadcrumb/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "breadcrumb/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][breadcrumb/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "breadcrumb/size/icon-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][button/color/background-contained]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/background-contained",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/background-contained-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/background-contained-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/background-contained-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/background-contained-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-contained-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-contained-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-contained-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-contained-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-alert-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-alert-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-alert-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-alert-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-alert-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-alert-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-alert-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-alert-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-alert-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-alert-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-alert-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-alert-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-success-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-success-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-success-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-success-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-success-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-success-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-success-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-success-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-success-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-success-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-success-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-success-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-1-scale-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-1-scale-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-1-scale-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-1-scale-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/outline-on-1-scale-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/outline-on-1-scale-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-1-scale-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-1-scale-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-1-scale-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-1-scale-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][button/color/label-text-on-1-scale-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/color/label-text-on-1-scale-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/default-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/default-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/default-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/default-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/default-icon-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/default-icon-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/small-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/small-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/small-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/small-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/small-icon-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/small-icon-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][button/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/min-width",
+      "type": "float",
+      "value": 80
+    },
+    "[UI-Kit][Desktop][button/size/content-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/content-max-width",
+      "type": "float",
+      "value": 320
+    },
+    "[UI-Kit][Desktop][button/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/icon-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][button/size/default-fixed]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/default-fixed",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][button/size/small-fixed]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "button/size/small-fixed",
+      "type": "float",
+      "value": 32
+    },
+    "[UI-Kit][Desktop][carousel/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "carousel/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][carousel/size/spacing-mobile]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "carousel/size/spacing-mobile",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/surface]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/surface",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/image-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/image-background",
+      "type": "color",
+      "value": {
+        "collection": "Tokens",
+        "name": "color/white/100"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/image-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/image-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/text-subtle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/text-subtle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/color/bottom-divider]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/color/bottom-divider",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/size/horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/size/horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/size/content-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/size/content-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][cart-item/size/content-spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "cart-item/size/content-spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/color/enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/color/enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/color/disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/color/disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/color/icon-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/color/icon-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/color/icon-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/color/icon-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][banner/size/text-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/size/text-max-width",
+      "type": "float",
+      "value": 500
+    },
+    "[UI-Kit][Desktop][checkbox/size/spacing-stacked]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/size/spacing-stacked",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/label-unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/label-unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/label-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/label-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/background-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/background-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/background-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/background-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/alert/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/stroke-unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/stroke-unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/stroke-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/stroke-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/error"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/label-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/label-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/alert"
+      }
+    },
+    "[UI-Kit][Desktop][chip/color/label-on-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/color/label-on-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][chip/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/color/title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/color/title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/color/subtitle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/color/subtitle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/color/icon]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/color/icon",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/color/border]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/color/border",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/size/horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/size/horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][dashboard-card/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dashboard-card/size/icon-size",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][date-picker/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/background-date-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/background-date-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/date-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/date-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/date-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/date-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/date-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/date-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/hover"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/color/date-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/color/date-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/height",
+      "type": "float",
+      "value": 400
+    },
+    "[UI-Kit][Desktop][date-picker/size/width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/width",
+      "type": "float",
+      "value": 360
+    },
+    "[UI-Kit][Desktop][date-picker/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/row-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/row-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/button-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/button-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/date-border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/date-border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/date-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/date-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][date-picker/size/date-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/date-size",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][date-picker/size/month-year-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/month-year-height",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][date-picker/size/month-year-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "date-picker/size/month-year-width",
+      "type": "float",
+      "value": 72
+    },
+    "[UI-Kit][Desktop][divider/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "divider/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/focus]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/focus",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/focused"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/selected"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/error"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/background-input]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/background-input",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/color/background-input-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/color/background-input-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][dropdown/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/min-width",
+      "type": "float",
+      "value": 120
+    },
+    "[UI-Kit][Desktop][dropdown/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/max-width",
+      "type": "float",
+      "value": 460
+    },
+    "[UI-Kit][Desktop][dropdown/size/input-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "dropdown/size/input-height",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][file-upload/color/file-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/file-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/file-stroke-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/file-stroke-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/error"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/title-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/title-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/descriptive-text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/descriptive-text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/title-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/title-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/alert"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/descriptive-text-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/descriptive-text-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/alert"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/icon]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/icon",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/color/icon-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/color/icon-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/alert"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][file-upload/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/max-width",
+      "type": "float",
+      "value": 460
+    },
+    "[UI-Kit][Desktop][file-upload/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "file-upload/size/min-width",
+      "type": "float",
+      "value": 150
+    },
+    "[UI-Kit][Desktop][footer/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/form-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/form-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/500"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/form-text-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/form-text-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/500/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/outline-button]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/outline-button",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/accordions-mobile]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/accordions-mobile",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/logo]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/logo",
+      "type": "color",
+      "value": {
+        "collection": "Tokens",
+        "name": "color/white/100"
+      }
+    },
+    "[UI-Kit][Desktop][footer/color/social-icons]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/color/social-icons",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/desktop-tablet-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/desktop-tablet-padding",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][footer/size/mobile-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/mobile-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/mobile-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/mobile-vertical-padding",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][footer/size/form-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/form-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/navigation-links-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/navigation-links-spacing",
+      "type": "float",
+      "value": 64
+    },
+    "[UI-Kit][Desktop][footer/size/spacing-extra-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/spacing-extra-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][footer/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/desktop-min-width",
+      "type": "float",
+      "value": 1200
+    },
+    "[UI-Kit][Desktop][footer/size/tablet-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/tablet-max-width",
+      "type": "float",
+      "value": 960
+    },
+    "[UI-Kit][Desktop][footer/size/tablet-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/tablet-min-width",
+      "type": "float",
+      "value": 768
+    },
+    "[UI-Kit][Desktop][footer/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/mobile-min-width",
+      "type": "float",
+      "value": 320
+    },
+    "[UI-Kit][Desktop][footer/size/mobile-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "footer/size/mobile-max-width",
+      "type": "float",
+      "value": 480
+    },
+    "[UI-Kit][Desktop][form/icon/color/icon]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/icon/color/icon",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/icon/color/icon-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/icon/color/icon-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][form/icon/color/trailing-icon]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/icon/color/trailing-icon",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/icon/color/trailing-icon-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/icon/color/trailing-icon-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][form/icon/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/icon/size/icon-size",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][form/label/size/label-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/size/label-vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/color/label]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/color/label",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/color/optional-indicator]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/color/optional indicator",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/color/assistive-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/color/assistive text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/color/error-message]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/color/error message",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/alert"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][form/label/size/inline-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/size/inline-height",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][form/label/size/inline-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/label/size/inline-width",
+      "type": "float",
+      "value": 224
+    },
+    "[UI-Kit][Desktop][form/value+placeholder/color/value-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/value+placeholder/color/value-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/value+placeholder/color/value-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/value+placeholder/color/value-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][form/value+placeholder/color/placeholder-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/value+placeholder/color/placeholder-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][form/value+placeholder/color/placeholder-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/value+placeholder/color/placeholder-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][form/value+placeholder/size/value-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "form/value+placeholder/size/value-vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/50"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/color/card-title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/color/card-title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/7-scale/100/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/color/gift-card-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/color/gift-card-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/color/gift-title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/color/gift-title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/color/gift-secondary-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/color/gift-secondary-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/4x"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/gift-card-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/gift-card-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/gift-card-border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/gift-card-border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][gift-gallery/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "gift-gallery/size/max-width",
+      "type": "float",
+      "value": 650
+    },
+    "[UI-Kit][Desktop][header/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][header/color/icons]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/color/icons",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][header/color/text-bag-count]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/color/text-bag-count",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/horizontal-padding",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][header/size/mobile-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/mobile-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/action-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/action-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/icon-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/icon-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/shopping-bag-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/shopping-bag-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/navigation-link-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/navigation-link-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][header/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/desktop-min-width",
+      "type": "float",
+      "value": 1200
+    },
+    "[UI-Kit][Desktop][header/size/tablet-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/tablet-max-width",
+      "type": "float",
+      "value": 960
+    },
+    "[UI-Kit][Desktop][header/size/tablet-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/tablet-min-width",
+      "type": "float",
+      "value": 768
+    },
+    "[UI-Kit][Desktop][header/size/mobile-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/mobile-max-width",
+      "type": "float",
+      "value": 480
+    },
+    "[UI-Kit][Desktop][header/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "header/size/mobile-min-width",
+      "type": "float",
+      "value": 320
+    },
+    "[UI-Kit][Desktop][journal-card/color/title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "journal-card/color/title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][journal-card/color/body-subtle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "journal-card/color/body-subtle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][journal-card/size/image-content-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "journal-card/size/image-content-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][journal-card/size/title-description-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "journal-card/size/title-description-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][menu/color/surface]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/color/surface",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][menu/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][menu/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][menu/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][menu/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][menu/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/size/min-width",
+      "type": "float",
+      "value": 120
+    },
+    "[UI-Kit][Desktop][menu/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu/size/max-width",
+      "type": "float",
+      "value": 460
+    },
+    "[UI-Kit][Desktop][menu-item/color/default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/color/hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/hover"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/color/selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/selected"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/color/focused]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/focused",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/focused"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/color/label-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/label-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/color/label-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/color/label-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][menu-item/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "menu-item/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][modal/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][modal/color/title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/color/title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][modal/color/divider]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/color/divider",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][modal/size/button-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/button-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][modal/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][modal/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][modal/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][modal/size/desktop-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/desktop-width",
+      "type": "float",
+      "value": 800
+    },
+    "[UI-Kit][Desktop][modal/size/tablet-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/tablet-width",
+      "type": "float",
+      "value": 600
+    },
+    "[UI-Kit][Desktop][modal/size/mobile-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/mobile-max-width",
+      "type": "float",
+      "value": 448
+    },
+    "[UI-Kit][Desktop][modal/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "modal/size/mobile-min-width",
+      "type": "float",
+      "value": 288
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/background-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/background-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/background-inactive]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/background-inactive",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/image-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/image-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/image-background-inactive]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/image-background-inactive",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/100"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/text-item-count-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/text-item-count-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/text-inactive]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/text-inactive",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/text-item-count-inactive]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/text-item-count-inactive",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/spacing-extra-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/spacing-extra-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/desktop-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/desktop-min-width",
+      "type": "float",
+      "value": 696
+    },
+    "[UI-Kit][Desktop][orders-and-subscriptions/size/mobile-min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "orders-and-subscriptions/size/mobile-min-width",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][order-details/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/color/background-total-saved]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/background-total-saved",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/100"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/color/highlight-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/highlight-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/100/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/color/text-discount]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/text-discount",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/success/default"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/size/vertical-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/vertical-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/size/vertical-spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/vertical-spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][order-details/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/min-width",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][order-details/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "order-details/size/max-width",
+      "type": "float",
+      "value": 600
+    },
+    "[UI-Kit][Desktop][pagination/color/background-hover-unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/background-hover-unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/hover"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/color/background-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/background-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/color/background-hover-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/background-hover-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/hover"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/color/page-number-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/page-number-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/color/page-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/page-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/color/icon-color]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/color/icon-color",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/size/number-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/size/number-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][pagination/size/page-number-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "pagination/size/page-number-size",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][panel/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][panel/color/title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/color/title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][panel/size/body-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/size/body-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/partner-logo-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/partner-logo-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/view-all-card-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/view-all-card-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/50"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/view-all-icon]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/view-all-icon",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/size/padding-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/size/padding-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/size/padding-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/size/padding-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][partner-card/size/image-fixed-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/size/image-fixed-height",
+      "type": "float",
+      "value": 128
+    },
+    "[UI-Kit][Desktop][partner-card/size/card-fixed-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "partner-card/size/card-fixed-height",
+      "type": "float",
+      "value": 236
+    },
+    "[UI-Kit][Desktop][product-card/color/image-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/color/image-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/color/title]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/color/title",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/color/text-subtitle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/color/text-subtitle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/color/text-strikethrough]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/color/text-strikethrough",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/size/content-vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/size/content-vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/size/card-vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/size/card-vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/size/price-horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/size/price-horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/size/footer-horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/size/footer-horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-card/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-card/size/min-width",
+      "type": "float",
+      "value": 128
+    },
+    "[UI-Kit][Desktop][product-detail/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/color/text-subtle]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/color/text-subtle",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/color/purchase-options-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/color/purchase-options-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/color/purchase-options-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/color/purchase-options-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/vertical-spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/vertical-spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/vertical-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/vertical-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/horizontal-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/horizontal-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/purchase-options-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/purchase-options-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/purchase-options-border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/purchase-options-border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-detail/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-detail/size/max-width",
+      "type": "float",
+      "value": 600
+    },
+    "[UI-Kit][Desktop][product-list/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/color/background-image]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/color/background-image",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/color/text-strikethrough]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/color/text-strikethrough",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/size/horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/size/horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][product-list/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "product-list/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][progress-bar/color/bar]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "progress-bar/color/bar",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/300"
+      }
+    },
+    "[UI-Kit][Desktop][progress-bar/color/value]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "progress-bar/color/value",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][progress-bar/color/text-percent-progress]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "progress-bar/color/text-percent-progress",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][progress-bar/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "progress-bar/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][promo-banner/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "promo-banner/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][promo-banner/color/text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "promo-banner/color/text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][promo-banner/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "promo-banner/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][promo-banner/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "promo-banner/size/min-width",
+      "type": "float",
+      "value": 320
+    },
+    "[UI-Kit][Desktop][radio/color/selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/color/selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][radio/color/selected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/color/selected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][radio/color/unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/color/unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][radio/color/unselected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/color/unselected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-disabled"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/spacing-stacked]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/spacing-stacked",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/spacing-individual]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/spacing-individual",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/spacing-group]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/spacing-group",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/2x"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/border-radius-inside]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/border-radius-inside",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/dot]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/dot",
+      "type": "float",
+      "value": 10
+    },
+    "[UI-Kit][Desktop][radio/size/label-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/label-vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][radio/size/radio-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "radio/size/radio-size",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][panel/size/header-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/size/header-horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][panel/size/header-vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/size/header-vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][panel/size/horizontal-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "panel/size/horizontal-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][rating/color/star-active]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/color/star-active",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][rating/color/star-inactive]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/color/star-inactive",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][rating/color/counter-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/color/counter-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][rating/color/counter-link]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/color/counter-link",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][rating/color/counter-link-hover]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/color/counter-link-hover",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-hover"
+      }
+    },
+    "[UI-Kit][Desktop][rating/size/star-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/size/star-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][rating/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "rating/size/icon-size",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][review-list/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/color/text-timestamp-and-helpful]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/text-timestamp-and-helpful",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/color/text-verified-buyer]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/text-verified-buyer",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/color/icon-like-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/icon-like-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/color/icon-dislike-unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/icon-dislike-unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/size/vertical-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/size/vertical-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/size/vertical-spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/size/vertical-spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/size/vertical-spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/size/vertical-spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/4x"
+      }
+    },
+    "[UI-Kit][Desktop][review-list/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "review-list/size/min-width",
+      "type": "float",
+      "value": 280
+    },
+    "[UI-Kit][Desktop][streak-card/color/slider-base]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/slider-base",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/200"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/slider-completed]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/slider-completed",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/handle-stroke-next]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/handle-stroke-next",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/200"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/handle-background-next]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/handle-background-next",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/50"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/handle-background-done]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/handle-background-done",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/title-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/title-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/secondary-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/secondary-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/icon-color]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/icon-color",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/streak-completed-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/streak-completed-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/streak-completed-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/streak-completed-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/200"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/streak-icon-completed]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/streak-icon-completed",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/streak-next]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/streak-next",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/color/streak-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/color/streak-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/size/spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/size/spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/size/spacing-medium]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/size/spacing-medium",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][streak-card/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "streak-card/size/max-width",
+      "type": "float",
+      "value": 650
+    },
+    "[UI-Kit][Desktop][search/color/stroke-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/stroke-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][search/color/stroke-focus]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/stroke-focus",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/focused"
+      }
+    },
+    "[UI-Kit][Desktop][search/color/stroke-valued]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/stroke-valued",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/selected"
+      }
+    },
+    "[UI-Kit][Desktop][search/color/stroke-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/stroke-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][search/color/background-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/background-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/background/default"
+      }
+    },
+    "[UI-Kit][Desktop][search/color/background-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/color/background-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/background/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][search/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][search/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][search/size/spacing-inline]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/spacing-inline",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][search/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][search/size/input-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/input-height",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][search/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/min-width",
+      "type": "float",
+      "value": 224
+    },
+    "[UI-Kit][Desktop][search/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "search/size/max-width",
+      "type": "float",
+      "value": 464
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/background-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/background-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/background-image-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/background-image-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/background-unskip]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/background-unskip",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/background-image-unskip]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/background-image-unskip",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/100"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/text-product-title-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/text-product-title-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/text-strikethrough-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/text-strikethrough-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/text-product-title-unskip]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/text-product-title-unskip",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/text-strikethorugh-unskip]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/text-strikethorugh-unskip",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/neutral/default/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/size/padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/size/padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/size/horizontal-spacing-small]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/size/horizontal-spacing-small",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/size/horizontal-spacing-large]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/size/horizontal-spacing-large",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][subscription-item-list/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "subscription-item-list/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/100"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/background-offer]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/background-offer",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/neutral/default"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/primary-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/primary-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/1-scale/default"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/secondary-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/secondary-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/100/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][sub-toggle/color/tertiary-text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "sub-toggle/color/tertiary-text",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/1-scale/100/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/thumb-unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/thumb-unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/thumb-unselected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/thumb-unselected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/thumb-selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/thumb-selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/thumb-selected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/thumb-selected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/track-selected-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/track-selected-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/default"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/track-selected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/track-selected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/interactive/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/track-unselected-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/track-unselected-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][switch/color/track-unselected-enabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/color/track-unselected-enabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][chip/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][chip/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][chip/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][chip/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "chip/size/icon-size",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][checkbox/size/spacing-individual]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/size/spacing-individual",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/size/spacing-group]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/size/spacing-group",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][checkbox/size/checkbox-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "checkbox/size/checkbox-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][switch/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][switch/size/border-radius-track]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/size/border-radius-track",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/3x"
+      }
+    },
+    "[UI-Kit][Desktop][switch/size/height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "switch/size/height",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/3x"
+      }
+    },
+    "[UI-Kit][Desktop][tab/color/default-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/color/default-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][tab/color/selected-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/color/selected-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/selected"
+      }
+    },
+    "[UI-Kit][Desktop][tab/color/unselected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/color/unselected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/medium-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][tab/color/selected]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/color/selected",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/background/interactive-text-default"
+      }
+    },
+    "[UI-Kit][Desktop][tab/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][tab/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][tab/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/icon-size",
+      "type": "float",
+      "value": 20
+    },
+    "[UI-Kit][Desktop][tab/size/height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/height",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][tab/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/min-width",
+      "type": "float",
+      "value": 120
+    },
+    "[UI-Kit][Desktop][tab/size/label-max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tab/size/label-max-width",
+      "type": "float",
+      "value": 200
+    },
+    "[UI-Kit][Desktop][text-field/color/default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/focused]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/focused",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/focused"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/valued]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/valued",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/selected"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/error"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/background-input]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/background-input",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/background-input-disabled]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/background-input-disabled",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0x"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/min-width",
+      "type": "float",
+      "value": 140
+    },
+    "[UI-Kit][Desktop][text-field/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/max-width",
+      "type": "float",
+      "value": 464
+    },
+    "[UI-Kit][Desktop][text-field/size/min-input-height]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/size/min-input-height",
+      "type": "float",
+      "value": 48
+    },
+    "[UI-Kit][Desktop][text-field/color/read-only-background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/read-only-background",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][text-field/color/read-only-stroke]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "text-field/color/read-only-stroke",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/disabled"
+      }
+    },
+    "[UI-Kit][Desktop][time-picker/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "time-picker/size/max-width",
+      "type": "float",
+      "value": 300
+    },
+    "[UI-Kit][Desktop][time-picker/size/vertical-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "time-picker/size/vertical-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][time-picker/size/input-spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "time-picker/size/input-spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][toast/color/background-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/background-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/surface/default"
+      }
+    },
+    "[UI-Kit][Desktop][toast/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][toast/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/2x"
+      }
+    },
+    "[UI-Kit][Desktop][toast/size/spacing]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/spacing",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][toast/size/min-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/min-width",
+      "type": "float",
+      "value": 320
+    },
+    "[UI-Kit][Desktop][toast/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/max-width",
+      "type": "float",
+      "value": 624
+    },
+    "[UI-Kit][Desktop][toast/size/icon-size]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/size/icon-size",
+      "type": "float",
+      "value": 24
+    },
+    "[UI-Kit][Desktop][toast/color/background-success]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/background-success",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/success/default"
+      }
+    },
+    "[UI-Kit][Desktop][toast/color/background-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/background-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/alert/default"
+      }
+    },
+    "[UI-Kit][Desktop][toast/color/text-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/text-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/surface/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][toast/color/text-success]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/text-success",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/success/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][toast/color/text-error]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/text-error",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color-on/alert/default/high-emphasis"
+      }
+    },
+    "[UI-Kit][Desktop][banner/size/mobile-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/size/mobile-horizontal-padding",
+      "type": "float",
+      "value": 16
+    },
+    "[UI-Kit][Desktop][banner/size/desktop-horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "banner/size/desktop-horizontal-padding",
+      "type": "float",
+      "value": 40
+    },
+    "[UI-Kit][Desktop][tooltip/color/background]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/color/background",
+      "type": "color",
+      "value": {
+        "collection": "Tokens",
+        "name": "color/black/100"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/color/text]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/color/text",
+      "type": "color",
+      "value": {
+        "collection": "Tokens",
+        "name": "color/white/100"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/size/horizontal-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/size/horizontal-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/1-5x"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/size/vertical-padding]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/size/vertical-padding",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/size/beak-spacer]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/size/beak-spacer",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/spacer/default"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/size/border-radius]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/size/border-radius",
+      "type": "float",
+      "value": {
+        "collection": "Tokens",
+        "name": "size/border-radius/0-5x"
+      }
+    },
+    "[UI-Kit][Desktop][tooltip/size/max-width]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "tooltip/size/max-width",
+      "type": "float",
+      "value": 240
+    },
+    "[UI-Kit][Desktop][toast/color/stroke-default]": {
+      "collection": "UI Kit",
+      "mode": "Desktop",
+      "name": "toast/color/stroke-default",
+      "type": "color",
+      "value": {
+        "collection": "Themes",
+        "name": "color/stroke/default"
+      }
+    },
+    "[ID-variables][Mode-1][project-id]": {
+      "collection": "ID variables",
+      "mode": "Mode 1",
+      "name": "project-id",
+      "type": "string",
+      "value": "cymbiotika"
+    },
+    "[ID-variables][Mode-1][project-type]": {
+      "collection": "ID variables",
+      "mode": "Mode 1",
+      "name": "project-type",
+      "type": "string",
+      "value": "ui-kit"
+    }
+  },
+  "projectId": "recursica-sandbox"
+}
