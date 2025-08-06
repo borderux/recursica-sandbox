@@ -3,7 +3,7 @@ name: Deploy PR Preview
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    branches: [ main ]
+    branches: [main]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -14,7 +14,7 @@ permissions:
 
 # Allow concurrent deployments for different PRs
 concurrency:
-  group: "pr-preview-${{ github.event.pull_request.number }}"
+  group: 'pr-preview-${{ github.event.pull_request.number }}'
   cancel-in-progress: true
 
 jobs:
@@ -24,30 +24,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build Storybook for PR
         run: npm run build-storybook
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Prepare PR preview deployment
         run: |
           # Create a clean deployment directory
           mkdir -p deployment
-          
+
           PR_NUMBER=${{ github.event.pull_request.number }}
           mkdir -p deployment/pr-$PR_NUMBER
-          
+
           # Copy the latest Storybook build to PR preview
           if [ -d "builds" ]; then
             # Get the most recent build (last modified)
@@ -63,15 +63,14 @@ jobs:
             echo "No builds directory found"
             exit 1
           fi
-          
+
           # Create a redirect from root to PR preview
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-'$PR_NUMBER'/"></head><body>Redirecting to <a href="./pr-'$PR_NUMBER'/">PR Preview</a></body></html>' > deployment/index.html
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './deployment'
-
 
   # Deployment job for PRs using GitHub Environments
   deploy:
@@ -83,4 +82,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
