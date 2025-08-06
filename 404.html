@@ -10,7 +10,7 @@
 
       function handleRouting() {
         const path = window.location.pathname;
-        const pathSegments = path.split('/').filter(segment => segment);
+        const pathSegments = path.split('/').filter((segment) => segment);
 
         // If we're at the root, serve the main app
         if (pathSegments.length === 0) {
@@ -24,7 +24,7 @@
 
         // Try to fetch the build's index.html to see if it exists
         fetch(buildPath, { method: 'HEAD' })
-          .then(response => {
+          .then((response) => {
             if (response.ok) {
               // Build exists, redirect to it
               window.location.href = buildPath;

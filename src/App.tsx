@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import '@mantine/core/styles.css';
 import '../recursica.css';
-import {
-  ThemeProvider,
-  Button,
-  Textfield,
-  Box,
-  Typography,
-  Flex,
-} from '@recursica/ui-kit-mantine';
+import { ThemeProvider, Button, Textfield, Box, Typography, Flex } from '@recursica/ui-kit-mantine';
 
 interface FormData {
   name: string;
@@ -27,9 +20,7 @@ function App() {
     buttonColor: '#3366FF',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<
-    'idle' | 'success' | 'error'
-  >('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [prUrl, setPrUrl] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>('');
 
@@ -93,9 +84,7 @@ This issue was created automatically from the main application form.`;
 
       if (!issueResp.ok) {
         const errorText = await issueResp.text();
-        throw new Error(
-          `Failed to create issue: ${issueResp.status} ${errorText}`
-        );
+        throw new Error(`Failed to create issue: ${issueResp.status} ${errorText}`);
       }
 
       const issue = await issueResp.json();
@@ -104,9 +93,7 @@ This issue was created automatically from the main application form.`;
       setFormData({ name: '', email: '', buttonColor: '#3366FF' });
     } catch (error) {
       console.error('Error creating issue:', error);
-      setErrorMessage(
-        error instanceof Error ? error.message : 'Unknown error occurred'
-      );
+      setErrorMessage(error instanceof Error ? error.message : 'Unknown error occurred');
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -114,7 +101,7 @@ This issue was created automatically from the main application form.`;
   };
 
   const handleInputChange = (field: keyof FormData, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [field]: value,
     }));
@@ -126,53 +113,48 @@ This issue was created automatically from the main application form.`;
   };
 
   const isFormValid =
-    formData.name.trim() &&
-    formData.email.trim() &&
-    formData.buttonColor.trim() &&
-    GITHUB_TOKEN;
+    formData.name.trim() && formData.email.trim() && formData.buttonColor.trim() && GITHUB_TOKEN;
 
   return (
-    <ThemeProvider themeClassname="RecursicaBrand-Light">
+    <ThemeProvider themeClassname='RecursicaBrand-Light'>
       <Box
         style={{
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
         }}
-        bg="color/gray/050"
+        bg='color/gray/050'
       >
         {/* Header */}
         <Box
-          p="size/spacer/4x"
-          bg="layers/layer-0/properties/surface"
+          p='size/spacer/4x'
+          bg='layers/layer-0/properties/surface'
           style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}
         >
-          <Box
-            style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}
-          >
+          <Box style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <Box style={{ marginBottom: '8px' }}>
-              <Typography variant="h1" as="h1">
+              <Typography variant='h1' as='h1'>
                 🎨 Color Request Studio
               </Typography>
             </Box>
             <Box style={{ maxWidth: '600px', margin: '0 auto' }}>
-              <Typography variant="body-1/normal" color="color/gray/600">
-                Request a custom button color for your project. Submit your
-                details and we'll create a GitHub issue to track your request.
+              <Typography variant='body-1/normal' color='color/gray/600'>
+                Request a custom button color for your project. Submit your details and we'll create
+                a GitHub issue to track your request.
               </Typography>
             </Box>
           </Box>
         </Box>
 
         {/* Main Content */}
-        <Box style={{ flex: 1 }} p="size/spacer/4x">
+        <Box style={{ flex: 1 }} p='size/spacer/4x'>
           <Box style={{ maxWidth: '600px', margin: '0 auto' }}>
             {/* Configuration Warning */}
             {!GITHUB_TOKEN && (
               <Box
-                p="size/spacer/3x"
-                bg="color/salmon/50"
-                br="size/border-radius/2x"
+                p='size/spacer/3x'
+                bg='color/salmon/50'
+                br='size/border-radius/2x'
                 style={{
                   marginBottom: '32px',
                   border: '1px solid',
@@ -180,19 +162,19 @@ This issue was created automatically from the main application form.`;
                 }}
               >
                 <Box style={{ marginBottom: '8px' }}>
-                  <Flex align="center" gap="size/spacer/default">
-                    <Typography variant="h4" as="h3" color="color/salmon/700">
+                  <Flex align='center' gap='size/spacer/default'>
+                    <Typography variant='h4' as='h3' color='color/salmon/700'>
                       ⚠️ Configuration Required
                     </Typography>
                   </Flex>
                 </Box>
                 <Box style={{ marginBottom: '8px' }}>
-                  <Typography color="color/salmon/700">
-                    GitHub token is not configured. Please set the
-                    VITE_GITHUB_TOKEN environment variable.
+                  <Typography color='color/salmon/700'>
+                    GitHub token is not configured. Please set the VITE_GITHUB_TOKEN environment
+                    variable.
                   </Typography>
                 </Box>
-                <Typography variant="body-2/normal" color="color/salmon/600">
+                <Typography variant='body-2/normal' color='color/salmon/600'>
                   <strong>Repository:</strong> {REPO_OWNER}/{REPO_NAME}
                 </Typography>
               </Box>
@@ -200,78 +182,70 @@ This issue was created automatically from the main application form.`;
 
             {/* Main Form Card */}
             <Box
-              p="size/spacer/4x"
-              bg="layers/layer-0/properties/surface"
-              br="size/border-radius/2x"
+              p='size/spacer/4x'
+              bg='layers/layer-0/properties/surface'
+              br='size/border-radius/2x'
               style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
             >
               <Box style={{ marginBottom: '32px', textAlign: 'center' }}>
                 <Box style={{ marginBottom: '8px' }}>
-                  <Typography variant="h2" as="h2">
+                  <Typography variant='h2' as='h2'>
                     Submit Color Request
                   </Typography>
                 </Box>
-                <Typography variant="body-1/normal" color="color/gray/600">
+                <Typography variant='body-1/normal' color='color/gray/600'>
                   Fill out the form below to request a new button color
                 </Typography>
               </Box>
 
               <form onSubmit={handleSubmit}>
-                <Flex direction="column" gap="size/spacer/3x">
+                <Flex direction='column' gap='size/spacer/3x'>
                   {/* Form Fields */}
                   <Textfield
-                    label="Full Name"
-                    placeholder="Enter your full name"
+                    label='Full Name'
+                    placeholder='Enter your full name'
                     value={formData.name}
-                    onChange={e => handleInputChange('name', e.target.value)}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
                   />
 
                   <Textfield
-                    label="Email Address"
-                    placeholder="your.email@example.com"
+                    label='Email Address'
+                    placeholder='your.email@example.com'
                     value={formData.email}
-                    onChange={e => handleInputChange('email', e.target.value)}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
                   />
 
                   <Box>
                     <Textfield
-                      label="Hex Color Code"
-                      placeholder="#3366FF"
+                      label='Hex Color Code'
+                      placeholder='#3366FF'
                       value={formData.buttonColor}
-                      onChange={e =>
-                        handleInputChange('buttonColor', e.target.value)
-                      }
-                      helpText="Enter a valid hex color code (e.g., #FF0000 for red, #00FF00 for green)"
+                      onChange={(e) => handleInputChange('buttonColor', e.target.value)}
+                      helpText='Enter a valid hex color code (e.g., #FF0000 for red, #00FF00 for green)'
                     />
 
                     {/* Color Preview */}
                     {formData.buttonColor &&
-                      formData.buttonColor.match(
-                        /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/
-                      ) && (
+                      formData.buttonColor.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) && (
                         <Box style={{ marginTop: '8px' }}>
                           <Box style={{ marginBottom: '4px' }}>
-                            <Typography
-                              variant="body-2/normal"
-                              color="color/gray/600"
-                            >
+                            <Typography variant='body-2/normal' color='color/gray/600'>
                               Color Preview:
                             </Typography>
                           </Box>
-                          <Flex align="center" gap="size/spacer/default">
+                          <Flex align='center' gap='size/spacer/default'>
                             <Box
                               style={{
                                 width: '40px',
                                 height: '40px',
                                 backgroundColor: formData.buttonColor,
                                 borderRadius: '8px',
-                                border:
-                                  '1px solid var(--recursica-color-gray-300)',
+                                border: '1px solid var(--recursica-color-gray-300)',
                               }}
                             />
                             <Button
-                              label="Sample Button"
-                              variant="solid"
+                              label='Sample Button'
+                              variant='solid'
                               style={{ backgroundColor: formData.buttonColor }}
                               disabled
                             />
@@ -282,13 +256,9 @@ This issue was created automatically from the main application form.`;
 
                   {/* Submit Button */}
                   <Button
-                    type="submit"
-                    label={
-                      isSubmitting
-                        ? 'Submitting Request...'
-                        : 'Submit Color Request'
-                    }
-                    variant="solid"
+                    type='submit'
+                    label={isSubmitting ? 'Submitting Request...' : 'Submit Color Request'}
+                    variant='solid'
                     loading={isSubmitting}
                     disabled={!isFormValid || isSubmitting}
                   />
@@ -299,9 +269,9 @@ This issue was created automatically from the main application form.`;
             {/* Success Message */}
             {submitStatus === 'success' && (
               <Box
-                p="size/spacer/3x"
-                bg="color/greensheen/50"
-                br="size/border-radius/2x"
+                p='size/spacer/3x'
+                bg='color/greensheen/50'
+                br='size/border-radius/2x'
                 style={{
                   marginTop: '24px',
                   border: '1px solid',
@@ -309,27 +279,23 @@ This issue was created automatically from the main application form.`;
                 }}
               >
                 <Box style={{ marginBottom: '8px' }}>
-                  <Flex align="center" gap="size/spacer/default">
-                    <Typography
-                      variant="h4"
-                      as="h3"
-                      color="color/greensheen/700"
-                    >
+                  <Flex align='center' gap='size/spacer/default'>
+                    <Typography variant='h4' as='h3' color='color/greensheen/700'>
                       ✅ Request Submitted Successfully!
                     </Typography>
                   </Flex>
                 </Box>
                 <Box style={{ marginBottom: '8px' }}>
-                  <Typography color="color/greensheen/700">
-                    Your button color request has been created as a GitHub issue
-                    and will be reviewed by our team.
+                  <Typography color='color/greensheen/700'>
+                    Your button color request has been created as a GitHub issue and will be
+                    reviewed by our team.
                   </Typography>
                 </Box>
                 {prUrl && (
                   <Box>
                     <Button
-                      label="View Issue on GitHub"
-                      variant="outline"
+                      label='View Issue on GitHub'
+                      variant='outline'
                       onClick={() => window.open(prUrl, '_blank')}
                     />
                   </Box>
@@ -340,9 +306,9 @@ This issue was created automatically from the main application form.`;
             {/* Error Message */}
             {submitStatus === 'error' && (
               <Box
-                p="size/spacer/3x"
-                bg="color/salmon/50"
-                br="size/border-radius/2x"
+                p='size/spacer/3x'
+                bg='color/salmon/50'
+                br='size/border-radius/2x'
                 style={{
                   marginTop: '24px',
                   border: '1px solid',
@@ -350,20 +316,20 @@ This issue was created automatically from the main application form.`;
                 }}
               >
                 <Box style={{ marginBottom: '8px' }}>
-                  <Flex align="center" gap="size/spacer/default">
-                    <Typography variant="h4" as="h3" color="color/salmon/700">
+                  <Flex align='center' gap='size/spacer/default'>
+                    <Typography variant='h4' as='h3' color='color/salmon/700'>
                       ❌ Submission Failed
                     </Typography>
                   </Flex>
                 </Box>
                 <Box style={{ marginBottom: '8px' }}>
-                  <Typography color="color/salmon/700">
-                    There was an error submitting your color request. Please
-                    check your input and try again.
+                  <Typography color='color/salmon/700'>
+                    There was an error submitting your color request. Please check your input and
+                    try again.
                   </Typography>
                 </Box>
                 {errorMessage && (
-                  <Typography variant="body-2/normal" color="color/salmon/600">
+                  <Typography variant='body-2/normal' color='color/salmon/600'>
                     <strong>Error details:</strong> {errorMessage}
                   </Typography>
                 )}
@@ -373,9 +339,9 @@ This issue was created automatically from the main application form.`;
         </Box>
 
         {/* Footer */}
-        <Box p="size/spacer/3x" bg="layers/layer-0/properties/surface">
+        <Box p='size/spacer/3x' bg='layers/layer-0/properties/surface'>
           <Box style={{ textAlign: 'center' }}>
-            <Typography color="color/gray/500" variant="body-2/normal">
+            <Typography color='color/gray/500' variant='body-2/normal'>
               Built with ❤️ using React, Vite & Recursica Design System
             </Typography>
           </Box>

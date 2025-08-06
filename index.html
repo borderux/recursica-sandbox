@@ -8,7 +8,7 @@
       // Check if the current path matches a Storybook build folder
       function checkForStorybookBuild() {
         const path = window.location.pathname;
-        const pathSegments = path.split('/').filter(segment => segment);
+        const pathSegments = path.split('/').filter((segment) => segment);
 
         // If we're at the root, serve the main app (do nothing, let it load)
         if (pathSegments.length === 0) {
@@ -17,10 +17,7 @@
 
         // For GitHub Pages, the first segment might be the repository name
         // Check if we're at the root of the site (just the repo name)
-        if (
-          pathSegments.length === 1 &&
-          pathSegments[0] === 'recursica-sandbox'
-        ) {
+        if (pathSegments.length === 1 && pathSegments[0] === 'recursica-sandbox') {
           return; // This is the root, serve the main app
         }
 
@@ -41,7 +38,7 @@
 
         // Try to fetch the build's index.html to see if it exists
         fetch(buildPath, { method: 'HEAD' })
-          .then(response => {
+          .then((response) => {
             if (response.ok) {
               // Build exists, redirect to it
               window.location.href = buildPath;
