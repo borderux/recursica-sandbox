@@ -122,6 +122,8 @@ This issue was created automatically from the main application form.`;
           minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
+          alignItems: 'center',
+          width: '100%'
         }}
         bg='color/gray/050'
       >
@@ -129,7 +131,7 @@ This issue was created automatically from the main application form.`;
         <Box
           p='size/spacer/4x'
           bg='layers/layer-0/properties/surface'
-          style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}
+          style={{ boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)' }}
         >
           <Box style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <Box style={{ marginBottom: '8px' }}>
@@ -148,7 +150,7 @@ This issue was created automatically from the main application form.`;
 
         {/* Main Content */}
         <Box style={{ flex: 1 }} p='size/spacer/4x'>
-          <Box style={{ maxWidth: '600px', margin: '0 auto' }}>
+          <Box style={{ maxWidth: '800px', margin: '0 auto' }}>
             {/* Configuration Warning */}
             {!GITHUB_TOKEN && (
               <Box
@@ -157,8 +159,7 @@ This issue was created automatically from the main application form.`;
                 br='size/border-radius/2x'
                 style={{
                   marginBottom: '32px',
-                  border: '1px solid',
-                  borderColor: 'var(--recursica-color-salmon-200)',
+                  border: '1px solid var(--recursica-color-salmon-200)'
                 }}
               >
                 <Box style={{ marginBottom: '8px' }}>
@@ -185,7 +186,7 @@ This issue was created automatically from the main application form.`;
               p='size/spacer/4x'
               bg='layers/layer-0/properties/surface'
               br='size/border-radius/2x'
-              style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
+              style={{ boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}
             >
               <Box style={{ marginBottom: '32px', textAlign: 'center' }}>
                 <Box style={{ marginBottom: '8px' }}>
@@ -240,7 +241,7 @@ This issue was created automatically from the main application form.`;
                                 height: '40px',
                                 backgroundColor: formData.buttonColor,
                                 borderRadius: '8px',
-                                border: '1px solid var(--recursica-color-gray-300)',
+                                border: '1px solid var(--recursica-color-gray-300)'
                               }}
                             />
                             <Button
@@ -311,8 +312,7 @@ This issue was created automatically from the main application form.`;
                 br='size/border-radius/2x'
                 style={{
                   marginTop: '24px',
-                  border: '1px solid',
-                  borderColor: 'var(--recursica-color-salmon-200)',
+                  border: '1px solid var(--recursica-color-salmon-200)'
                 }}
               >
                 <Box style={{ marginBottom: '8px' }}>
