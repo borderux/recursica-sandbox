@@ -1,49 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recursica Sandbox</title>
-  <script>
-    // GitHub Pages 404.html routing
-    // This handles direct navigation to Storybook builds
-    
-    function handleRouting() {
-      const path = window.location.pathname;
-      const pathSegments = path.split('/').filter(segment => segment);
-      
-      // If we're at the root, serve the main app
-      if (pathSegments.length === 0) {
-        window.location.href = '/app.html';
-        return;
-      }
-      
-      // Check if the first segment matches a build folder
-      const buildFolder = pathSegments[0];
-      const buildPath = `/builds/${buildFolder}/index.html`;
-      
-      // Try to fetch the build's index.html to see if it exists
-      fetch(buildPath, { method: 'HEAD' })
-        .then(response => {
-          if (response.ok) {
-            // Build exists, redirect to it
-            window.location.href = buildPath;
-          } else {
-            // Build doesn't exist, serve main app
-            window.location.href = '/app.html';
-          }
-        })
-        .catch(() => {
-          // Error occurred, serve main app
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursica Sandbox</title>
+    <script>
+      // GitHub Pages 404.html routing
+      // This handles direct navigation to Storybook builds
+
+      function handleRouting() {
+        const path = window.location.pathname;
+        const pathSegments = path.split('/').filter((segment) => segment);
+
+        // If we're at the root, serve the main app
+        if (pathSegments.length === 0) {
           window.location.href = '/app.html';
-        });
-    }
-    
-    // Run the routing check
-    handleRouting();
-  </script>
-</head>
-<body>
-  <div>Redirecting...</div>
-</body>
-</html> 
+          return;
+        }
+
+        // Check if the first segment matches a build folder
+        const buildFolder = pathSegments[0];
+        const buildPath = `/builds/${buildFolder}/index.html`;
+
+        // Try to fetch the build's index.html to see if it exists
+        fetch(buildPath, { method: 'HEAD' })
+          .then((response) => {
+            if (response.ok) {
+              // Build exists, redirect to it
+              window.location.href = buildPath;
+            } else {
+              // Build doesn't exist, serve main app
+              window.location.href = '/app.html';
+            }
+          })
+          .catch(() => {
+            // Error occurred, serve main app
+            window.location.href = '/app.html';
+          });
+      }
+
+      // Run the routing check
+      handleRouting();
+    </script>
+  </head>
+  <body>
+    <div>Redirecting...</div>
+  </body>
+</html>

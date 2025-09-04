@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Create JSON file
         run: |
           # Create the JSON payload
@@ -53,21 +53,21 @@ jobs:
             "user": "${{ github.event.inputs.user }}"
           }
           EOF
-      
+
       - name: Create GitHub Issue
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
             const path = require('path');
-            
+
             // Read the JSON file
             const jsonContent = fs.readFileSync('change-request.json', 'utf8');
             const changeData = JSON.parse(jsonContent);
-            
+
             // Create issue title
             const title = `Change Request: ${changeData.type} - ${changeData.priority} priority`;
-            
+
             // Create issue body with proper escaping
             const body = [
               'Change Request submitted via the main application.',
@@ -87,7 +87,7 @@ jobs:
               JSON.stringify(changeData, null, 2),
               '```'
             ].join('\n');
-            
+
             // Create the issue
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
@@ -96,14 +96,14 @@ jobs:
               body: body,
               labels: ['change-request', changeData.type, changeData.priority]
             });
-            
+
             console.log(`Created issue #${issue.data.number}: ${issue.data.html_url}`);
-            
+
             // Upload the JSON file as an attachment
             // Note: GitHub doesn't have a direct API for file attachments to issues
             // We'll create a file in the repo instead
             const fileName = `change-requests/change-${issue.data.number}-${Date.now()}.json`;
-            
+
             await github.rest.repos.createOrUpdateFileContents({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -112,7 +112,7 @@ jobs:
               content: Buffer.from(jsonContent).toString('base64'),
               branch: 'main'
             });
-            
+
             // Add a comment to the issue with the file link
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -120,8 +120,8 @@ jobs:
               issue_number: issue.data.number,
               body: `📎 Change request JSON file: [${fileName}](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/${fileName})`
             });
-            
+
             // Set output for other workflows to use
             core.setOutput('issue-number', issue.data.number);
             core.setOutput('issue-url', issue.data.html_url);
-            core.setOutput('json-file', fileName); 
+            core.setOutput('json-file', fileName);

@@ -16,6 +16,7 @@ A React + Vite + Storybook project with GitHub Pages deployment that serves Stor
 - **Storybook Builds**: `https://borderux.github.io/recursica-sandbox/{build-folder-name}`
 
 For example:
+
 - `https://borderux.github.io/recursica-sandbox/Matt_Massey_20250730_171743` serves the Storybook build in the `builds/Matt_Massey_20250730_171743` folder
 
 ### Build Process
@@ -81,4 +82,5 @@ The routing system works as follows:
 3. **Fallback**: If no matching build is found, serves the main landing page
 
 This is handled by both `index.html` (for initial page loads) and `404.html` (for direct navigation to build URLs).
+
 # Trigger deployment

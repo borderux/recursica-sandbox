@@ -5,6 +5,7 @@ This document explains the architecture of the Storybook deployment system in th
 ## Overview
 
 The project implements a sophisticated Storybook deployment system that provides:
+
 - **PR Previews**: Automatic Storybook previews for every pull request using GitHub's built-in deployment environments
 - **Issue-to-PR Automation**: Automatic PR creation from GitHub issues
 - **Versioned Builds**: Historical build preservation with timestamped directories
@@ -15,23 +16,27 @@ The project implements a sophisticated Storybook deployment system that provides
 ### 1. Build System
 
 #### Storybook Build Process
+
 - **Build Script**: `scripts/build-storybook.js`
 - **Output Location**: `builds/` directory
 - **Naming Convention**: `{username}_{timestamp}` (e.g., `Matt_Massey_20250730_171743`)
 - **Build Command**: `npm run build-storybook`
 
 The build script:
+
 1. Gets the current git username
 2. Creates a timestamped directory name
 3. Runs `storybook build -o {buildPath}`
 4. Stores builds in versioned directories for historical preservation
 
 #### Main App Build Process
+
 - **Build Script**: `scripts/generate-builds-list.js` + Vite build
 - **Output Location**: `dist/` directory
 - **Build Command**: `npm run build`
 
 The main build:
+
 1. Generates a list of all available Storybook builds
 2. Compiles the main React application
 3. Creates a builds.json file for the UI to display available builds
@@ -43,6 +48,7 @@ The main build:
 **Trigger**: When a new issue is opened
 
 **Process**:
+
 1. **Branch Creation**: Creates a new branch `issue-{number}` from main
 2. **PR Creation**: Automatically creates a pull request with the issue title and body
 3. **Storybook Build**: Runs `npm run build-storybook` to create a new build
@@ -50,6 +56,7 @@ The main build:
 5. **Notification**: Comments on both the issue and PR with preview URLs
 
 **Key Features**:
+
 - Automatic PR creation from issues
 - Isolated preview environments per PR
 - PR-specific artifact naming to prevent conflicts
@@ -57,13 +64,15 @@ The main build:
 
 #### Main Deployment Workflow (`.github/workflows/deploy.yml`)
 
-**Trigger**: 
+**Trigger**:
+
 - Push to main branch
 - Pull request events (opened, synchronized, reopened)
 
 **Process**:
+
 1. **Build Detection**: Determines if it's a PR or main branch deployment
-2. **Conditional Building**: 
+2. **Conditional Building**:
    - PRs: Builds Storybook only
    - Main: Builds both main app and Storybook
 3. **Deployment Strategy**:
@@ -71,6 +80,7 @@ The main build:
    - Main: Deploy main app to root, Storybook builds to `/builds/`
 
 **Concurrency Management**:
+
 - Each PR gets its own concurrency group: `pages-{pr-number}`
 - Allows multiple PRs to deploy simultaneously without conflicts
 - Cancels in-progress deployments when new commits are pushed
@@ -78,17 +88,20 @@ The main build:
 ### 3. Deployment Strategy
 
 #### GitHub Pages Artifacts
+
 - **Storage**: Build artifacts are stored in GitHub Pages artifact storage (not in repository)
 - **Retention**: 90-day automatic cleanup
 - **Isolation**: Each PR gets its own preview environment with unique artifact names
 - **URL Structure**: `https://{username}.github.io/{repo}/pr-{number}/`
 
 #### PR-Specific Artifact Naming
+
 - **PR Deployments**: `deployment-{pr-number}` or `deployment-pr-{pr-number}`
 - **Main Deployments**: `deployment-{sha}`
 - **Conflict Prevention**: Unique names prevent artifact overwriting
 
 #### Directory Structure
+
 ```
 deployment/
 ├── index.html (redirect for PRs)
@@ -99,6 +112,7 @@ deployment/
 ### 4. File Organization
 
 #### Repository Structure
+
 ```
 ├── builds/                    # Storybook build outputs (versioned)
 │   ├── Matt_Massey_20250730_171743/
@@ -117,6 +131,7 @@ deployment/
 ## Data Flow
 
 ### PR Creation Flow
+
 1. User creates GitHub issue
 2. Workflow triggers automatically
 3. New branch created from main
@@ -126,6 +141,7 @@ deployment/
 7. Preview URL shared in PR comments
 
 ### Build Process Flow
+
 1. `npm run build-storybook` executed
 2. Username and timestamp captured
 3. Unique build directory created
@@ -134,6 +150,7 @@ deployment/
 6. Deployment artifacts prepared with unique naming
 
 ### Deployment Flow
+
 1. Build artifacts prepared in `deployment/` directory
 2. Artifacts uploaded to GitHub Pages storage with PR-specific names
 3. GitHub Pages serves files from artifact storage
@@ -161,9 +178,10 @@ deployment/
 ## Future Enhancements
 
 Potential improvements could include:
+
 - Custom domain support
 - Longer artifact retention strategies
 - Build caching for faster deployments
 - Integration with external hosting services
 - Automated testing in preview environments
-- PR-specific environment variables for configuration 
+- PR-specific environment variables for configuration
