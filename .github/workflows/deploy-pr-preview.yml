@@ -50,16 +50,13 @@ jobs:
           # Create a clean deployment directory
           mkdir -p deployment
 
-          PR_NUMBER=${{ github.event.pull_request.number }}
-          mkdir -p deployment/pr-$PR_NUMBER
-
-          # Copy the latest Storybook build to PR preview
+          # Copy the latest Storybook build directly to deployment root
           if [ -d "builds" ]; then
             # Get the most recent build (last modified)
             LATEST_BUILD=$(ls -t builds/ | head -1)
             if [ -n "$LATEST_BUILD" ]; then
               echo "Using latest build: $LATEST_BUILD"
-              cp -r builds/$LATEST_BUILD/* deployment/pr-$PR_NUMBER/
+              cp -r builds/$LATEST_BUILD/* deployment/
             else
               echo "No builds found"
               exit 1
@@ -70,7 +67,7 @@ jobs:
           fi
 
           # Create a 404.html for SPA routing - redirects to the Storybook index
-          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-$PR_NUMBER/404.html
+          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
