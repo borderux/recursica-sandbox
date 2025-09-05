@@ -35,24 +35,10 @@ jobs:
         if: github.event.action != 'closed'
         run: npm run build-storybook
 
-      - name: Prepare build for deployment
-        if: github.event.action != 'closed'
-        run: |
-          # Get the most recent build (last modified)
-          LATEST_BUILD=$(ls -t builds/ | head -1)
-          if [ -n "$LATEST_BUILD" ]; then
-            echo "Using latest build: $LATEST_BUILD"
-            # Copy the latest build to a standard location for the PR preview action
-            cp -r builds/$LATEST_BUILD ./storybook-build
-          else
-            echo "No builds found"
-            exit 1
-          fi
-
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./storybook-build
+          source-dir: ./storybook-static
           preview-branch: gh-pages
           umbrella-dir: pr-preview
           action: auto
