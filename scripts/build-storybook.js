@@ -5,10 +5,16 @@ import { mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
 
 try {
-  // Get git username
-  const gitUsername = execSync('git config user.name', {
-    encoding: 'utf8',
-  }).trim();
+  // Get git username, fallback to 'ci' in CI environments
+  let gitUsername;
+  try {
+    gitUsername = execSync('git config user.name', {
+      encoding: 'utf8',
+    }).trim();
+  } catch (gitError) {
+    // Fallback for CI environments where git user.name might not be set
+    gitUsername = process.env.CI ? 'ci' : 'local';
+  }
   const safeUsername = gitUsername.replace(/\s+/g, '_');
 
   // Get current timestamp
