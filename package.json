@@ -15,7 +15,7 @@
     "format:check": "prettier --check .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "node scripts/build-storybook.js"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@mantine/core": "^8.2.2",
