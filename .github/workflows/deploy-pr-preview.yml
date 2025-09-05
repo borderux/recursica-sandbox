@@ -50,13 +50,16 @@ jobs:
           # Create a clean deployment directory
           mkdir -p deployment
 
-          # Copy the latest Storybook build directly to deployment root
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          mkdir -p deployment/pr-previews/$PR_NUMBER
+
+          # Copy the latest Storybook build to PR preview subdirectory
           if [ -d "builds" ]; then
             # Get the most recent build (last modified)
             LATEST_BUILD=$(ls -t builds/ | head -1)
             if [ -n "$LATEST_BUILD" ]; then
               echo "Using latest build: $LATEST_BUILD"
-              cp -r builds/$LATEST_BUILD/* deployment/
+              cp -r builds/$LATEST_BUILD/* deployment/pr-previews/$PR_NUMBER/
             else
               echo "No builds found"
               exit 1
@@ -67,7 +70,7 @@ jobs:
           fi
 
           # Create a 404.html for SPA routing - redirects to the Storybook index
-          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/404.html
+          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-previews/$PR_NUMBER/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -85,8 +88,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          target_path: 'pr-previews/${{ github.event.pull_request.number }}'
 
       - name: Comment PR with preview URL
         uses: actions/github-script@v7
