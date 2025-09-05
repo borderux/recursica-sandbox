@@ -33,8 +33,7 @@ dist-ssr
 # Build outputs
 build/
 out/
-# Allow builds directory for Storybook deployments
-!builds/
+builds/
 
 # Coverage directory used by tools like istanbul
 coverage/
