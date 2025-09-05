@@ -34,6 +34,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Configure git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
       - name: Build Storybook for PR
         run: npm run build-storybook
 
@@ -67,6 +72,9 @@ jobs:
           # Create a redirect from root to PR preview
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-'$PR_NUMBER'/"></head><body>Redirecting to <a href="./pr-'$PR_NUMBER'/">PR Preview</a></body></html>' > deployment/index.html
 
+          # Create a 404.html for SPA routing - redirects to the Storybook index
+          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-$PR_NUMBER/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -83,3 +91,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Comment PR with preview URL
+        uses: actions/github-script@v7
+        continue-on-error: true
+        with:
+          script: |
+            try {
+              const prNumber = ${{ github.event.pull_request.number }};
+              const previewUrl = `https://borderux.github.io/recursica-sandbox/pr-${prNumber}/`;
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: `🎉 PR Preview deployed!\n\nView your Storybook preview here: ${previewUrl}`
+              });
+              
+              console.log(`✅ Successfully posted preview URL to PR #${prNumber}`);
+            } catch (error) {
+              console.log(`⚠️ Could not post comment to PR: ${error.message}`);
+              console.log(`Preview URL: https://borderux.github.io/recursica-sandbox/pr-${{ github.event.pull_request.number }}/`);
+            }
