@@ -77,10 +77,10 @@ jobs:
         with:
           path: './deployment'
 
-  # Deployment job for PRs using GitHub Environments
+  # Deployment job for PRs using GitHub's native preview system
   deploy:
     environment:
-      name: pr-${{ github.event.pull_request.number }}
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
