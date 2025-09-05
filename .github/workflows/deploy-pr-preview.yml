@@ -72,23 +72,15 @@ jobs:
           # Create a 404.html for SPA routing - redirects to the Storybook index
           echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-$PR_NUMBER/404.html
 
-          # Copy the main app files to preserve the main site
-          if [ -d "dist" ]; then
-            echo "Copying main app files to preserve main site"
-            cp -r dist/* deployment/
-          else
-            echo "No dist directory found - main app not built yet"
-          fi
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './deployment'
 
-  # Deployment job for PRs using GitHub's native preview system
+  # Deployment job for PRs using separate environments
   deploy:
     environment:
-      name: github-pages
+      name: pr-${{ github.event.pull_request.number }}
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
