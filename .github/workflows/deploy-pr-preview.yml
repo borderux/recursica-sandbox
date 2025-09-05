@@ -72,6 +72,9 @@ jobs:
           # Create a redirect from root to PR preview
           echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./pr-'$PR_NUMBER'/"></head><body>Redirecting to <a href="./pr-'$PR_NUMBER'/">PR Preview</a></body></html>' > deployment/index.html
 
+          # Create a 404.html for SPA routing - redirects to the Storybook index
+          echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-$PR_NUMBER/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
