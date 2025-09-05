@@ -72,6 +72,14 @@ jobs:
           # Create a 404.html for SPA routing - redirects to the Storybook index
           echo '<!DOCTYPE html><html><head><script>window.location.replace("./index.html");</script></head><body>Redirecting...</body></html>' > deployment/pr-$PR_NUMBER/404.html
 
+          # Copy the main app files to preserve the main site
+          if [ -d "dist" ]; then
+            echo "Copying main app files to preserve main site"
+            cp -r dist/* deployment/
+          else
+            echo "No dist directory found - main app not built yet"
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
