@@ -74,10 +74,10 @@ jobs:
         with:
           path: './deployment'
 
-  # Deployment job for PRs using separate environments
+  # Deployment job for PRs using target_path for multiple PR support
   deploy:
     environment:
-      name: pr-${{ github.event.pull_request.number }}
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
@@ -85,6 +85,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          target_path: 'pr-previews/${{ github.event.pull_request.number }}'
 
       - name: Comment PR with preview URL
         uses: actions/github-script@v7
@@ -93,7 +95,7 @@ jobs:
           script: |
             try {
               const prNumber = ${{ github.event.pull_request.number }};
-              const previewUrl = `https://borderux.github.io/recursica-sandbox/pr-${prNumber}/`;
+              const previewUrl = `https://borderux.github.io/recursica-sandbox/pr-previews/${prNumber}/`;
 
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
@@ -105,5 +107,5 @@ jobs:
               console.log(`✅ Successfully posted preview URL to PR #${prNumber}`);
             } catch (error) {
               console.log(`⚠️ Could not post comment to PR: ${error.message}`);
-              console.log(`Preview URL: https://borderux.github.io/recursica-sandbox/pr-${{ github.event.pull_request.number }}/`);
+              console.log(`Preview URL: https://borderux.github.io/recursica-sandbox/pr-previews/${{ github.event.pull_request.number }}/`);
             }
