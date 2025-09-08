@@ -136,13 +136,12 @@ This issue was created automatically from the main application form.`;
           <Box style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <Box style={{ marginBottom: '8px' }}>
               <Typography variant='h1' as='h1'>
-                🎨 Color Request Studio
+                Recursica Sandbox
               </Typography>
             </Box>
             <Box style={{ maxWidth: '600px', margin: '0 auto' }}>
               <Typography variant='body-1/normal' color='color/gray/600'>
-                Request a custom button color for your project. Submit your details and we'll create
-                a GitHub issue to track your request.
+                This demonstrates how modifications to the Recursica JSON structure will update the styling in the components. This demonstrates by creating a Storybook UI build to demonstrate automated PR previews can allow designers to see their changes in the code.
               </Typography>
             </Box>
           </Box>
@@ -188,29 +187,19 @@ This issue was created automatically from the main application form.`;
               br='size/border-radius/2x'
               style={{ boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}
             >
-              <Box style={{ marginBottom: '32px', textAlign: 'center' }}>
-                <Box style={{ marginBottom: '8px' }}>
-                  <Typography variant='h2' as='h2'>
-                    Submit Color Request
-                  </Typography>
-                </Box>
-                <Typography variant='body-1/normal' color='color/gray/600'>
-                  Fill out the form below to request a new button color
-                </Typography>
-              </Box>
 
               <form onSubmit={handleSubmit}>
                 <Flex direction='column' gap='size/spacer/3x'>
                   {/* Form Fields */}
                   <Textfield
-                    label='Full Name'
-                    placeholder='Enter your full name'
+                    label='Name'
+                    placeholder='Enter your name'
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
                   />
 
                   <Textfield
-                    label='Email Address'
+                    label='Email'
                     placeholder='your.email@example.com'
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
@@ -218,11 +207,11 @@ This issue was created automatically from the main application form.`;
 
                   <Box>
                     <Textfield
-                      label='Hex Color Code'
+                      label='Color'
                       placeholder='#3366FF'
                       value={formData.buttonColor}
                       onChange={(e) => handleInputChange('buttonColor', e.target.value)}
-                      helpText='Enter a valid hex color code (e.g., #FF0000 for red, #00FF00 for green)'
+                      helpText='Enter a hex color code'
                     />
 
                     {/* Color Preview */}
@@ -231,7 +220,7 @@ This issue was created automatically from the main application form.`;
                         <Box style={{ marginTop: '8px' }}>
                           <Box style={{ marginBottom: '4px' }}>
                             <Typography variant='body-2/normal' color='color/gray/600'>
-                              Color Preview:
+                              Preview:
                             </Typography>
                           </Box>
                           <Flex align='center' gap='size/spacer/default'>
@@ -258,7 +247,7 @@ This issue was created automatically from the main application form.`;
                   {/* Submit Button */}
                   <Button
                     type='submit'
-                    label={isSubmitting ? 'Submitting Request...' : 'Submit Color Request'}
+                    label={isSubmitting ? 'Submitting...' : 'Submit'}
                     variant='solid'
                     loading={isSubmitting}
                     disabled={!isFormValid || isSubmitting}
@@ -282,14 +271,13 @@ This issue was created automatically from the main application form.`;
                 <Box style={{ marginBottom: '8px' }}>
                   <Flex align='center' gap='size/spacer/default'>
                     <Typography variant='h4' as='h3' color='color/greensheen/700'>
-                      ✅ Request Submitted Successfully!
+                      ✅ Success!
                     </Typography>
                   </Flex>
                 </Box>
                 <Box style={{ marginBottom: '8px' }}>
                   <Typography color='color/greensheen/700'>
-                    Your button color request has been created as a GitHub issue and will be
-                    reviewed by our team.
+                    Your request has been submitted successfully.
                   </Typography>
                 </Box>
                 {prUrl && (
@@ -318,14 +306,13 @@ This issue was created automatically from the main application form.`;
                 <Box style={{ marginBottom: '8px' }}>
                   <Flex align='center' gap='size/spacer/default'>
                     <Typography variant='h4' as='h3' color='color/salmon/700'>
-                      ❌ Submission Failed
+                      ❌ Error
                     </Typography>
                   </Flex>
                 </Box>
                 <Box style={{ marginBottom: '8px' }}>
                   <Typography color='color/salmon/700'>
-                    There was an error submitting your color request. Please check your input and
-                    try again.
+                    There was an error submitting your request. Please try again.
                   </Typography>
                 </Box>
                 {errorMessage && (
