@@ -31,7 +31,7 @@ The build script:
 
 #### Main App Build Process
 
-- **Build Script**: `scripts/generate-builds-list.js` + Vite build
+- **Build Script**: Vite build
 - **Output Location**: `dist/` directory
 - **Build Command**: `npm run build`
 
@@ -121,8 +121,7 @@ deployment/
 ├── public/
 │   └── builds.json           # Generated list of available builds
 ├── scripts/
-│   ├── build-storybook.js    # Storybook build orchestration
-│   └── generate-builds-list.js # Builds list generation
+│   └── build-storybook.js    # Storybook build orchestration
 └── .github/workflows/
     ├── create-pr-from-issue.yml
     └── deploy.yml

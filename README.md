@@ -48,8 +48,7 @@ npm run build
 ## Build Scripts
 
 - `npm run build-storybook`: Creates a new Storybook build in the `builds/` folder
-- `npm run build`: Generates the builds list and builds the main app
-- `scripts/generate-builds-list.js`: Scans the builds directory and creates a JSON file with available builds
+- `npm run build`: Builds the main app
 
 ## File Structure
 
