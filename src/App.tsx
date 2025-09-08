@@ -71,7 +71,7 @@ This issue was created automatically from the main application form.`;
         {
           method: 'POST',
           headers: {
-            Authorization: `token ${GITHUB_TOKEN}`,
+            Authorization: `Bearer ${GITHUB_TOKEN}`,
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
@@ -84,6 +84,9 @@ This issue was created automatically from the main application form.`;
 
       if (!issueResp.ok) {
         const errorText = await issueResp.text();
+        if (issueResp.status === 401) {
+          throw new Error('GitHub authentication failed. Please check your VITE_GITHUB_TOKEN environment variable and ensure it has the correct permissions.');
+        }
         throw new Error(`Failed to create issue: ${issueResp.status} ${errorText}`);
       }
 
