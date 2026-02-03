@@ -60,6 +60,18 @@ function App() {
           >
             Launch Theme Forge
           </a>
+          <br />
+          <br />
+          <a
+            href={"/storybook"}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--recursica-color-primary-600, #2563eb)',
+              textDecoration: 'underline'
+            }}
+          >
+            Checkout the Storybook
+          </a>
         </Box>
       </Box>
     </ThemeProvider>

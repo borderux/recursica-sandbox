@@ -30,6 +30,9 @@ jobs:
       - name: Build main app
         run: npm run build
 
+      - name: Build Storybook
+        run: npx storybook build -o dist/storybook
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
