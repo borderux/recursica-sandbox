@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/recursica-sandbox/' : '/',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
   plugins: [react()],
   build: {
     rollupOptions: {
