@@ -1,186 +1,69 @@
 # Architecture Overview
 
-This document explains the architecture of the Storybook deployment system in this project.
+This document explains the architecture of the Recursica Sandbox: Theme Forge integration, the create-PR API at api.recursica.com, and the CI that builds Storybook and updates PR descriptions.
 
 ## Overview
 
-The project implements a sophisticated Storybook deployment system that provides:
+The project provides:
 
-- **PR Previews**: Automatic Storybook previews for every pull request using GitHub's built-in deployment environments
-- **Issue-to-PR Automation**: Automatic PR creation from GitHub issues
-- **Versioned Builds**: Historical build preservation with timestamped directories
-- **GitHub Pages Integration**: Seamless deployment to GitHub Pages with robust multi-PR support
-
-## Core Components
-
-### 1. Build System
-
-#### Storybook Build Process
-
-- **Build Script**: `scripts/build-storybook.js`
-- **Output Location**: `builds/` directory
-- **Naming Convention**: `{username}_{timestamp}` (e.g., `Matt_Massey_20250730_171743`)
-- **Build Command**: `npm run build-storybook`
-
-The build script:
-
-1. Gets the current git username
-2. Creates a timestamped directory name
-3. Runs `storybook build -o {buildPath}`
-4. Stores builds in versioned directories for historical preservation
-
-#### Main App Build Process
-
-- **Build Script**: Vite build
-- **Output Location**: `dist/` directory
-- **Build Command**: `npm run build`
-
-The main build:
-
-1. Generates a list of all available Storybook builds
-2. Compiles the main React application
-3. Creates a builds.json file for the UI to display available builds
-
-### 2. GitHub Workflows
-
-#### Issue-to-PR Workflow (`.github/workflows/create-pr-from-issue.yml`)
-
-**Trigger**: When a new issue is opened
-
-**Process**:
-
-1. **Branch Creation**: Creates a new branch `issue-{number}` from main
-2. **PR Creation**: Automatically creates a pull request with the issue title and body
-3. **Storybook Build**: Runs `npm run build-storybook` to create a new build
-4. **Deployment**: Deploys the build to GitHub Pages using PR-specific artifact naming
-5. **Notification**: Comments on both the issue and PR with preview URLs
-
-**Key Features**:
-
-- Automatic PR creation from issues
-- Isolated preview environments per PR
-- PR-specific artifact naming to prevent conflicts
-- 90-day artifact retention on GitHub Pages
-
-#### Main Deployment Workflow (`.github/workflows/deploy.yml`)
-
-**Trigger**:
-
-- Push to main branch
-- Pull request events (opened, synchronized, reopened)
-
-**Process**:
-
-1. **Build Detection**: Determines if it's a PR or main branch deployment
-2. **Conditional Building**:
-   - PRs: Builds Storybook only
-   - Main: Builds both main app and Storybook
-3. **Deployment Strategy**:
-   - PRs: Deploy to `/pr-{number}/` with PR-specific artifact naming
-   - Main: Deploy main app to root, Storybook builds to `/builds/`
-
-**Concurrency Management**:
-
-- Each PR gets its own concurrency group: `pages-{pr-number}`
-- Allows multiple PRs to deploy simultaneously without conflicts
-- Cancels in-progress deployments when new commits are pushed
-
-### 3. Deployment Strategy
-
-#### GitHub Pages Artifacts
-
-- **Storage**: Build artifacts are stored in GitHub Pages artifact storage (not in repository)
-- **Retention**: 90-day automatic cleanup
-- **Isolation**: Each PR gets its own preview environment with unique artifact names
-- **URL Structure**: `https://{username}.github.io/{repo}/pr-{number}/`
-
-#### PR-Specific Artifact Naming
-
-- **PR Deployments**: `deployment-{pr-number}` or `deployment-pr-{pr-number}`
-- **Main Deployments**: `deployment-{sha}`
-- **Conflict Prevention**: Unique names prevent artifact overwriting
-
-#### Directory Structure
-
-```
-deployment/
-├── index.html (redirect for PRs)
-├── pr-{number}/ (PR-specific Storybook build)
-└── builds/ (historical builds for main deployment)
-```
-
-### 4. File Organization
-
-#### Repository Structure
-
-```
-├── builds/                    # Storybook build outputs (versioned)
-│   ├── Matt_Massey_20250730_171743/
-│   └── ...
-├── dist/                      # Main app build output
-├── public/
-│   └── builds.json           # Generated list of available builds
-├── scripts/
-│   └── build-storybook.js    # Storybook build orchestration
-└── .github/workflows/
-    ├── create-pr-from-issue.yml
-    └── deploy.yml
-```
+- **Instructions page**: Main app explains how to connect Recursica Theme Forge to this repo and submit changes. Theme Forge calls api.recursica.com to create a PR.
+- **Create-PR API**: Hosted at api.recursica.com. Accepts GitHub user token + file contents; creates branch, commits files, opens PR, assigns user. Secured with token validation and per-user rate limiting. See [docs/create-pr-api-spec.md](docs/create-pr-api-spec.md).
+- **PR Previews**: CI builds Storybook for each PR and deploys to GitHub Pages; updates the PR description with the Storybook preview URL.
+- **GitHub Pages**: Main app and PR previews served from the `gh-pages` branch.
 
 ## Data Flow
 
-### PR Creation Flow
+### Theme Forge → PR flow
 
-1. User creates GitHub issue
-2. Workflow triggers automatically
-3. New branch created from main
-4. PR created with issue content
-5. Storybook built and timestamped
-6. Build deployed to GitHub Pages with PR-specific artifact name
-7. Preview URL shared in PR comments
+1. User connects Recursica Theme Forge to this repository and edits Recursica JSON/CSS.
+2. User submits; Theme Forge sends `POST` to api.recursica.com with `Authorization: Bearer <user token>` and `files` (e.g. `recursica.json`, `recursica-bundle.json`, `recursica.css`).
+3. API validates token (GitHub `GET /user`), checks rate limit, then using a GitHub App installation token: creates branch `{username}_{timestamp}`, commits each file, creates PR, assigns the user.
+4. API returns `prUrl` and `prNumber`. User is notified (assigned to PR).
 
-### Build Process Flow
+### CI flow (PR preview)
 
-1. `npm run build-storybook` executed
-2. Username and timestamp captured
-3. Unique build directory created
-4. Storybook build output stored
-5. Builds list regenerated for main app
-6. Deployment artifacts prepared with unique naming
+1. PR is opened or updated → **deploy-pr-preview.yml** runs.
+2. Workflow checks out repo, runs `npm run build-storybook` (output: `storybook-static`).
+3. **rossjrw/pr-preview-action** deploys `storybook-static` to `gh-pages` under `pr-preview/pr-{number}/`.
+4. Workflow updates the PR description via `github.rest.pulls.update` to include the Storybook preview URL (from the action’s `preview-url` output).
+5. On PR closed, the action removes the preview from `gh-pages`.
 
-### Deployment Flow
+### Main deployment
 
-1. Build artifacts prepared in `deployment/` directory
-2. Artifacts uploaded to GitHub Pages storage with PR-specific names
-3. GitHub Pages serves files from artifact storage
-4. Preview URLs become available immediately
-5. Each PR maintains its own isolated deployment
+1. Push to `main` → **deploy-main.yml** runs.
+2. Builds the main app (`npm run build`), deploys `dist/` to `gh-pages` (without wiping `pr-preview/`).
 
-## Key Benefits
+## API contract (summary)
 
-1. **Automation**: Zero manual intervention for PR creation and deployment
-2. **Isolation**: Each PR gets its own preview environment with unique artifacts
-3. **Concurrency**: Multiple PRs can deploy simultaneously without conflicts
-4. **History**: All builds preserved with timestamps
-5. **Performance**: No build artifacts in repository (keeps it clean)
-6. **Scalability**: GitHub Pages handles hosting and CDN distribution
-7. **Cost**: Free hosting with generous limits
-8. **Robustness**: Built-in GitHub deployment environments handle multi-PR scenarios
+- **Endpoint**: api.recursica.com (exact path defined by backend; e.g. `/sandbox/create-pr`).
+- **Request**: `POST`, `Authorization: Bearer <GitHub user token>`, JSON body `{ "files": { "recursica.json": "...", ... } }`. Allowed keys: `recursica.json`, `recursica-bundle.json`, `recursica.css`.
+- **Response**: `201` with `{ "prUrl": "...", "prNumber": 123 }`. Errors: `401` (invalid/missing token), `429` (rate limit), `4xx`/`5xx`.
+- **Security**: Token validated with GitHub; identity used for branch name and PR assignment. Rate limit per GitHub user (e.g. 5/hour or 10/day).
+
+Full spec: [docs/create-pr-api-spec.md](docs/create-pr-api-spec.md).
+
+## Repository structure
+
+```
+├── docs/
+│   └── create-pr-api-spec.md   # Backend spec for api.recursica.com
+├── src/
+│   └── App.tsx                 # Instructions for Theme Forge
+├── .github/workflows/
+│   ├── deploy-main.yml         # Deploy main app on push to main
+│   └── deploy-pr-preview.yml   # Storybook build + deploy + update PR description
+├── recursica.json, recursica.css, recursica-bundle.json
+└── ...
+```
+
+## Key benefits
+
+- No form or issue creation in the frontend; Theme Forge and api.recursica.com handle submission and PR creation.
+- User is assigned to the PR and gets GitHub notifications.
+- CI keeps PR description updated with the Storybook preview URL.
+- API is authenticated (valid GitHub user) and rate-limited to prevent abuse.
 
 ## Limitations
 
-1. **Artifact Retention**: 90-day limit on GitHub Pages artifacts
-2. **Storage Limits**: 1GB limit for public repositories
-3. **Build Time**: Each PR requires a fresh build
-4. **Dependencies**: Requires GitHub Actions minutes
-
-## Future Enhancements
-
-Potential improvements could include:
-
-- Custom domain support
-- Longer artifact retention strategies
-- Build caching for faster deployments
-- Integration with external hosting services
-- Automated testing in preview environments
-- PR-specific environment variables for configuration
+- Create-PR API and GitHub App are owned and operated by api.recursica.com; this repo only documents the contract.
+- PR previews live on GitHub Pages with standard retention/limits.
