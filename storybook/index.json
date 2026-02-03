@@ -1,0 +1,1 @@
+{"v":5,"entries":{"example-hello--hello-world":{"type":"story","subtype":"story","id":"example-hello--hello-world","name":"Hello World","title":"Example/Hello","importPath":"./src/Hello.stories.tsx","tags":["dev","test","manifest"],"exportName":"HelloWorld"}}}
