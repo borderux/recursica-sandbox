@@ -9,7 +9,8 @@ type TypefaceVariant = { weight?: string; style?: string }
 type TypefaceEntry = {
   $value?: string | string[]
   $extensions?: {
-    'com.google.fonts'?: { url?: string; variants?: TypefaceVariant[] }
+    'com.google.fonts'?: { url?: string; variants?: TypefaceVariant[] },
+    variants?: TypefaceVariant[]
   }
 }
 
@@ -46,49 +47,14 @@ function getWeightsSortedByValue(): { key: string; weightVar: string }[] {
   return entries.map(({ key }) => ({ key, weightVar: weightKeyToCssVar(key) }))
 }
 
-function findVariantsInExtension(ext: Record<string, unknown>): TypefaceVariant[] | undefined {
-  for (const val of Object.values(ext)) {
-    if (
-      Array.isArray(val) &&
-      val.length > 0 &&
-      val.every(
-        (item: unknown) =>
-          item !== null &&
-          typeof item === 'object' &&
-          'weight' in item &&
-          typeof (item as { weight: unknown }).weight === 'string',
-      )
-    ) {
-      return val as TypefaceVariant[]
-    }
-  }
-  return undefined
-}
-
 function getWeightKeysForTypeface(typefaceKey: string): string[] {
   const typefaces = data.tokens?.font?.typefaces
   const entry = typefaces?.[typefaceKey] as TypefaceEntry | undefined
-  const extensions = entry?.$extensions
   const weightsData = data.tokens?.font?.weights
   if (!weightsData) return []
 
-  let variants: TypefaceVariant[] | undefined
-  if (extensions && typeof extensions === 'object') {
-    const googleExt = (extensions as Record<string, Record<string, unknown>>)['com.google.fonts']
-    if (googleExt && typeof googleExt === 'object') {
-      variants = findVariantsInExtension(googleExt)
-    }
-    if (!variants) {
-      for (const ext of Object.values(extensions)) {
-        if (ext && typeof ext === 'object') {
-          variants = findVariantsInExtension(ext as Record<string, unknown>)
-          if (variants) break
-        }
-      }
-    }
-  }
-
-  if (variants && variants.length > 0) {
+  const variants = entry?.$extensions?.variants
+  if (Array.isArray(variants) && variants.length > 0) {
     const keys = new Set<string>()
     for (const v of variants) {
       const key = parseWeightRef(v?.weight ?? '')
@@ -114,7 +80,7 @@ function getTypefaces() {
 
   const allWeights = getWeightsSortedByValue()
 
-  return Object.entries(typefaces)
+  const ret = Object.entries(typefaces)
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, face]) => face && typeof face === 'object')
     .map(([key, entry]) => {
@@ -127,9 +93,11 @@ function getTypefaces() {
       }).filter((w): w is { key: string; weightVar: string } => w !== null)
       return { key, displayName, cssVar, weights }
     })
+    console.log(ret);
+    return ret;
 }
 
-const SAMPLE_TEXT = 'The quick brown fox jumps over the lazy dog.'
+const SAMPLE_TEXT = 'The quick onyx goblin jumps over the lazy dwarf, executing a superb and swift maneuver with extraordinary zeal.'
 
 function FontPalette() {
   const typefaces = getTypefaces()
