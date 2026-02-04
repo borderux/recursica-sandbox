@@ -8,9 +8,7 @@ type SizeEntry = { $type?: string; $value?: DimensionValue }
 
 type TokensShape = {
   tokens?: {
-    font?: {
-      sizes?: Record<string, SizeEntry>
-    }
+    sizes?: Record<string, SizeEntry>
   }
 }
 
@@ -26,14 +24,15 @@ function formatSizeValue(entry: SizeEntry): string | null {
 }
 
 function getSizes(): { key: string; cssVar: string; value: string | null }[] {
-  const sizes = data.tokens?.font?.sizes
+  const sizes = data.tokens?.sizes
   if (!sizes || typeof sizes !== 'object') return []
 
   return Object.entries(sizes)
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, entry]) => entry && typeof entry === 'object')
+    .filter(([key]) => !key.startsWith('elevation-')) // skip elevation sub-keys (blur, offset_x, etc.)
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-font-sizes-${key}`
+      const cssVar = `--recursica-tokens-sizes-${key}`
       const value = formatSizeValue(entry)
       return { key, cssVar, value }
     })
@@ -42,7 +41,7 @@ function getSizes(): { key: string; cssVar: string; value: string | null }[] {
 const SAMPLE_TEXT =
   'The quick onyx goblin jumps over the lazy dwarf, executing a superb and swift maneuver with extraordinary zeal.'
 
-function FontSizesPalette() {
+function SizesPalette() {
   const sizes = getSizes()
   if (sizes.length === 0) {
     return (
@@ -67,6 +66,15 @@ function FontSizesPalette() {
             {key}
             {value !== null ? ` — ${value}` : ''}
           </h2>
+          <div
+            style={{
+              width: `var(${cssVar})`,
+              height: 32,
+              backgroundColor: '#333',
+              borderRadius: 4,
+              marginBottom: 8,
+            }}
+          />
           <p
             style={{
               fontSize: `var(${cssVar})`,
@@ -83,7 +91,7 @@ function FontSizesPalette() {
 }
 
 const meta = {
-  title: 'Tokens/Font/Sizes',
+  title: 'Tokens/Sizes',
   parameters: {
     layout: 'padded',
   },
@@ -94,5 +102,5 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: () => <FontSizesPalette />,
+  render: () => <SizesPalette />,
 }
