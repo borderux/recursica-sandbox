@@ -25,7 +25,7 @@ export interface TokenToCssOptions {
  * Converts token names to kebab-case CSS custom property format
  */
 export function defaultNameTransform(key: string): string {
-  return key.replace(/[\/\s]/g, "-").toLowerCase();
+  return key.replace(/[/\s]/g, "-").toLowerCase();
 }
 
 /**
@@ -56,7 +56,7 @@ function normalizeColorLevel(level: string): string {
  * Other tokens: recursica-tokens-{path-with-hyphens}
  */
 export function tokenNameToCssVar(tokenName: string): string {
-  const parts = tokenName.replace(/[\/\s]+/g, "/").split("/").filter(Boolean).map((p) => p.toLowerCase());
+  const parts = tokenName.replace(/[/\s]+/g, "/").split("/").filter(Boolean).map((p) => p.toLowerCase());
   if (parts.length === 0) return "recursica-tokens";
 
   const [category, ...rest] = parts;
@@ -103,7 +103,7 @@ export function tokenNameToCssVar(tokenName: string): string {
  * is applied by the selector (e.g. .eyepopbrand-light-theme sets light values,
  * .eyepopbrand-dark-theme sets dark values). No themes-{mode}- in the name.
  */
-export function themePathToCssVar(themePath: string, _mode?: string): string {
+export function themePathToCssVar(themePath: string): string {
   const normalized = themePath.replace(/[/\s]+/g, "-").toLowerCase();
 
   if (normalized.startsWith("palette-")) {
@@ -148,7 +148,7 @@ export function themePathToCssVar(themePath: string, _mode?: string): string {
  * Transforms UI Kit path to CSS variable with --recursica-ui-kit- prefix.
  * Theme-agnostic: one variable name per semantic. Theme is applied by selector.
  */
-export function uiKitPathToCssVar(path: string, _mode?: "light" | "dark"): string {
+export function uiKitPathToCssVar(path: string): string {
   let normalized = path.replace(/^ui-kit\//, "");
 
   if (normalized.startsWith("global/")) {
@@ -206,8 +206,8 @@ function resolveTokenReference(tokenName: string): string {
 /**
  * Resolves a theme reference to a CSS variable
  */
-function resolveThemeReference(themePath: string, mode?: string): string {
-  const cssVarName = themePathToCssVar(themePath, mode);
+function resolveThemeReference(themePath: string): string {
+  const cssVarName = themePathToCssVar(themePath);
   return `var(--${cssVarName})`;
 }
 
@@ -217,8 +217,7 @@ function resolveThemeReference(themePath: string, mode?: string): string {
 function resolveValue(
   value: string | number | TokenReference,
   type: string,
-  tokenName: string = "",
-  mode?: string,
+  tokenName: string = ""
 ): string | null {
   // If it's an object reference
   if (typeof value === "object" && value !== null) {
@@ -227,7 +226,7 @@ function resolveValue(
       return resolveTokenReference(ref.name);
     }
     if (ref.collection === "Themes" && ref.name) {
-      return resolveThemeReference(ref.name, mode);
+      return resolveThemeReference(ref.name);
     }
   }
 
@@ -249,7 +248,6 @@ export function tokenEntryToCss(
 ): string | null {
   const {
     nameTransform = defaultNameTransform,
-    handleReferences = true,
   } = options;
 
   // Ensure token.name exists
@@ -267,7 +265,7 @@ export function tokenEntryToCss(
   }
 
   const cssVarName = nameTransform(token.name, mode || options.mode);
-  const value = resolveValue(token.value, token.type, token.name, mode || options.mode);
+  const value = resolveValue(token.value, token.type, token.name);
 
   if (value === null) {
     return null;
@@ -341,7 +339,7 @@ export const TOKEN_CONFIGS = {
   /** Configuration for theme tokens (with references) - mode should be passed when calling */
   THEME_TOKENS: {
     filterPrimitives: false,
-    nameTransform: (key: string, mode?: string) => themePathToCssVar(key, mode),
+    nameTransform: (key: string) => themePathToCssVar(key),
     handleReferences: true,
   } as TokenToCssOptions,
 } as const;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import tokensJson from '../../../../tokens.json?raw'
 import '../../../../recursica-variables-scoped.css'
@@ -58,7 +59,7 @@ function FontCasesPalette() {
           </h2>
           <p
             style={{
-              textTransform: `var(${cssVar})`,
+              textTransform: `var(${cssVar})` as any,
               fontSize: 18,
               lineHeight: 1.4,
               margin: 0,

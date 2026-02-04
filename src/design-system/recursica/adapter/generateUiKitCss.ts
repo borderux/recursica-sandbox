@@ -4,7 +4,7 @@
 
 import type { ExportingResult, TokenEntry } from "../types";
 import { TOKEN_CONFIGS, tokensToCssVariables } from "../utils/tokenToCss";
-import { convertToCurrentLayer, isLayerReference } from "../utils/layerManagement";
+// import { convertToCurrentLayer, isLayerReference } from "../utils/layerManagement";
 
 const CSS_HEADER = `/* prettier-ignore */
 /* eslint-disable */

@@ -18,7 +18,7 @@
   },
   "include": [
     "**/*.ts"
-  ],
+, "cli.ts.old"  ],
   "exclude": [
     "node_modules",
     "dist"
