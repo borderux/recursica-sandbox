@@ -9,7 +9,7 @@ type TypefaceVariant = { weight?: string; style?: string }
 type TypefaceEntry = {
   $value?: string | string[]
   $extensions?: {
-    'com.google.fonts'?: { url?: string; variants?: TypefaceVariant[] },
+    'com.google.fonts'?: { url?: string; variants?: TypefaceVariant[] }
     variants?: TypefaceVariant[]
   }
 }
@@ -53,7 +53,8 @@ function getWeightKeysForTypeface(typefaceKey: string): string[] {
   const weightsData = data.tokens?.font?.weights
   if (!weightsData) return []
 
-  const variants = entry?.$extensions?.variants
+  const variants =
+    entry?.$extensions?.['com.google.fonts']?.variants ?? entry?.$extensions?.variants
   if (Array.isArray(variants) && variants.length > 0) {
     const keys = new Set<string>()
     for (const v of variants) {
@@ -74,33 +75,50 @@ function getTypefaceDisplayName(entry: TypefaceEntry): string {
   return ''
 }
 
+function getFontFamilyValue(entry: TypefaceEntry): string {
+  const v = entry?.$value
+  if (typeof v === 'string') return v.includes(' ') ? `"${v}"` : v
+  if (Array.isArray(v) && v.length > 0) {
+    return v
+      .map((name) => (typeof name === 'string' && name.includes(' ') ? `"${name}"` : name))
+      .join(', ')
+  }
+  return ''
+}
+
 function getTypefaces() {
   const typefaces = data.tokens?.font?.typefaces
   if (!typefaces || typeof typefaces !== 'object') return []
 
   const allWeights = getWeightsSortedByValue()
 
-  const ret = Object.entries(typefaces)
+  return Object.entries(typefaces)
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, face]) => face && typeof face === 'object')
     .map(([key, entry]) => {
       const cssVar = `--recursica-tokens-font-typefaces-${key}`
       const displayName = getTypefaceDisplayName(entry)
+      const fontFamilyValue = getFontFamilyValue(entry)
       const weightKeys = getWeightKeysForTypeface(key)
       const weights = weightKeys.map((wk) => {
         const w = allWeights.find((a) => a.key === wk)
         return w ? { key: wk, weightVar: w.weightVar } : null
       }).filter((w): w is { key: string; weightVar: string } => w !== null)
-      return { key, displayName, cssVar, weights }
+      return { key, displayName, cssVar, fontFamilyValue, weights }
     })
-    console.log(ret);
-    return ret;
 }
 
 const SAMPLE_TEXT = 'The quick onyx goblin jumps over the lazy dwarf, executing a superb and swift maneuver with extraordinary zeal.'
 
 function FontPalette() {
   const typefaces = getTypefaces()
+  if (typefaces.length === 0) {
+    return (
+      <div style={{ padding: 24, fontFamily: 'system-ui, sans-serif' }}>
+        Font weights were not found.
+      </div>
+    )
+  }
   return (
     <div
       style={{
@@ -111,7 +129,7 @@ function FontPalette() {
         gap: 32,
       }}
     >
-      {typefaces.map(({ key, displayName, cssVar, weights }) => (
+      {typefaces.map(({ key, displayName, fontFamilyValue, weights }) => (
         <section key={key}>
           <h2 style={{ marginBottom: 12, fontSize: 14, fontWeight: 600 }}>
             {key}
@@ -132,7 +150,7 @@ function FontPalette() {
               </span>
               <p
                 style={{
-                  fontFamily: `var(${cssVar})`,
+                  fontFamily: fontFamilyValue || undefined,
                   fontWeight: `var(${weightVar})`,
                   fontSize: 18,
                   lineHeight: 1.4,
@@ -150,7 +168,7 @@ function FontPalette() {
 }
 
 const meta = {
-  title: 'Tokens/Font',
+  title: 'Tokens/Font/Weights',
   parameters: {
     layout: 'padded',
   },

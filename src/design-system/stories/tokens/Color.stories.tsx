@@ -55,6 +55,13 @@ const colorScales = getColorScales()
 const SWATCH_WIDTH = 60
 
 function ColorPalette() {
+  if (colorScales.length === 0) {
+    return (
+      <div style={{ padding: 24, fontFamily: 'system-ui, sans-serif' }}>
+        Colors were not found.
+      </div>
+    )
+  }
   return (
     <div
       style={{
