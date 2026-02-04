@@ -1,0 +1,58 @@
+.root {
+  height: var(--recursica-ui-kit-components-button-size-default-height);
+  width: var(--recursica-ui-kit-components-button-size-default-height);
+  border-radius: var(--recursica-ui-kit-components-button-size-border-radius-no-text);
+
+  &[data-size='sm'] {
+    height: var(--recursica-ui-kit-components-button-size-small-height);
+    width: var(--recursica-ui-kit-components-button-size-small-height);
+
+    .icon {
+      width: var(--recursica-ui-kit-components-button-size-small-icon);
+      height: var(--recursica-ui-kit-components-button-size-small-icon);
+    }
+  }
+
+  &[data-variant='filled'] {
+    background-color: var(--recursica-ui-kit-components-button-colors-background-solid);
+    color: var(--recursica-ui-kit-components-button-colors-text-solid);
+
+    &:not(:disabled):hover {
+      background-color: var(--recursica-ui-kit-components-button-colors-background-solid-hover);
+    }
+  }
+
+  &[data-variant='outline'] {
+    background-color: transparent;
+    border-color: var(--recursica-ui-kit-components-button-colors-outline);
+    color: var(--recursica-ui-kit-components-button-colors-outline);
+
+    &:not(:disabled):hover {
+      background-color: var(--recursica-ui-kit-components-button-colors-outline-hover);
+    }
+  }
+
+  &[data-variant='transparent'] {
+    background-color: transparent;
+    color: var(--recursica-brand-layer-element-interactive-color);
+  }
+
+  &:disabled {
+    opacity: var(--recursica-brand-state-disabled);
+  }
+
+  &[data-variant='filled'] {
+    .loader {
+      --ai-color: var(--recursica-ui-kit-components-button-colors-text-solid);
+    }
+  }
+}
+
+.loader {
+  --ai-color: var(--recursica-brand-layer-element-interactive-color);
+}
+
+.icon {
+  width: var(--recursica-ui-kit-components-button-size-default-icon);
+  height: var(--recursica-ui-kit-components-button-size-default-icon);
+}
