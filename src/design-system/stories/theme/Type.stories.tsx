@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import brandJson from '../../../../brand.json?raw.json';
-import tokensJson from '../../../../tokens.json?raw.json';
+import brandJson from '../../../../brand.json?raw';
+import tokensJson from '../../../../tokens.json?raw';
 import '../../../../recursica-variables-scoped.css'
 
 const REF_PATTERN = /^\{([^}]+)\}$/
