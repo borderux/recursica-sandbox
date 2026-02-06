@@ -668,7 +668,7 @@
                   "$type": "color"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
+                  "$value": "{brand.palettes.core-white}",
                   "$type": "color"
                 }
               }
@@ -1772,7 +1772,7 @@
                   "$type": "color"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
+                  "$value": "{brand.palettes.core-white}",
                   "$type": "color"
                 }
               }
@@ -2491,7 +2491,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-02-04T18:33:56.033Z",
+    "exportedAt": "2026-02-06T19:03:58.069Z",
     "version": "1.0.0"
   }
 }
