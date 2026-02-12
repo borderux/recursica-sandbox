@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type DimensionValue = { value: number; unit: string } | string
 
@@ -32,7 +32,7 @@ function getSizes(): { key: string; cssVar: string; value: string | null }[] {
     .filter(([, entry]) => entry && typeof entry === 'object')
     .filter(([key]) => !key.startsWith('elevation-')) // skip elevation sub-keys (blur, offset_x, etc.)
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-sizes-${key}`
+      const cssVar = `--recursica_tokens_sizes_${key}`
       const value = formatSizeValue(entry)
       return { key, cssVar, value }
     })

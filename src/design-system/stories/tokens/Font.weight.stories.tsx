@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type FontWeights = Record<string, { $type: string; $value: number }>
 
@@ -26,7 +26,7 @@ type TokensShape = {
 const data = JSON.parse(tokensJson) as TokensShape
 
 function weightKeyToCssVar(key: string): string {
-  return `--recursica-tokens-font-weights-${key.replace(/-/g, '_')}`
+  return `--recursica_tokens_font_weights_${key}`
 }
 
 function parseWeightRef(ref: string): string | null {
@@ -96,7 +96,7 @@ function getTypefaces() {
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, face]) => face && typeof face === 'object')
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-font-typefaces-${key}`
+      const cssVar = `--recursica_tokens_font_typefaces_${key}`
       const displayName = getTypefaceDisplayName(entry)
       const fontFamilyValue = getFontFamilyValue(entry)
       const weightKeys = getWeightKeysForTypeface(key)

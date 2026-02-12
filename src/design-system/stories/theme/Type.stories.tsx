@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import brandJson from '../../../../brand.json?raw';
-import tokensJson from '../../../../tokens.json?raw';
-import '../../../../recursica-variables-scoped.css'
+import brandJson from '../../../../recursica_brand.json?raw';
+import tokensJson from '../../../../recursica_tokens.json?raw';
+import '../../../../recursica_variables_scoped.css'
 
 const REF_PATTERN = /^\{([^}]+)\}$/
 
@@ -135,7 +135,7 @@ function ThemeTypographyPalette() {
       }}
     >
       {typographyStyles.map(({ name, style }) => {
-        const cssVarPrefix = `--recursica-brand-typography-${name}`
+        const cssVarPrefix = `--recursica_brand_typography_${name}`
         return (
           <section key={name}>
             <h2

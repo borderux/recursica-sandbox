@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type LetterSpacingEntry = { $type?: string; $value?: number | null }
 
@@ -22,7 +22,7 @@ function getLetterSpacings(): { key: string; cssVar: string; value: number | nul
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, entry]) => entry && typeof entry === 'object')
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-font-letter-spacings_${key.replace(/-/g, '_')}`
+      const cssVar = `--recursica_tokens_font_letter-spacings_${key}`
       const value = entry?.$value ?? null
       return { key, cssVar, value }
     })

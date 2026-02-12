@@ -1,5 +1,5 @@
 import { type ReactNode, useEffect } from 'react'
-import tokens from '../tokens.json'
+import tokens from '../recursica_tokens.json'
 
 type TypefaceEntry = {
   $extensions?: { 'com.google.fonts'?: { url?: string } }

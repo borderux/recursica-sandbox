@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type OpacityEntry = { $type?: string; $value?: number | null }
 
@@ -20,7 +20,7 @@ function getOpacities(): { key: string; cssVar: string; value: number | null }[]
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, entry]) => entry && typeof entry === 'object')
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-opacities-${key}`
+      const cssVar = `--recursica_tokens_opacities_${key}`
       const value = entry?.$value ?? null
       return { key, cssVar, value }
     })

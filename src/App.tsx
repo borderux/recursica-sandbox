@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-import '../recursica-variables-scoped.css';
+import '../recursica_variables_scoped.css';
 import { MantineProvider, Box } from '@mantine/core';
 
 const THEME_FORGE_URL = 'https://forge.recursica.com?demo=true';

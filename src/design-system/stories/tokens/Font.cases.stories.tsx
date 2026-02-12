@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type CaseEntry = { $type?: string; $value?: string | null }
 
@@ -23,7 +23,7 @@ function getCases(): { key: string; cssVar: string; value: string | null }[] {
     .filter(([name]) => !name.startsWith('$'))
     .filter(([, entry]) => entry && typeof entry === 'object')
     .map(([key, entry]) => {
-      const cssVar = `--recursica-tokens-font-cases-${key.replace(/-/g, '_')}`
+      const cssVar = `--recursica_tokens_font_cases_${key}`
       const value = entry?.$value ?? null
       return { key, cssVar, value }
     })

@@ -1,22 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import brandJson from '../../../../brand.json?raw'
-import tokensJson from '../../../../tokens.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import brandJson from '../../../../recursica_brand.json?raw'
+import tokensJson from '../../../../recursica_tokens.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 /*
-  Layout grids from brand.json are breakpoints:
+  Layout grids from recursica_brand.json are breakpoints:
   - Desktop: largest; applies at viewport ≥ 1280px → 6 columns, max-width 1280px, gutter
   - Tablet: at viewport < 1280 and ≥ 810px → 6 columns, max-width 810px, gutter
   - Mobile: at viewport < 810px → 4 columns, max-width 480px, gutter
 
-  Grid CSS variables exist in recursica.css (--recursica-brand-dimensions-grid-*-columns,
-  -gutter, -max-width) but NOT in recursica-variables-scoped.css (which the app loads).
-  recursica.css has no @media queries; it only defines the variables. The UI kit
-  layout-size-* vars (desktop-min-width = 810, etc.) imply desktop ≥810 in that build.
-
-  This story implements the intended breakpoints (1280 / 810 / 480) with real
-  @media rules so the grid responds to viewport. Resize the Storybook frame to see
-  columns and max-width change.
+  Grid CSS variables exist in recursica_variables_scoped.css as --recursica_brand_layout-grids_*
+  (desktop/tablet/mobile: columns, gutter, max-width). That file has no @media queries; it only
+  defines the variables. This story implements the intended breakpoints (1280 / 810 / 480) with
+  @media rules so the grid responds to viewport. Resize the Storybook frame to see the change.
 */
 
 const REF_PATTERN = /^\{([^}]+)\}$/

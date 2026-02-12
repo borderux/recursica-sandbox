@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import brandJson from '../../../../brand.json?raw'
-import '../../../../recursica-variables-scoped.css'
+import brandJson from '../../../../recursica_brand.json?raw'
+import '../../../../recursica_variables_scoped.css'
 
 type DimensionEntry = { $type?: string; $value?: unknown }
 
@@ -27,7 +27,7 @@ function getDimensionSections(): { section: string; items: { key: string; cssVar
         .filter(([, entry]) => entry && typeof entry === 'object')
         .map(([key]) => ({
           key,
-          cssVar: `--recursica-brand-dimensions-${sectionKey}-${key}`,
+          cssVar: `--recursica_brand_dimensions_${sectionKey}_${key}`,
         }))
       return { section: sectionKey, items }
     })
@@ -82,7 +82,7 @@ function ThemeDimensionsPalette() {
             {section}
             <span style={{ fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}>
               {' — '}
-              <code style={{ fontSize: 11 }}>--recursica-brand-dimensions-{section}-*</code>
+              <code style={{ fontSize: 11 }}>--recursica_brand_dimensions_{section}_*</code>
             </span>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>

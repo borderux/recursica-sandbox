@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import tokensData from '../../../../tokens.json'
-import '../../../../recursica-variables-scoped.css'
+import tokensData from '../../../../recursica_tokens.json'
+import '../../../../recursica_variables_scoped.css'
 
 const STEP_ORDER = [
   '000',
@@ -43,7 +43,7 @@ function getColorScales() {
       return entry !== undefined && isColorToken(entry)
     }).map((step) => {
       const entry = scaleEntries[step] as ColorToken
-      const cssVar = `--recursica-tokens-colors-${scaleId}_${step}`
+      const cssVar = `--recursica_tokens_colors_${scaleId}_${step}`
       return { step, hex: entry.$value, cssVar }
     })
     return { scaleId, alias, steps }
