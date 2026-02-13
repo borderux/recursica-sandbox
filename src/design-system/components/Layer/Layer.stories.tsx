@@ -6,7 +6,7 @@ const layerStyle = { padding: 20 };
 
 const meta: Meta<typeof Layer> = {
   component: Layer,
-  title: 'Design System/Layer',
+  title: 'UI Kit/Layer',
   argTypes: {
     layer: {
       control: 'select',

@@ -7,7 +7,6 @@ const config: StorybookConfig = {
   ],
   addons: [
     '@storybook/addon-docs',
-    '@storybook/addon-onboarding',
     '@storybook/addon-a11y',
     '@storybook/addon-vitest',
     '@storybook/addon-mcp',

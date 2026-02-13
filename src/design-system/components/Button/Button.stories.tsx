@@ -4,7 +4,7 @@ import { Layer } from '../Layer/Layer';
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: 'Design System/Button',
+  title: 'UI Kit/Button',
   decorators: [
     (Story) => (
       <div style={{ padding: 16 }}>
