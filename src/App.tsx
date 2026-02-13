@@ -1,12 +1,14 @@
 import '@mantine/core/styles.css';
 import '../recursica_variables_scoped.css';
 import { MantineProvider, Box } from '@mantine/core';
+import { RecursicaThemeProvider } from './design-system/RecursicaThemeProvider/RecursicaThemeProvider';
 
 const THEME_FORGE_URL = 'https://forge.recursica.com?demo=true';
 
 function App() {
   return (
-    <MantineProvider>
+    <RecursicaThemeProvider>
+      <MantineProvider>
       <Box
         style={{
           minHeight: '100vh',
@@ -75,6 +77,7 @@ function App() {
         </Box>
       </Box>
     </MantineProvider>
+    </RecursicaThemeProvider>
   );
 }
 

@@ -1,12 +1,20 @@
 import type { Preview } from '@storybook/react-vite'
+import '@mantine/core/styles.css'
+import '../recursica_variables_scoped.css'
+import { MantineProvider } from '@mantine/core'
+import { RecursicaThemeProvider } from '../src/design-system/RecursicaThemeProvider/RecursicaThemeProvider'
 import { RecursicaFontLoader } from './RecursicaFontLoader'
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <RecursicaFontLoader>
-        <Story />
-      </RecursicaFontLoader>
+      <RecursicaThemeProvider>
+        <MantineProvider>
+          <RecursicaFontLoader>
+            <Story />
+          </RecursicaFontLoader>
+        </MantineProvider>
+      </RecursicaThemeProvider>
     ),
   ],
   parameters: {

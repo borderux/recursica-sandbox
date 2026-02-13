@@ -1502,6 +1502,21 @@
   --recursica_brand_states_overlay_opacity: var(--recursica_tokens_opacities_ghost);
   --recursica_brand_text-emphasis_high: var(--recursica_tokens_opacities_solid);
   --recursica_brand_text-emphasis_low: var(--recursica_tokens_opacities_smoky);
+  /* Layer-0 as default when only theme is set (no data-recursica-layer). */
+  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_core-colors_interactive_default_on-tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_on-tone);
+  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_palettes_core-colors_interactive_default_tone);
+  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_tone);
+  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
+  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_neutral_050_color_on-tone);
+  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
+  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
+  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_200_color_tone);
+  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_border-thickness: 0px;
+  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
+  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
 }
 
 [data-recursica-theme="dark"] {
@@ -1640,6 +1655,23 @@
   --recursica_brand_states_overlay_opacity: var(--recursica_tokens_opacities_ghost);
   --recursica_brand_text-emphasis_high: var(--recursica_tokens_opacities_solid);
   --recursica_brand_text-emphasis_low: var(--recursica_tokens_opacities_smoky);
+  /* Layer-0 as default when only theme is set (no data-recursica-layer). */
+  --recursica_brand_layer_0_elements_interactive_color: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_hover-color: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_palettes_palette-1_500_color_tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
+  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
+  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
+  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_100_color_tone);
+  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_border-thickness: 0px;
+  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
+  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
 }
 
 [data-recursica-theme="light"][data-recursica-layer="0"],
