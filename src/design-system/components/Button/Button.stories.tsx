@@ -73,10 +73,10 @@ export const Default: Story = {
   args: {
     ...meta.args,
     showIcon: false,
-    layer: 1,
+    layer: 0,
   } as typeof meta.args & { showIcon?: boolean; layer?: 0 | 1 | 2 | 3 },
   render: (args: typeof meta.args & { showIcon?: boolean; layer?: 0 | 1 | 2 | 3 }) => {
-    const { showIcon, layer = 1, ...rest } = args;
+    const { showIcon, layer = 0, ...rest } = args;
     return (
       <Layer layer={layer} style={{ padding: 16 }}>
         <Button {...rest} icon={showIcon ? placeholderIcon : undefined} />

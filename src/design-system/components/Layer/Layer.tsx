@@ -9,6 +9,11 @@ import styles from './Layer.module.css';
 export interface RecursicaLayerProps {
   /** Layer (0–3). Sets data-recursica-layer on the root so descendants use this layer's styles. */
   layer: 0 | 1 | 2 | 3;
+  /**
+   * When true, the root uses display: contents (no box, not styled) and data-recursica-layer
+   * is omitted so Recursica layer styling is not applied. Children still participate in the cascade.
+   */
+  contentsOnly?: boolean;
   children?: React.ReactNode;
 }
 
@@ -20,16 +25,22 @@ export type LayerProps = RecursicaLayerProps & React.HTMLAttributes<HTMLDivEleme
  * to descendants. Root is display: block so padding/background from style or className apply.
  */
 export const Layer = forwardRef<HTMLDivElement, LayerProps>(function Layer(
-  { layer, children, className, style, ...rest },
+  { layer, contentsOnly, children, className, style, ...rest },
   ref
 ) {
-  const rootClassName = className ? `${styles.root} ${className}` : styles.root;
+  const rootClassName = contentsOnly
+    ? className
+      ? `${styles.root} ${styles.contents} ${className}`
+      : `${styles.root} ${styles.contents}`
+    : className
+      ? `${styles.root} ${className}`
+      : styles.root;
   return (
     <div
       ref={ref}
       className={rootClassName}
       style={style}
-      data-recursica-layer={String(layer)}
+      {...(contentsOnly ? {} : { 'data-recursica-layer': String(layer) })}
       {...rest}
     >
       {children}
