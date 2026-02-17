@@ -316,12 +316,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -329,12 +329,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -342,12 +342,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -355,12 +355,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -368,12 +368,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -381,12 +381,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -394,12 +394,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -407,12 +407,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -420,12 +420,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -433,12 +433,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -449,12 +449,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -462,12 +462,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             }
@@ -477,12 +477,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -490,12 +490,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -503,12 +503,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -516,12 +516,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -529,12 +529,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -542,12 +542,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -555,12 +555,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -568,12 +568,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -581,12 +581,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -594,12 +594,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -610,12 +610,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -623,12 +623,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             }
@@ -638,12 +638,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -651,12 +651,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -664,12 +664,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -677,12 +677,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -690,12 +690,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -703,12 +703,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -716,12 +716,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -729,12 +729,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -742,12 +742,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -755,12 +755,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -771,12 +771,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -784,12 +784,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             }
@@ -799,9 +799,11 @@
             "$value": {
               "black": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-02.1000}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -810,9 +812,11 @@
               },
               "white": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-02.000}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.black}"
                 },
                 "interactive": {
@@ -821,9 +825,11 @@
               },
               "alert": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-05.600}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -832,9 +838,11 @@
               },
               "success": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-03.600}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -843,9 +851,11 @@
               },
               "warning": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-04.600}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-05.900}"
                 },
                 "interactive": {
@@ -855,17 +865,21 @@
               "interactive": {
                 "default": {
                   "tone": {
+                    "$type": "color",
                     "$value": "{tokens.colors.scale-05.500}"
                   },
                   "on-tone": {
+                    "$type": "color",
                     "$value": "{brand.palettes.core-colors.white}"
                   }
                 },
                 "hover": {
                   "tone": {
+                    "$type": "color",
                     "$value": "{tokens.colors.scale-05.600}"
                   },
                   "on-tone": {
+                    "$type": "color",
                     "$value": "{brand.palettes.core-colors.white}"
                   }
                 }
@@ -1379,12 +1393,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1392,12 +1406,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1405,12 +1419,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1418,12 +1432,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1431,12 +1445,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1444,12 +1458,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1457,12 +1471,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1470,12 +1484,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1483,12 +1497,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1496,12 +1510,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1509,12 +1523,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1522,12 +1536,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-02.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-02.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1541,12 +1555,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1554,12 +1568,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1567,12 +1581,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1580,12 +1594,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1593,12 +1607,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1606,12 +1620,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1619,12 +1633,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1632,12 +1646,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1645,12 +1659,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1658,12 +1672,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1671,12 +1685,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1684,12 +1698,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-06.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-04.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1703,12 +1717,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.800}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.800}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1716,12 +1730,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.700}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.700}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1729,12 +1743,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.600}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.600}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1742,12 +1756,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.500}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.500}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1755,12 +1769,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.400}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.400}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1768,12 +1782,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.300}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.300}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1781,12 +1795,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.200}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.200}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1794,12 +1808,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.100}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.100}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1807,12 +1821,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.050}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.050}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1820,12 +1834,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-black}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-black}"
                 }
               }
             },
@@ -1833,12 +1847,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.1000}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.1000}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1846,12 +1860,12 @@
               "color": {
                 "$type": "color",
                 "tone": {
-                  "$value": "{tokens.colors.scale-01.900}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-01.900}"
                 },
                 "on-tone": {
-                  "$value": "{brand.palettes.core-white}",
-                  "$type": "color"
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-white}"
                 }
               }
             },
@@ -1865,9 +1879,11 @@
             "$value": {
               "black": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-02.1000}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -1876,9 +1892,11 @@
               },
               "white": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-02.000}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.black}"
                 },
                 "interactive": {
@@ -1887,9 +1905,11 @@
               },
               "alert": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-05.400}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -1898,9 +1918,11 @@
               },
               "success": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-03.400}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{brand.palettes.core-colors.white}"
                 },
                 "interactive": {
@@ -1909,9 +1931,11 @@
               },
               "warning": {
                 "tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-04.400}"
                 },
                 "on-tone": {
+                  "$type": "color",
                   "$value": "{tokens.colors.scale-05.900}"
                 },
                 "interactive": {
@@ -1921,17 +1945,21 @@
               "interactive": {
                 "default": {
                   "tone": {
+                    "$type": "color",
                     "$value": "{tokens.colors.scale-05.400}"
                   },
                   "on-tone": {
+                    "$type": "color",
                     "$value": "{brand.palettes.core-colors.white}"
                   }
                 },
                 "hover": {
                   "tone": {
+                    "$type": "color",
                     "$value": "{tokens.colors.scale-05.300}"
                   },
                   "on-tone": {
+                    "$type": "color",
                     "$value": "{brand.palettes.core-colors.white}"
                   }
                 }
@@ -2503,7 +2531,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-02-12T23:32:25.334Z",
+    "exportedAt": "2026-02-17T19:08:34.522Z",
     "version": "1.0.0"
   }
 }
