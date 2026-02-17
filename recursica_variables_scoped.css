@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Scoped
- * Transform version: 1.0.0
- * Generated: Thu, 12 Feb 2026 23:32:25 GMT
+ * Transform version: 1.1.0
+ * Generated: Tue, 17 Feb 2026 19:08:34 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -16,6 +16,7 @@
  *
  * How to apply:
  * - Set data-recursica-theme="light" or "dark" on root <html> element
+ * - When only theme is set, layer-0 applies by default (no data-recursica-layer needed)
  * - Set data-recursica-layer="N" on any element to apply that layer to it and its descendants
  * - Layer can be on the same element as theme, or on a nested descendant (e.g. theme on root, layer on a deep div)
  * - Nested layers override: a div with layer=2 inside a div with layer=1 applies layer 2 to its descendants
@@ -563,7 +564,7 @@
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text: var(--recursica_brand_layer_3_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text-hover: var(--recursica_brand_layer_3_elements_interactive_tone-hover);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_border-size: 1px;
-  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background: var(--recursica_brand_layer_0_elements_interactive_tone);
+  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background: var(--recursica_brand_palettes_palette-1_600_color_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_border-color: var(--recursica_brand_layer_0_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text: var(--recursica_brand_layer_0_elements_interactive_on-tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text-hover: var(--recursica_brand_layer_0_elements_interactive_on-tone-hover);
@@ -923,6 +924,109 @@
   --recursica_ui-kit_components_modal_properties_min-width: 304px;
   --recursica_ui-kit_components_modal_properties_scroll-divider-thickness: 1px;
   --recursica_ui-kit_components_modal_properties_vertical-padding: var(--recursica_brand_dimensions_general_lg);
+  --recursica_ui-kit_components_number-input_properties_border-radius: var(--recursica_ui-kit_globals_form_field_size_border-radius);
+  --recursica_ui-kit_components_number-input_properties_horizontal-padding: var(--recursica_ui-kit_globals_form_field_size_horizontal-padding);
+  --recursica_ui-kit_components_number-input_properties_icon-size: var(--recursica_ui-kit_globals_form_field_size_icon);
+  --recursica_ui-kit_components_number-input_properties_icon-text-gap: var(--recursica_ui-kit_globals_form_field_size_icon-text-gap);
+  --recursica_ui-kit_components_number-input_properties_max-width: var(--recursica_ui-kit_globals_form_field_size_max-width);
+  --recursica_ui-kit_components_number-input_properties_min-height: var(--recursica_ui-kit_globals_form_field_size_single-line-input-height);
+  --recursica_ui-kit_components_number-input_properties_min-width: 180px;
+  --recursica_ui-kit_components_number-input_properties_placeholder-opacity: var(--recursica_tokens_opacities_ghost);
+  --recursica_ui-kit_components_number-input_properties_text_font-family: var(--recursica_tokens_font_typefaces_primary);
+  --recursica_ui-kit_components_number-input_properties_text_font-size: var(--recursica_tokens_font_sizes_md);
+  --recursica_ui-kit_components_number-input_properties_text_font-style: normal;
+  --recursica_ui-kit_components_number-input_properties_text_font-weight: var(--recursica_tokens_font_weights_regular);
+  --recursica_ui-kit_components_number-input_properties_text_letter-spacing: var(--recursica_tokens_font_letter-spacings_default);
+  --recursica_ui-kit_components_number-input_properties_text_line-height: var(--recursica_tokens_font_line-heights_default);
+  --recursica_ui-kit_components_number-input_properties_text_text-decoration: none;
+  --recursica_ui-kit_components_number-input_properties_text_text-transform: none;
+  --recursica_ui-kit_components_number-input_properties_vertical-padding: var(--recursica_ui-kit_globals_form_field_size_vertical-padding);
+  --recursica_ui-kit_components_number-input_variants_layouts_side-by-side_properties_top-bottom-margin: 0px;
+  --recursica_ui-kit_components_number-input_variants_layouts_stacked_properties_top-bottom-margin: var(--recursica_brand_dimensions_general_default);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_border-size: 1px;
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-0_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-0_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-0_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-0_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-0_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-1_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-1_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-1_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-1_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-1_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-2_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-2_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-2_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-2_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-2_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-3_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-3_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-3_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-3_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_default_properties_colors_layer-3_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_border-size: 1px;
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-0_background: var(--recursica_ui-kit_globals_form_field_colors_disabled-background);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-0_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-0_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-0_text: var(--recursica_ui-kit_globals_form_field_colors_disabled-text);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-0_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-1_background: var(--recursica_ui-kit_globals_form_field_colors_disabled-background);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-1_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-1_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-1_text: var(--recursica_ui-kit_globals_form_field_colors_disabled-text);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-1_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-2_background: var(--recursica_ui-kit_globals_form_field_colors_disabled-background);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-2_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-2_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-2_text: var(--recursica_ui-kit_globals_form_field_colors_disabled-text);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-2_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-3_background: var(--recursica_ui-kit_globals_form_field_colors_disabled-background);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-3_border-color: var(--recursica_ui-kit_globals_form_field_colors_border);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-3_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-3_text: var(--recursica_ui-kit_globals_form_field_colors_disabled-text);
+  --recursica_ui-kit_components_number-input_variants_states_disabled_properties_colors_layer-3_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_border-size: 1px;
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-0_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-0_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-error);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-0_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-0_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-0_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-1_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-1_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-error);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-1_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-1_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-1_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-2_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-2_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-error);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-2_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-2_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-2_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-3_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-3_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-error);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-3_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-3_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_error_properties_colors_layer-3_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_border-size: 2px;
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-0_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-0_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-focus);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-0_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-0_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-0_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-1_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-1_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-focus);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-1_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-1_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-1_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-2_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-2_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-focus);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-2_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-2_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-2_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-3_background: var(--recursica_ui-kit_globals_form_field_colors_background);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-3_border-color: var(--recursica_ui-kit_globals_form_field_colors_border-focus);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-3_leading-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-3_text: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
+  --recursica_ui-kit_components_number-input_variants_states_focus_properties_colors_layer-3_trailing-icon: var(--recursica_ui-kit_globals_form_field_colors_icon);
   --recursica_ui-kit_components_segmented-control_properties_colors_layer-0_text: var(--recursica_brand_palettes_neutral_100_color_on-tone);
   --recursica_ui-kit_components_segmented-control_properties_colors_layer-1_text: var(--recursica_brand_palettes_neutral_100_color_on-tone);
   --recursica_ui-kit_components_segmented-control_properties_colors_layer-2_text: var(--recursica_brand_palettes_neutral_050_color_on-tone);
@@ -1402,6 +1506,20 @@
   --recursica_brand_elevations_elevation-4_spread: 0px;
   --recursica_brand_elevations_elevation-4_x: 0px;
   --recursica_brand_elevations_elevation-4_y: 12px;
+  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_core-colors_interactive_default_on-tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_on-tone);
+  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_palettes_core-colors_interactive_default_tone);
+  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_tone);
+  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
+  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_neutral_050_color_on-tone);
+  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
+  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
+  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_200_color_tone);
+  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_border-thickness: 0px;
+  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
+  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
   --recursica_brand_palettes_core-colors_alert_interactive: var(--recursica_tokens_colors_scale-05_050);
   --recursica_brand_palettes_core-colors_alert_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
   --recursica_brand_palettes_core-colors_alert_tone: var(--recursica_tokens_colors_scale-05_600);
@@ -1447,29 +1565,29 @@
   --recursica_brand_palettes_neutral_900_color_tone: var(--recursica_tokens_colors_scale-02_900);
   --recursica_brand_palettes_neutral_default: var(--recursica_brand_palettes_neutral_200_color_tone);
   --recursica_brand_palettes_palette-1_000_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_000_color_tone: var(--recursica_tokens_colors_scale-06_000);
+  --recursica_brand_palettes_palette-1_000_color_tone: var(--recursica_tokens_colors_scale-04_000);
   --recursica_brand_palettes_palette-1_050_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_050_color_tone: var(--recursica_tokens_colors_scale-06_050);
+  --recursica_brand_palettes_palette-1_050_color_tone: var(--recursica_tokens_colors_scale-04_050);
   --recursica_brand_palettes_palette-1_100_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_100_color_tone: var(--recursica_tokens_colors_scale-06_100);
+  --recursica_brand_palettes_palette-1_100_color_tone: var(--recursica_tokens_colors_scale-04_100);
   --recursica_brand_palettes_palette-1_1000_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_1000_color_tone: var(--recursica_tokens_colors_scale-06_1000);
+  --recursica_brand_palettes_palette-1_1000_color_tone: var(--recursica_tokens_colors_scale-04_1000);
   --recursica_brand_palettes_palette-1_200_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_200_color_tone: var(--recursica_tokens_colors_scale-06_200);
+  --recursica_brand_palettes_palette-1_200_color_tone: var(--recursica_tokens_colors_scale-04_200);
   --recursica_brand_palettes_palette-1_300_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_300_color_tone: var(--recursica_tokens_colors_scale-06_300);
-  --recursica_brand_palettes_palette-1_400_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_400_color_tone: var(--recursica_tokens_colors_scale-06_400);
-  --recursica_brand_palettes_palette-1_500_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_500_color_tone: var(--recursica_tokens_colors_scale-06_500);
-  --recursica_brand_palettes_palette-1_600_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_600_color_tone: var(--recursica_tokens_colors_scale-06_600);
+  --recursica_brand_palettes_palette-1_300_color_tone: var(--recursica_tokens_colors_scale-04_300);
+  --recursica_brand_palettes_palette-1_400_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_400_color_tone: var(--recursica_tokens_colors_scale-04_400);
+  --recursica_brand_palettes_palette-1_500_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_500_color_tone: var(--recursica_tokens_colors_scale-04_500);
+  --recursica_brand_palettes_palette-1_600_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_600_color_tone: var(--recursica_tokens_colors_scale-04_600);
   --recursica_brand_palettes_palette-1_700_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_700_color_tone: var(--recursica_tokens_colors_scale-06_700);
+  --recursica_brand_palettes_palette-1_700_color_tone: var(--recursica_tokens_colors_scale-04_700);
   --recursica_brand_palettes_palette-1_800_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_800_color_tone: var(--recursica_tokens_colors_scale-06_800);
+  --recursica_brand_palettes_palette-1_800_color_tone: var(--recursica_tokens_colors_scale-04_800);
   --recursica_brand_palettes_palette-1_900_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_900_color_tone: var(--recursica_tokens_colors_scale-06_900);
+  --recursica_brand_palettes_palette-1_900_color_tone: var(--recursica_tokens_colors_scale-04_900);
   --recursica_brand_palettes_palette-1_default: var(--recursica_brand_palettes_palette-1_400_color_tone);
   --recursica_brand_palettes_palette-2_000_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
   --recursica_brand_palettes_palette-2_000_color_tone: var(--recursica_tokens_colors_scale-01_000);
@@ -1502,21 +1620,6 @@
   --recursica_brand_states_overlay_opacity: var(--recursica_tokens_opacities_ghost);
   --recursica_brand_text-emphasis_high: var(--recursica_tokens_opacities_solid);
   --recursica_brand_text-emphasis_low: var(--recursica_tokens_opacities_smoky);
-  /* Layer-0 as default when only theme is set (no data-recursica-layer). */
-  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_core-colors_interactive_default_on-tone);
-  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_on-tone);
-  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_palettes_core-colors_interactive_default_tone);
-  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_palettes_core-colors_interactive_hover_tone);
-  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
-  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_neutral_050_color_on-tone);
-  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
-  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
-  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_200_color_tone);
-  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
-  --recursica_brand_layer_0_properties_border-thickness: 0px;
-  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
-  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
-  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
 }
 
 [data-recursica-theme="dark"] {
@@ -1555,6 +1658,22 @@
   --recursica_brand_elevations_elevation-4_spread: 0px;
   --recursica_brand_elevations_elevation-4_x: 0px;
   --recursica_brand_elevations_elevation-4_y: 8px;
+  --recursica_brand_layer_0_elements_interactive_color: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_hover-color: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_layer_0_elements_interactive_color);
+  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_layer_0_elements_interactive_hover-color);
+  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
+  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
+  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
+  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_100_color_tone);
+  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_border-thickness: 0px;
+  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
+  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
+  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
   --recursica_brand_palettes_core-colors_alert_interactive: var(--recursica_brand_palettes_core-colors_white_tone);
   --recursica_brand_palettes_core-colors_alert_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
   --recursica_brand_palettes_core-colors_alert_tone: var(--recursica_tokens_colors_scale-05_400);
@@ -1599,30 +1718,30 @@
   --recursica_brand_palettes_neutral_900_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
   --recursica_brand_palettes_neutral_900_color_tone: var(--recursica_tokens_colors_scale-02_050);
   --recursica_brand_palettes_neutral_default: var(--recursica_brand_palettes_neutral_800_color_tone);
-  --recursica_brand_palettes_palette-1_000_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_000_color_tone: var(--recursica_tokens_colors_scale-06_1000);
-  --recursica_brand_palettes_palette-1_050_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_050_color_tone: var(--recursica_tokens_colors_scale-06_900);
-  --recursica_brand_palettes_palette-1_100_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_100_color_tone: var(--recursica_tokens_colors_scale-06_800);
-  --recursica_brand_palettes_palette-1_1000_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_1000_color_tone: var(--recursica_tokens_colors_scale-06_000);
-  --recursica_brand_palettes_palette-1_200_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_200_color_tone: var(--recursica_tokens_colors_scale-06_700);
-  --recursica_brand_palettes_palette-1_300_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_300_color_tone: var(--recursica_tokens_colors_scale-06_600);
-  --recursica_brand_palettes_palette-1_400_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_400_color_tone: var(--recursica_tokens_colors_scale-06_500);
-  --recursica_brand_palettes_palette-1_500_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_palettes_palette-1_500_color_tone: var(--recursica_tokens_colors_scale-06_400);
+  --recursica_brand_palettes_palette-1_000_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_000_color_tone: var(--recursica_tokens_colors_scale-04_000);
+  --recursica_brand_palettes_palette-1_050_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_050_color_tone: var(--recursica_tokens_colors_scale-04_050);
+  --recursica_brand_palettes_palette-1_100_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_100_color_tone: var(--recursica_tokens_colors_scale-04_100);
+  --recursica_brand_palettes_palette-1_1000_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_palettes_palette-1_1000_color_tone: var(--recursica_tokens_colors_scale-04_1000);
+  --recursica_brand_palettes_palette-1_200_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_200_color_tone: var(--recursica_tokens_colors_scale-04_200);
+  --recursica_brand_palettes_palette-1_300_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_300_color_tone: var(--recursica_tokens_colors_scale-04_300);
+  --recursica_brand_palettes_palette-1_400_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_400_color_tone: var(--recursica_tokens_colors_scale-04_400);
+  --recursica_brand_palettes_palette-1_500_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
+  --recursica_brand_palettes_palette-1_500_color_tone: var(--recursica_tokens_colors_scale-04_500);
   --recursica_brand_palettes_palette-1_600_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_600_color_tone: var(--recursica_tokens_colors_scale-06_300);
-  --recursica_brand_palettes_palette-1_700_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_700_color_tone: var(--recursica_tokens_colors_scale-06_200);
-  --recursica_brand_palettes_palette-1_800_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_800_color_tone: var(--recursica_tokens_colors_scale-06_100);
-  --recursica_brand_palettes_palette-1_900_color_on-tone: var(--recursica_brand_palettes_core-colors_black_tone);
-  --recursica_brand_palettes_palette-1_900_color_tone: var(--recursica_tokens_colors_scale-06_050);
+  --recursica_brand_palettes_palette-1_600_color_tone: var(--recursica_tokens_colors_scale-04_600);
+  --recursica_brand_palettes_palette-1_700_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_palettes_palette-1_700_color_tone: var(--recursica_tokens_colors_scale-04_700);
+  --recursica_brand_palettes_palette-1_800_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_palettes_palette-1_800_color_tone: var(--recursica_tokens_colors_scale-04_800);
+  --recursica_brand_palettes_palette-1_900_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
+  --recursica_brand_palettes_palette-1_900_color_tone: var(--recursica_tokens_colors_scale-04_900);
   --recursica_brand_palettes_palette-1_default: var(--recursica_brand_palettes_palette-1_600_color_tone);
   --recursica_brand_palettes_palette-2_000_color_on-tone: var(--recursica_brand_palettes_core-colors_white_tone);
   --recursica_brand_palettes_palette-2_000_color_tone: var(--recursica_tokens_colors_scale-01_1000);
@@ -1655,23 +1774,6 @@
   --recursica_brand_states_overlay_opacity: var(--recursica_tokens_opacities_ghost);
   --recursica_brand_text-emphasis_high: var(--recursica_tokens_opacities_solid);
   --recursica_brand_text-emphasis_low: var(--recursica_tokens_opacities_smoky);
-  /* Layer-0 as default when only theme is set (no data-recursica-layer). */
-  --recursica_brand_layer_0_elements_interactive_color: var(--recursica_brand_palettes_palette-1_600_color_tone);
-  --recursica_brand_layer_0_elements_interactive_hover-color: var(--recursica_brand_palettes_palette-1_600_color_tone);
-  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_palettes_palette-1_600_color_tone);
-  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_palettes_palette-1_500_color_tone);
-  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
-  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
-  --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
-  --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_core-colors_white_tone);
-  --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
-  --recursica_brand_layer_0_elements_text_warning: var(--recursica_brand_palettes_core-colors_warning_tone);
-  --recursica_brand_layer_0_properties_border-color: var(--recursica_brand_palettes_neutral_100_color_tone);
-  --recursica_brand_layer_0_properties_border-radius: var(--recursica_tokens_sizes_3x);
-  --recursica_brand_layer_0_properties_border-thickness: 0px;
-  --recursica_brand_layer_0_properties_elevation: var(--recursica_brand_elevations_elevation-0);
-  --recursica_brand_layer_0_properties_padding: var(--recursica_tokens_sizes_3x);
-  --recursica_brand_layer_0_properties_surface: var(--recursica_brand_palettes_neutral_000_color_tone);
 }
 
 [data-recursica-theme="light"][data-recursica-layer="0"],
@@ -1696,6 +1798,10 @@
 [data-recursica-theme="dark"] [data-recursica-layer="0"] {
   --recursica_brand_layer_0_elements_interactive_color: var(--recursica_brand_palettes_palette-1_600_color_tone);
   --recursica_brand_layer_0_elements_interactive_hover-color: var(--recursica_brand_palettes_palette-1_600_color_tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_interactive_on-tone-hover: var(--recursica_brand_palettes_palette-1_600_color_on-tone);
+  --recursica_brand_layer_0_elements_interactive_tone: var(--recursica_brand_layer_0_elements_interactive_color);
+  --recursica_brand_layer_0_elements_interactive_tone-hover: var(--recursica_brand_layer_0_elements_interactive_hover-color);
   --recursica_brand_layer_0_elements_text_alert: var(--recursica_brand_palettes_core-colors_alert_tone);
   --recursica_brand_layer_0_elements_text_color: var(--recursica_brand_palettes_core-colors_white_tone);
   --recursica_brand_layer_0_elements_text_success: var(--recursica_brand_palettes_core-colors_success_tone);
