@@ -50,3 +50,15 @@ Without this chain of `min-width: 0` and overflow rules, the button would grow p
 **Why the inner span:** Ellipsis truncation in buttons is more reliable when the three properties (`overflow: hidden`, `text-overflow: ellipsis`, `white-space: nowrap`) are applied to an inner element (e.g. a `<span>`) rather than directly on the `<button>`, because default button styles can interfere in some browsers. We apply them to `.label` (the span that wraps the label text). The button gets `overflow: hidden` and a defined width via `max-width`; the inner (Mantine’s flex wrapper) gets `width: 100%` and `min-width: 0`; the label span gets the truncation trio plus `flex: 1 1 0` and `min-width: 0` so it has a computed width. All three requirements are met: overflow is hidden, text is forced to one line, and the truncating element has a defined width.
 
 **Why a `.labelText` wrapper:** Mantine's `.mantine-Button-label` uses `display: flex` for vertical centering. With that, the label's text lives in an anonymous flex item and `text-overflow: ellipsis` often does not paint. We wrap the button's children in `<span className={styles.labelText}>` so the label stays a flex container (vertical centering, height) and the inner span is a block box that gets the truncation styles (overflow, text-overflow, white-space). The label keeps `display: flex; align-items: center`; only `.labelText` has the ellipsis rules and `font-size: inherit; line-height: inherit` so typography matches the root.
+
+---
+
+## Scoped CSS: generic names only
+
+**Decision:** The Button follows the integration rules in the header of `recursica_variables_scoped.css`: it uses only **generic** ui-kit variable names (e.g. `--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_background`). It never references `data-recursica-layer` or `data-recursica-theme` in selectors, and it never uses specific (theme/layer-in-path) variable names. Theme on the document root and layer on an ancestor provide the cascade; the Button just uses the generic names and inherits the right values.
+
+**Implementation:**
+
+- **Single rule per variant:** One rule per variant (and hover) with the generic vars. No layer selectors; inheritance from the Layer wrapper provides the right colors for layer 0–3.
+- **Mantine override:** We use the `border` and `background` shorthands so we fully override Mantine’s `background` and any `border: 0` it applies.
+- **Text variant border-color:** The generic `_text_properties_colors_border-color` is defined in every theme+layer block (transparent for 0/1/2, layer-3 border for 3), so one `border-color: var(...)` is enough; no fallback hack.

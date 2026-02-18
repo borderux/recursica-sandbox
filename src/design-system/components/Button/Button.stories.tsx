@@ -50,8 +50,8 @@ type Story = StoryObj<typeof Button>;
 
 /** Placeholder icon; size is enforced by Button's icon wrapper (Recursica token). */
 const placeholderIcon = (
-  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden>
-    <path d="M8 3a.75.75 0 0 1 .75.75v3.5h3.5a.75.75 0 0 1 0 1.5h-3.5v3.5a.75.75 0 0 1-1.5 0v-3.5h-3.5a.75.75 0 0 1 0-1.5h3.5v-3.5A.75.75 0 0 1 8 3Z" />
+  <svg viewBox='0 0 16 16' fill='currentColor' aria-hidden>
+    <path d='M8 3a.75.75 0 0 1 .75.75v3.5h3.5a.75.75 0 0 1 0 1.5h-3.5v3.5a.75.75 0 0 1-1.5 0v-3.5h-3.5a.75.75 0 0 1 0-1.5h3.5v-3.5A.75.75 0 0 1 8 3Z' />
   </svg>
 );
 
@@ -156,7 +156,7 @@ export const WithIcon: Story = {
 export const Layer1Solid: Story = {
   render: () => (
     <Layer layer={1} style={{ padding: 16 }}>
-      <Button variant="solid" size="default">
+      <Button variant='solid' size='default'>
         Layer 1 solid
       </Button>
     </Layer>
@@ -167,7 +167,7 @@ export const Layer1Solid: Story = {
 export const Layer2Outline: Story = {
   render: () => (
     <Layer layer={2} style={{ padding: 16 }}>
-      <Button variant="outline" size="default">
+      <Button variant='outline' size='default'>
         Layer 2 outline
       </Button>
     </Layer>
@@ -189,7 +189,7 @@ export const Disabled: Story = {
 export const MinWidth: Story = {
   render: () => (
     <Layer layer={0} style={{ padding: 16 }}>
-      <Button variant="solid" size="default" icon={placeholderIcon} aria-label="Action" />
+      <Button variant='solid' size='default' icon={placeholderIcon} aria-label='Action' />
     </Layer>
   ),
   parameters: { controls: { disable: true } },
@@ -199,8 +199,9 @@ export const MinWidth: Story = {
 export const MaxWidth: Story = {
   render: () => (
     <Layer layer={0} style={{ padding: 16 }}>
-      <Button variant="solid" size="default">
-        This is an example of a button label that is long enough to hit the maximum width constraint of five hundred pixels defined by the design token
+      <Button variant='solid' size='default'>
+        This is an example of a button label that is long enough to hit the maximum width constraint
+        of five hundred pixels defined by the design token
       </Button>
     </Layer>
   ),

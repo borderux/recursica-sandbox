@@ -4,9 +4,9 @@
  *   from inline style or className. With display: contents, the box is elided and such styles do nothing. No token.)
  * - .root: border-style solid (baseline for border; width comes from token border-thickness.)
  *
- * Layer surface, border, and elevation come from recursica_variables_scoped.css brand layer variables
- * (--recursica_brand_layer_N_properties_surface, border-color, border-radius, border-thickness, elevation).
- * The scoped file defines these on [data-recursica-layer="N"]; we apply them here to the Layer root.
+ * Layer surface, border, elevation: generic brand vars (--recursica_brand_layer_N_*) from scoped CSS.
+ * Theme+layer blocks set those generic names on elements matching [data-recursica-layer="N"]; we apply
+ * them to the Layer root. See docs/SCOPED_CSS_ARCHITECTURE.md.
  */
 
 .root {

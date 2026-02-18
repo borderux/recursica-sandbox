@@ -3,8 +3,10 @@ import styles from './Layer.module.css';
 
 /**
  * Recursica design-system props for Layer.
- * Wraps children and sets data-recursica-layer so Recursica scoped CSS
- * (recursica_variables_scoped.css) applies that layer's brand variables to descendants.
+ * Sets data-recursica-layer so scoped CSS theme+layer blocks apply that layer's
+ * generic brand vars (e.g. --recursica_brand_layer_N_properties_surface) to this element
+ * and descendants. Theme is set on the document root (e.g. via RecursicaThemeProvider).
+ * See docs/SCOPED_CSS_ARCHITECTURE.md.
  */
 export interface RecursicaLayerProps {
   /** Layer (0–3). Sets data-recursica-layer on the root so descendants use this layer's styles. */
@@ -20,9 +22,10 @@ export interface RecursicaLayerProps {
 export type LayerProps = RecursicaLayerProps & React.HTMLAttributes<HTMLDivElement>;
 
 /**
- * Applies a Recursica layer context to its children. The root element has data-recursica-layer
- * so recursica_variables_scoped.css applies the corresponding --recursica_brand_layer_* variables
- * to descendants. Root is display: block so padding/background from style or className apply.
+ * Applies a Recursica layer context. Root has data-recursica-layer so scoped CSS
+ * theme+layer blocks (e.g. [data-recursica-theme="light"] [data-recursica-layer="1"])
+ * set generic brand vars on this element; descendants inherit. Use with theme on
+ * document root (RecursicaThemeProvider). Root is display: block so padding/background apply.
  */
 export const Layer = forwardRef<HTMLDivElement, LayerProps>(function Layer(
   { layer, contentsOnly, children, className, style, ...rest },

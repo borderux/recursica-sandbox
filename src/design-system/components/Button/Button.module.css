@@ -117,170 +117,49 @@
   line-height: inherit;
 }
 
-/* ----- Solid (filled): default / layer-0, then cascade from ancestor Layer (no component layer prop) ----- */
-/* Hover: ui-kit defines only *_text-hover (no background/border-hover). Override library hover by re-applying default background/border on hover so only Recursica text-hover applies. */
-.root[data-variant='filled']:not([data-recursica-layer]),
-[data-recursica-layer='0'] .root[data-variant='filled'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size);
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text);
+/* ----- Solid (filled) ----- */
+/* Generic ui-kit vars (see docs/SCOPED_CSS_ARCHITECTURE.md): theme+layer blocks alias them to root; Button inherits from Layer. Border/background shorthand overrides Mantine. */
+/* Hover: ui-kit defines only *_text-hover; re-apply background/border on hover so only Recursica text-hover applies. */
+.root[data-variant='filled'] {
+  border: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size) solid
+    var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_border-color);
+  background: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_background);
+  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_text);
 }
 
-.root[data-variant='filled']:not([data-recursica-layer]):hover:not(:disabled),
-[data-recursica-layer='0'] .root[data-variant='filled']:hover:not(:disabled) {
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text-hover);
-}
-
-[data-recursica-layer='1'] .root[data-variant='filled'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size);
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_text);
-}
-
-[data-recursica-layer='1'] .root[data-variant='filled']:hover:not(:disabled) {
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_text-hover);
-}
-
-[data-recursica-layer='2'] .root[data-variant='filled'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size);
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_text);
-}
-
-[data-recursica-layer='2'] .root[data-variant='filled']:hover:not(:disabled) {
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-2_text-hover);
-}
-
-[data-recursica-layer='3'] .root[data-variant='filled'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size);
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_text);
-}
-
-[data-recursica-layer='3'] .root[data-variant='filled']:hover:not(:disabled) {
-  background-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_background);
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-3_text-hover);
+.root[data-variant='filled']:hover:not(:disabled) {
+  border: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size) solid
+    var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_border-color);
+  background: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_background);
+  color: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_colors_text-hover);
 }
 
 /* ----- Outline ----- */
-.root[data-variant='outline']:not([data-recursica-layer]),
-[data-recursica-layer='0'] .root[data-variant='outline'] {
+.root[data-variant='outline'] {
   border-width: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_border-size);
   background-color: transparent; /* HARDCODE: ui-kit has no outline background token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_text);
+  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_border-color);
+  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_text);
 }
 
-.root[data-variant='outline']:not([data-recursica-layer]):hover:not(:disabled),
-[data-recursica-layer='0'] .root[data-variant='outline']:hover:not(:disabled) {
+.root[data-variant='outline']:hover:not(:disabled) {
   background-color: transparent; /* HARDCODE: override library hover; no outline bg token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_text-hover);
-}
-
-[data-recursica-layer='1'] .root[data-variant='outline'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no outline background token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-1_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-1_text);
-}
-
-[data-recursica-layer='1'] .root[data-variant='outline']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no outline bg token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-1_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-1_text-hover);
-}
-
-[data-recursica-layer='2'] .root[data-variant='outline'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no outline background token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-2_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-2_text);
-}
-
-[data-recursica-layer='2'] .root[data-variant='outline']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no outline bg token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-2_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-2_text-hover);
-}
-
-[data-recursica-layer='3'] .root[data-variant='outline'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no outline background token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text);
-}
-
-[data-recursica-layer='3'] .root[data-variant='outline']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no outline bg token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text-hover);
+  border-color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_border-color);
+  color: var(--recursica_ui-kit_components_button_variants_styles_outline_properties_colors_text-hover);
 }
 
 
 /* ----- Text (subtle) ----- */
-.root[data-variant='subtle']:not([data-recursica-layer]),
-[data-recursica-layer='0'] .root[data-variant='subtle'] {
+.root[data-variant='subtle'] {
   border-width: var(--recursica_ui-kit_components_button_variants_styles_text_properties_border-size);
   background-color: transparent; /* HARDCODE: ui-kit has no text variant background token */
-  border-color: transparent;
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-0_text);
+  border-color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_border-color);
+  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_text);
 }
 
-.root[data-variant='subtle']:not([data-recursica-layer]):hover:not(:disabled),
-[data-recursica-layer='0'] .root[data-variant='subtle']:hover:not(:disabled) {
+.root[data-variant='subtle']:hover:not(:disabled) {
   background-color: transparent; /* HARDCODE: override library hover; no text variant bg token */
-  border-color: transparent; /* HARDCODE: no token */
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-0_text-hover);
-}
-
-[data-recursica-layer='1'] .root[data-variant='subtle'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_text_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no text variant background token */
-  border-color: transparent;
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-1_text);
-}
-
-[data-recursica-layer='1'] .root[data-variant='subtle']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no text variant bg token */
-  border-color: transparent; /* HARDCODE: no token */
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-1_text-hover);
-}
-
-[data-recursica-layer='2'] .root[data-variant='subtle'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_text_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no text variant background token */
-  border-color: transparent;
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-2_text);
-}
-
-[data-recursica-layer='2'] .root[data-variant='subtle']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no text variant bg token */
-  border-color: transparent; /* HARDCODE: no token */
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-2_text-hover);
-}
-
-[data-recursica-layer='3'] .root[data-variant='subtle'] {
-  border-width: var(--recursica_ui-kit_components_button_variants_styles_text_properties_border-size);
-  background-color: transparent; /* HARDCODE: ui-kit has no text variant background token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-3_text);
-}
-
-[data-recursica-layer='3'] .root[data-variant='subtle']:hover:not(:disabled) {
-  background-color: transparent; /* HARDCODE: override library hover; no text variant bg token */
-  border-color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-3_border-color);
-  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_layer-3_text-hover);
+  border-color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_border-color);
+  color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_text-hover);
 }
 
