@@ -62,3 +62,11 @@ Without this chain of `min-width: 0` and overflow rules, the button would grow p
 - **Single rule per variant:** One rule per variant (and hover) with the generic vars. No layer selectors; inheritance from the Layer wrapper provides the right colors for layer 0–3.
 - **Mantine override:** We use the `border` and `background` shorthands so we fully override Mantine’s `background` and any `border: 0` it applies.
 - **Text variant border-color:** The generic `_text_properties_colors_border-color` is defined in every theme+layer block (transparent for 0/1/2, layer-3 border for 3), so one `border-color: var(...)` is enough; no fallback hack.
+
+---
+
+## Disabled state: brand theme opacity (implicit)
+
+**Decision:** The ui-kit does **not** define a button-specific disabled token (e.g. no `--recursica_ui-kit_components_button_variants_states_disabled_*`). Forge shows the disabled button as an opacity change. We follow that by using the **brand** theme state variable for disabled opacity: `--recursica_brand_states_disabled` (generic name; resolves per theme to the configured opacity, e.g. from `opacities_ghost`).
+
+**Implementation:** In `Button.module.css`, `.root:disabled { opacity: var(--recursica_brand_states_disabled); }`. This is an implicit rule: it is not specified in the ui-kit schema; we infer it from Forge’s behavior and the existence of the brand theme state. If Forge or the design spec later adds an explicit button disabled token, we should switch to that.

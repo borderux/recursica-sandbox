@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Scoped
  * Transform version: 1.1.0
- * Generated: Wed, 18 Feb 2026 02:51:30 GMT
+ * Generated: Wed, 18 Feb 2026 03:13:19 GMT
  *
  * --- How to integrate this file ---
  *
@@ -44,6 +44,15 @@
  *    Classes like .recursica_brand_typography_h1 and .recursica_brand_typography_body apply the
  *    full type definition (family, size, weight, line-height, etc.) from brand.typography.
  *    Class names follow the path: brand.typography.<typeName>.
+ *
+ * --- Disabled state (implicit rule) ---
+ * The brand theme exposes a single disabled token: --recursica_brand_states_disabled (generic
+ * name; resolves per theme to an opacity value, e.g. from opacities_ghost). Use this for disabled
+ * styling when a component has no explicit disabled state variables: apply
+ * opacity: var(--recursica_brand_states_disabled) to the disabled component (e.g. :disabled or
+ * [aria-disabled="true"]). If a component has its own disabled state variables (e.g. ui-kit form
+ * components with disabled background, border, or text colors), use those tokens for the disabled
+ * look and do not apply the global opacity, since the design already defines the disabled state.
  *
  * --- How this file is structured ---
  * :root defines every variable with a specific (full-path) name so every reference resolves.

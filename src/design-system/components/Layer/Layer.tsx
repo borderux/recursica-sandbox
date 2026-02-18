@@ -6,7 +6,7 @@ import styles from './Layer.module.css';
  * Sets data-recursica-layer so scoped CSS theme+layer blocks apply that layer's
  * generic brand vars (e.g. --recursica_brand_layer_N_properties_surface) to this element
  * and descendants. Theme is set on the document root (e.g. via RecursicaThemeProvider).
- * See docs/SCOPED_CSS_ARCHITECTURE.md.
+ * See recursica_variables_scoped.css header.
  */
 export interface RecursicaLayerProps {
   /** Layer (0–3). Sets data-recursica-layer on the root so descendants use this layer's styles. */

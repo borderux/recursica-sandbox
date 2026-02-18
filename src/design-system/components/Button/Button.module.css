@@ -118,7 +118,7 @@
 }
 
 /* ----- Solid (filled) ----- */
-/* Generic ui-kit vars (see docs/SCOPED_CSS_ARCHITECTURE.md): theme+layer blocks alias them to root; Button inherits from Layer. Border/background shorthand overrides Mantine. */
+/* Generic ui-kit vars (see recursica_variables_scoped.css header): theme+layer blocks alias them to root; Button inherits from Layer. Border/background shorthand overrides Mantine. */
 /* Hover: ui-kit defines only *_text-hover; re-apply background/border on hover so only Recursica text-hover applies. */
 .root[data-variant='filled'] {
   border: var(--recursica_ui-kit_components_button_variants_styles_solid_properties_border-size) solid
@@ -163,3 +163,7 @@
   color: var(--recursica_ui-kit_components_button_variants_styles_text_properties_colors_text-hover);
 }
 
+/* Disabled: Forge uses brand theme state disabled opacity (generic name resolves per theme). */
+.root:disabled {
+  opacity: var(--recursica_brand_states_disabled);
+}

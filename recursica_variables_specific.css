@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Specific
  * Transform version: 1.1.0
- * Generated: Wed, 18 Feb 2026 02:51:30 GMT
+ * Generated: Wed, 18 Feb 2026 03:13:19 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -20,6 +20,15 @@
  * - Reference ui-kit variables (--recursica_ui-kit_*) in your component styles
  * - Avoid referencing brand layer variables (--recursica_brand_themes_*_layers_*) directly; ui-kit abstracts these
  * - ui-kit variables never reference tokens directly; they go through brand for theming
+ *
+ * Disabled state (implicit rule):
+ * The brand theme exposes a disabled token per theme (e.g. --recursica_brand_themes_light_states_disabled,
+ * --recursica_brand_themes_dark_states_disabled), an opacity value for implicit disabled styling.
+ * When a component has no explicit disabled state variables, apply
+ * opacity: var(--recursica_brand_themes_<theme>_states_disabled) to the disabled component
+ * (e.g. :disabled or [aria-disabled="true"]). If a component has its own disabled state variables
+ * (e.g. ui-kit form components with disabled background, border, or text colors), use those tokens
+ * for the disabled look and do not apply the global opacity.
  *
  * WARNING: This CSS is auto-generated from Recursica JSON files (tokens, brand, ui-kit).
  * NEVER modify this file directly or override its variables in your app. Doing so breaks

@@ -6,7 +6,7 @@
  *
  * Layer surface, border, elevation: generic brand vars (--recursica_brand_layer_N_*) from scoped CSS.
  * Theme+layer blocks set those generic names on elements matching [data-recursica-layer="N"]; we apply
- * them to the Layer root. See docs/SCOPED_CSS_ARCHITECTURE.md.
+ * them to the Layer root. See recursica_variables_scoped.css header.
  */
 
 .root {

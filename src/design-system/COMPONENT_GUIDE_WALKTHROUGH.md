@@ -80,7 +80,8 @@ Do not use plain `.css` for component overrides, and do not use `.css.ts` with `
 ## 6. Design tokens and variable naming
 
 - **Single source of truth** – All design values come from Recursica/UIKit CSS variables. No hardcoded design values in TSX or in the CSS module (beyond `var(...)` references).
-- **Reference tokens only in the CSS module** – In `{ComponentName}.module.css`, use the project’s variable naming (e.g. `--recursica-ui-kit-components-{component}-...`). The component TSX does not set design token values on the root.
+- **Reference tokens only in the CSS module** – In `{ComponentName}.module.css`, use the project’s variable naming (e.g. `--recursica_ui-kit_components_{component}_...`). The component TSX does not set design token values on the root.
+- **Integration rules** – Follow the integration steps in the header of `recursica_variables_scoped.css` (theme on root, layer on ancestor, generic names only, no theme/layer in selectors). The same header documents the **disabled state** rule: use `opacity: var(--recursica_brand_states_disabled)` when the component has no explicit disabled state variables; when it has its own disabled tokens (e.g. form fields), use those and do not apply the global opacity.
 - Document or link to the project’s CSS variable naming convention so the module uses the correct names.
 
 ---
