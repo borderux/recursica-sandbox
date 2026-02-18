@@ -31,7 +31,7 @@ const preview: Preview = {
   parameters: {
     options: {
       storySort: {
-        order: ['Tokens', 'Theme', 'UI Kit'],
+        order: ['Introduction', 'Tokens', 'Theme', 'UI Kit'],
       },
     },
     backgrounds: {
