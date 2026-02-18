@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Scoped
  * Transform version: 1.1.0
- * Generated: Wed, 18 Feb 2026 02:11:05 GMT
+ * Generated: Wed, 18 Feb 2026 02:51:30 GMT
  *
  * --- How to integrate this file ---
  *
@@ -40,12 +40,20 @@
  *    --recursica_brand_layer_N_* only when you need layer surface/border/elevation directly
  *    (e.g. for a Layer container).
  *
+ * 6. Optional: use typography helper classes for type styles
+ *    Classes like .recursica_brand_typography_h1 and .recursica_brand_typography_body apply the
+ *    full type definition (family, size, weight, line-height, etc.) from brand.typography.
+ *    Class names follow the path: brand.typography.<typeName>.
+ *
  * --- How this file is structured ---
  * :root defines every variable with a specific (full-path) name so every reference resolves.
  * Theme and theme+layer blocks ([data-recursica-theme="light"], [data-recursica-theme="light"][data-recursica-layer="1"], etc.)
  * define only generic names that alias to those root variables. Components use the generic names;
  * the block that matches the element (via theme and layer on ancestors) determines which root
  * value that generic name resolves to.
+ * At the end, typography helper classes (e.g. .recursica_brand_typography_h1, .recursica_brand_typography_body)
+ * are provided for each type in brand.typography. Apply one class to get the full type style.
+ * Class names follow the path: brand.typography.<typeName> → .recursica_brand_typography_<typeName>.
  *
  * --- WARNING ---
  * This file is auto-generated. Do not modify it or override its variables in your app.
@@ -5129,5 +5137,167 @@
   --recursica_ui-kit_components_tooltip_properties_colors_background: var(--recursica_ui-kit_themes_dark_layer_3_ui-kit_components_tooltip_properties_colors_background);
   --recursica_ui-kit_components_tooltip_properties_colors_border-color: var(--recursica_ui-kit_themes_dark_layer_3_ui-kit_components_tooltip_properties_colors_border-color);
   --recursica_ui-kit_components_tooltip_properties_colors_text: var(--recursica_ui-kit_themes_dark_layer_3_ui-kit_components_tooltip_properties_colors_text);
+}
+
+/* --- Typography helper classes ---
+ * One class per type in brand.typography. Apply the class to get the full type style
+ * (family, size, weight, line-height, etc.) from your design tokens. Class names follow
+ * the path: brand.typography.<typeName> → .recursica_brand_typography_<typeName>
+ */
+
+/* Typography style "body" (brand.typography.body): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_body {
+  font-family: var(--recursica_brand_typography_body_fontFamily);
+  font-size: var(--recursica_brand_typography_body_fontSize);
+  font-style: var(--recursica_brand_typography_body_fontStyle);
+  font-weight: var(--recursica_brand_typography_body_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_body_letterSpacing);
+  line-height: var(--recursica_brand_typography_body_lineHeight);
+  text-decoration: var(--recursica_brand_typography_body_textDecoration);
+  text-transform: var(--recursica_brand_typography_body_textCase);
+}
+
+/* Typography style "body-small" (brand.typography.body-small): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_body-small {
+  font-family: var(--recursica_brand_typography_body-small_fontFamily);
+  font-size: var(--recursica_brand_typography_body-small_fontSize);
+  font-style: var(--recursica_brand_typography_body-small_fontStyle);
+  font-weight: var(--recursica_brand_typography_body-small_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_body-small_letterSpacing);
+  line-height: var(--recursica_brand_typography_body-small_lineHeight);
+  text-decoration: var(--recursica_brand_typography_body-small_textDecoration);
+  text-transform: var(--recursica_brand_typography_body-small_textCase);
+}
+
+/* Typography style "caption" (brand.typography.caption): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_caption {
+  font-family: var(--recursica_brand_typography_caption_fontFamily);
+  font-size: var(--recursica_brand_typography_caption_fontSize);
+  font-style: var(--recursica_brand_typography_caption_fontStyle);
+  font-weight: var(--recursica_brand_typography_caption_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_caption_letterSpacing);
+  line-height: var(--recursica_brand_typography_caption_lineHeight);
+  text-decoration: var(--recursica_brand_typography_caption_textDecoration);
+  text-transform: var(--recursica_brand_typography_caption_textCase);
+}
+
+/* Typography style "h1" (brand.typography.h1): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h1 {
+  font-family: var(--recursica_brand_typography_h1_fontFamily);
+  font-size: var(--recursica_brand_typography_h1_fontSize);
+  font-style: var(--recursica_brand_typography_h1_fontStyle);
+  font-weight: var(--recursica_brand_typography_h1_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h1_letterSpacing);
+  line-height: var(--recursica_brand_typography_h1_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h1_textDecoration);
+  text-transform: var(--recursica_brand_typography_h1_textCase);
+}
+
+/* Typography style "h2" (brand.typography.h2): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h2 {
+  font-family: var(--recursica_brand_typography_h2_fontFamily);
+  font-size: var(--recursica_brand_typography_h2_fontSize);
+  font-style: var(--recursica_brand_typography_h2_fontStyle);
+  font-weight: var(--recursica_brand_typography_h2_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h2_letterSpacing);
+  line-height: var(--recursica_brand_typography_h2_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h2_textDecoration);
+  text-transform: var(--recursica_brand_typography_h2_textCase);
+}
+
+/* Typography style "h3" (brand.typography.h3): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h3 {
+  font-family: var(--recursica_brand_typography_h3_fontFamily);
+  font-size: var(--recursica_brand_typography_h3_fontSize);
+  font-style: var(--recursica_brand_typography_h3_fontStyle);
+  font-weight: var(--recursica_brand_typography_h3_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h3_letterSpacing);
+  line-height: var(--recursica_brand_typography_h3_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h3_textDecoration);
+  text-transform: var(--recursica_brand_typography_h3_textCase);
+}
+
+/* Typography style "h4" (brand.typography.h4): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h4 {
+  font-family: var(--recursica_brand_typography_h4_fontFamily);
+  font-size: var(--recursica_brand_typography_h4_fontSize);
+  font-style: var(--recursica_brand_typography_h4_fontStyle);
+  font-weight: var(--recursica_brand_typography_h4_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h4_letterSpacing);
+  line-height: var(--recursica_brand_typography_h4_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h4_textDecoration);
+  text-transform: var(--recursica_brand_typography_h4_textCase);
+}
+
+/* Typography style "h5" (brand.typography.h5): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h5 {
+  font-family: var(--recursica_brand_typography_h5_fontFamily);
+  font-size: var(--recursica_brand_typography_h5_fontSize);
+  font-style: var(--recursica_brand_typography_h5_fontStyle);
+  font-weight: var(--recursica_brand_typography_h5_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h5_letterSpacing);
+  line-height: var(--recursica_brand_typography_h5_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h5_textDecoration);
+  text-transform: var(--recursica_brand_typography_h5_textCase);
+}
+
+/* Typography style "h6" (brand.typography.h6): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_h6 {
+  font-family: var(--recursica_brand_typography_h6_fontFamily);
+  font-size: var(--recursica_brand_typography_h6_fontSize);
+  font-style: var(--recursica_brand_typography_h6_fontStyle);
+  font-weight: var(--recursica_brand_typography_h6_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_h6_letterSpacing);
+  line-height: var(--recursica_brand_typography_h6_lineHeight);
+  text-decoration: var(--recursica_brand_typography_h6_textDecoration);
+  text-transform: var(--recursica_brand_typography_h6_textCase);
+}
+
+/* Typography style "overline" (brand.typography.overline): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_overline {
+  font-family: var(--recursica_brand_typography_overline_fontFamily);
+  font-size: var(--recursica_brand_typography_overline_fontSize);
+  font-style: var(--recursica_brand_typography_overline_fontStyle);
+  font-weight: var(--recursica_brand_typography_overline_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_overline_letterSpacing);
+  line-height: var(--recursica_brand_typography_overline_lineHeight);
+  text-decoration: var(--recursica_brand_typography_overline_textDecoration);
+  text-transform: var(--recursica_brand_typography_overline_textCase);
+}
+
+/* Typography style "subtitle" (brand.typography.subtitle): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_subtitle {
+  font-family: var(--recursica_brand_typography_subtitle_fontFamily);
+  font-size: var(--recursica_brand_typography_subtitle_fontSize);
+  font-style: var(--recursica_brand_typography_subtitle_fontStyle);
+  font-weight: var(--recursica_brand_typography_subtitle_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_subtitle_letterSpacing);
+  line-height: var(--recursica_brand_typography_subtitle_lineHeight);
+  text-decoration: var(--recursica_brand_typography_subtitle_textDecoration);
+  text-transform: var(--recursica_brand_typography_subtitle_textCase);
+}
+
+/* Typography style "subtitle-small" (brand.typography.subtitle-small): applies full type definition.
+ * Generated so you can use one class instead of referencing each variable separately. */
+.recursica_brand_typography_subtitle-small {
+  font-family: var(--recursica_brand_typography_subtitle-small_fontFamily);
+  font-size: var(--recursica_brand_typography_subtitle-small_fontSize);
+  font-style: var(--recursica_brand_typography_subtitle-small_fontStyle);
+  font-weight: var(--recursica_brand_typography_subtitle-small_fontWeight);
+  letter-spacing: var(--recursica_brand_typography_subtitle-small_letterSpacing);
+  line-height: var(--recursica_brand_typography_subtitle-small_lineHeight);
+  text-decoration: var(--recursica_brand_typography_subtitle-small_textDecoration);
+  text-transform: var(--recursica_brand_typography_subtitle-small_textCase);
 }
 
