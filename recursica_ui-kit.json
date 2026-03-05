@@ -182,7 +182,7 @@
                     },
                     "border-color": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.tone}"
+                      "$value": "{brand.palettes.neutral.1000.color.tone}"
                     }
                   },
                   "layer-1": {
@@ -12982,7 +12982,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-05T21:00:47.219Z",
+    "exportedAt": "2026-03-05T21:42:07.624Z",
     "version": "1.0.0"
   }
 }
