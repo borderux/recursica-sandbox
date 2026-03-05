@@ -19,6 +19,25 @@ jobs:
   deploy-preview:
     runs-on: ubuntu-latest
     steps:
+      - name: Add pending message to PR description
+        if: github.event.action != 'closed'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request?.number;
+            if (!prNumber) return;
+            const existingBody = context.payload.pull_request.body || '';
+            const pendingSection = `## Storybook preview\n\n> [!WARNING]\n> ⏳ **Please wait for 1 minute while our system automatically build a Storybook preview`;
+            const newBody = existingBody.includes('## Storybook preview')
+              ? existingBody.replace(/## Storybook preview[\s\S]*?(?=\n\n##|$)/, pendingSection)
+              : existingBody + '\n\n' + pendingSection;
+            await github.rest.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              body: newBody
+            });
+
       - name: Checkout
         uses: actions/checkout@v4
 
