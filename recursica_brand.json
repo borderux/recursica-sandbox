@@ -26,15 +26,15 @@
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -53,7 +53,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-color": {
                 "$type": "color",
@@ -61,7 +61,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-thickness": {
                 "$type": "number",
@@ -87,7 +87,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-color": {
                 "$type": "color",
@@ -99,22 +99,22 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               }
             },
             "elements": {
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -149,7 +149,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.default}"
+                "$value": "{tokens.sizes.default}"
               },
               "surface": {
                 "$type": "color",
@@ -157,7 +157,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "border-color": {
                 "$type": "color",
@@ -175,19 +175,19 @@
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               },
               "interactive": {
@@ -215,11 +215,11 @@
               "text": {
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -227,7 +227,7 @@
                 },
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 }
               },
               "interactive": {
@@ -256,7 +256,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "elevation": {
                 "$type": "elevation",
@@ -264,7 +264,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "border-color": {
                 "$type": "color",
@@ -283,31 +283,31 @@
         "states": {
           "disabled": {
             "$type": "number",
-            "$value": "{tokens.opacity.ghost}"
+            "$value": "{tokens.opacities.ghost}"
           },
           "hover": {
             "$type": "number",
-            "$value": "{tokens.opacity.mist}"
+            "$value": "{tokens.opacities.mist}"
           },
           "overlay": {
             "color": {
               "$type": "color",
-              "$value": "{brand.palettes.core-colors.black}"
+              "$value": "{brand.palettes.core-colors.black.tone}"
             },
             "opacity": {
               "$type": "number",
-              "$value": "{tokens.opacity.ghost}"
+              "$value": "{tokens.opacities.ghost}"
             }
           }
         },
         "text-emphasis": {
           "low": {
             "$type": "number",
-            "$value": "{tokens.opacity.smoky}"
+            "$value": "{tokens.opacities.smoky}"
           },
           "high": {
             "$type": "number",
-            "$value": "{tokens.opacity.solid}"
+            "$value": "{tokens.opacities.solid}"
           }
         },
         "palettes": {
@@ -321,7 +321,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -334,7 +334,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -347,7 +347,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -360,7 +360,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -373,7 +373,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -386,7 +386,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -399,7 +399,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -412,7 +412,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -425,7 +425,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -438,12 +438,21 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$value": "{brand.palettes.neutral.200}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.neutral.200.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.neutral.200.color.on-tone}"
+                }
+              }
             },
             "000": {
               "color": {
@@ -454,7 +463,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -467,7 +476,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             }
@@ -482,7 +491,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -495,7 +504,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -508,7 +517,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -521,7 +530,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -534,7 +543,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -547,7 +556,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -560,7 +569,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -573,7 +582,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -586,7 +595,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -599,12 +608,21 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$value": "{brand.palettes.palette-1.400}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-1.400.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-1.400.color.on-tone}"
+                }
+              }
             },
             "000": {
               "color": {
@@ -615,7 +633,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -628,7 +646,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             }
@@ -643,7 +661,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -656,7 +674,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -669,7 +687,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -682,7 +700,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -695,7 +713,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -708,7 +726,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -721,7 +739,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -734,7 +752,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -747,7 +765,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -760,12 +778,21 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$value": "{brand.palettes.palette-2.400}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-2.400.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-2.400.color.on-tone}"
+                }
+              }
             },
             "000": {
               "color": {
@@ -776,7 +803,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -789,99 +816,101 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             }
           },
           "core-colors": {
-            "$type": "color",
-            "$value": {
-              "black": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-02.1000}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.300}"
-                }
+            "black": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-02.1000}"
               },
-              "white": {
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.300}"
+              }
+            },
+            "white": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-02.000}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.black.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.500}"
+              }
+            },
+            "alert": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.600}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.050}"
+              }
+            },
+            "success": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-03.600}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.050}"
+              }
+            },
+            "warning": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-04.600}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.900}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.900}"
+              }
+            },
+            "interactive": {
+              "default": {
                 "tone": {
                   "$type": "color",
-                  "$value": "{tokens.colors.scale-02.000}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black}"
-                },
-                "interactive": {
                   "$value": "{tokens.colors.scale-05.500}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               },
-              "alert": {
+              "hover": {
                 "tone": {
                   "$type": "color",
                   "$value": "{tokens.colors.scale-05.600}"
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.050}"
-                }
-              },
-              "success": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-03.600}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.050}"
-                }
-              },
-              "warning": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-04.600}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-05.900}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.900}"
-                }
-              },
-              "interactive": {
-                "default": {
-                  "tone": {
-                    "$type": "color",
-                    "$value": "{tokens.colors.scale-05.500}"
-                  },
-                  "on-tone": {
-                    "$type": "color",
-                    "$value": "{brand.palettes.core-colors.white}"
-                  }
-                },
-                "hover": {
-                  "tone": {
-                    "$type": "color",
-                    "$value": "{tokens.colors.scale-05.600}"
-                  },
-                  "on-tone": {
-                    "$type": "color",
-                    "$value": "{brand.palettes.core-colors.white}"
-                  }
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             }
@@ -1117,29 +1146,29 @@
               "interactive": {
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.default.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
                 "hover-color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.600.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
                 }
               },
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 }
               }
             },
@@ -1154,7 +1183,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-color": {
                 "$type": "color",
@@ -1162,7 +1191,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-thickness": {
                 "$type": "number",
@@ -1188,7 +1217,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               },
               "border-color": {
                 "$type": "color",
@@ -1200,22 +1229,22 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.3x}"
+                "$value": "{tokens.sizes.3x}"
               }
             },
             "elements": {
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -1225,11 +1254,11 @@
               "interactive": {
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.default.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
                 "hover-color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.600.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
                 }
               }
             }
@@ -1242,7 +1271,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.default}"
+                "$value": "{tokens.sizes.default}"
               },
               "surface": {
                 "$type": "color",
@@ -1250,7 +1279,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "border-color": {
                 "$type": "color",
@@ -1268,15 +1297,15 @@
               "text": {
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 },
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -1286,11 +1315,11 @@
               "interactive": {
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.700.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
                 "hover-color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.600.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
                 }
               }
             }
@@ -1300,11 +1329,11 @@
               "text": {
                 "success": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.success}"
+                  "$value": "{brand.palettes.core-colors.success.tone}"
                 },
                 "alert": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.alert}"
+                  "$value": "{brand.palettes.core-colors.alert.tone}"
                 },
                 "color": {
                   "$type": "color",
@@ -1312,17 +1341,17 @@
                 },
                 "warning": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.warning}"
+                  "$value": "{brand.palettes.core-colors.warning.tone}"
                 }
               },
               "interactive": {
                 "color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.700.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
                 "hover-color": {
                   "$type": "color",
-                  "$value": "{brand.palettes.palette-1.600.color.tone}"
+                  "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
                 }
               }
             },
@@ -1333,7 +1362,7 @@
               },
               "padding": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "elevation": {
                 "$type": "elevation",
@@ -1341,7 +1370,7 @@
               },
               "border-radius": {
                 "$type": "number",
-                "$value": "{tokens.size.2x}"
+                "$value": "{tokens.sizes.2x}"
               },
               "border-color": {
                 "$type": "color",
@@ -1360,31 +1389,31 @@
         "states": {
           "disabled": {
             "$type": "number",
-            "$value": "{tokens.opacity.ghost}"
+            "$value": "{tokens.opacities.ghost}"
           },
           "hover": {
             "$type": "number",
-            "$value": "{tokens.opacity.mist}"
+            "$value": "{tokens.opacities.mist}"
           },
           "overlay": {
             "color": {
               "$type": "color",
-              "$value": "{brand.palettes.core-colors.white}"
+              "$value": "{brand.palettes.core-colors.white.tone}"
             },
             "opacity": {
               "$type": "number",
-              "$value": "{tokens.opacity.ghost}"
+              "$value": "{tokens.opacities.ghost}"
             }
           }
         },
         "text-emphasis": {
           "low": {
             "$type": "number",
-            "$value": "{tokens.opacity.smoky}"
+            "$value": "{tokens.opacities.smoky}"
           },
           "high": {
             "$type": "number",
-            "$value": "{tokens.opacity.solid}"
+            "$value": "{tokens.opacities.solid}"
           }
         },
         "palettes": {
@@ -1398,7 +1427,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1411,7 +1440,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1424,7 +1453,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1437,7 +1466,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1450,7 +1479,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1463,7 +1492,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1476,7 +1505,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1489,7 +1518,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1502,7 +1531,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1515,7 +1544,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1528,7 +1557,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1541,13 +1570,21 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$type": "color",
-              "$value": "{brand.palettes.neutral.800}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.neutral.800.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.neutral.800.color.on-tone}"
+                }
+              }
             }
           },
           "palette-1": {
@@ -1560,7 +1597,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1573,7 +1610,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1586,7 +1623,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1599,7 +1636,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1612,7 +1649,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1625,7 +1662,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1638,7 +1675,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1651,7 +1688,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1664,7 +1701,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1677,7 +1714,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1690,7 +1727,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1703,13 +1740,21 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$type": "color",
-              "$value": "{brand.palettes.palette-1.600}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-1.600.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-1.600.color.on-tone}"
+                }
+              }
             }
           },
           "palette-2": {
@@ -1722,7 +1767,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1735,7 +1780,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1748,7 +1793,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1761,7 +1806,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1774,7 +1819,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1787,7 +1832,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1800,7 +1845,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1813,7 +1858,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1826,7 +1871,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1839,7 +1884,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-black}"
+                  "$value": "{brand.palettes.core-colors.black.tone}"
                 }
               }
             },
@@ -1852,7 +1897,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1865,103 +1910,113 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-white}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
             "default": {
-              "$type": "color",
-              "$value": "{brand.palettes.palette-2.600}"
+              "color": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-2.600.color.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.palette-2.600.color.on-tone}"
+                }
+              }
             }
           },
           "core-colors": {
-            "$type": "color",
-            "$value": {
-              "black": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-02.1000}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.300}"
-                }
+            "black": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-02.1000}"
               },
-              "white": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-02.000}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.500}"
-                }
-              },
-              "alert": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-05.400}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{brand.palettes.core-colors.white}"
-                }
-              },
-              "success": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-03.400}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{brand.palettes.core-colors.white}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.900}"
-                }
-              },
-              "warning": {
-                "tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-04.400}"
-                },
-                "on-tone": {
-                  "$type": "color",
-                  "$value": "{tokens.colors.scale-05.900}"
-                },
-                "interactive": {
-                  "$value": "{tokens.colors.scale-05.800}"
-                }
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
               },
               "interactive": {
-                "default": {
-                  "tone": {
-                    "$type": "color",
-                    "$value": "{tokens.colors.scale-05.400}"
-                  },
-                  "on-tone": {
-                    "$type": "color",
-                    "$value": "{brand.palettes.core-colors.white}"
-                  }
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.300}"
+              }
+            },
+            "white": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-02.000}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.black.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.500}"
+              }
+            },
+            "alert": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.400}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              }
+            },
+            "success": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-03.400}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{brand.palettes.core-colors.white.tone}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.900}"
+              }
+            },
+            "warning": {
+              "tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-04.400}"
+              },
+              "on-tone": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.900}"
+              },
+              "interactive": {
+                "$type": "color",
+                "$value": "{tokens.colors.scale-05.800}"
+              }
+            },
+            "interactive": {
+              "default": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-06.500}"
                 },
-                "hover": {
-                  "tone": {
-                    "$type": "color",
-                    "$value": "{tokens.colors.scale-05.300}"
-                  },
-                  "on-tone": {
-                    "$type": "color",
-                    "$value": "{brand.palettes.core-colors.white}"
-                  }
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.white.tone}"
+                }
+              },
+              "hover": {
+                "tone": {
+                  "$type": "color",
+                  "$value": "{tokens.colors.scale-06.400}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             }
@@ -2239,85 +2294,85 @@
       "icons": {
         "sm": {
           "$type": "number",
-          "$value": "{tokens.size.2x}"
+          "$value": "{tokens.sizes.2x}"
         },
         "lg": {
           "$type": "number",
-          "$value": "{tokens.size.4x}"
+          "$value": "{tokens.sizes.4x}"
         },
         "default": {
           "$type": "number",
-          "$value": "{tokens.size.3x}"
+          "$value": "{tokens.sizes.3x}"
         },
         "xs": {
           "$type": "number",
-          "$value": "{tokens.size.1-5x}"
+          "$value": "{tokens.sizes.1-5x}"
         }
       },
       "gutters": {
         "horizontal": {
           "$type": "number",
-          "$value": "{tokens.size.2x}"
+          "$value": "{tokens.sizes.2x}"
         },
         "vertical": {
           "$type": "number",
-          "$value": "{tokens.size.3x}"
+          "$value": "{tokens.sizes.3x}"
         }
       },
       "border-radii": {
         "none": {
           "$type": "number",
-          "$value": "{tokens.size.none}"
+          "$value": "{tokens.sizes.none}"
         },
         "sm": {
           "$type": "number",
-          "$value": "{tokens.size.0-5x}"
+          "$value": "{tokens.sizes.0-5x}"
         },
         "default": {
           "$type": "number",
-          "$value": "{tokens.size.default}"
+          "$value": "{tokens.sizes.default}"
         },
         "lg": {
           "$type": "number",
-          "$value": "{tokens.size.2x}"
+          "$value": "{tokens.sizes.2x}"
         },
         "xl": {
           "$type": "number",
-          "$value": "{tokens.size.3x}"
+          "$value": "{tokens.sizes.3x}"
         },
         "2xl": {
           "$type": "number",
-          "$value": "{tokens.size.4x}"
+          "$value": "{tokens.sizes.4x}"
         }
       },
       "general": {
         "none": {
           "$type": "number",
-          "$value": "{tokens.size.none}"
+          "$value": "{tokens.sizes.none}"
         },
         "sm": {
           "$type": "number",
-          "$value": "{tokens.size.0-5x}"
+          "$value": "{tokens.sizes.0-5x}"
         },
         "md": {
           "$type": "number",
-          "$value": "{tokens.size.1-5x}"
+          "$value": "{tokens.sizes.1-5x}"
         },
         "default": {
           "$type": "number",
-          "$value": "{tokens.size.default}"
+          "$value": "{tokens.sizes.default}"
         },
         "lg": {
           "$type": "number",
-          "$value": "{tokens.size.2x}"
+          "$value": "{tokens.sizes.2x}"
         },
         "xl": {
           "$type": "number",
-          "$value": "{tokens.size.3x}"
+          "$value": "{tokens.sizes.3x}"
         },
         "2xl": {
           "$type": "number",
-          "$value": "{tokens.size.4x}"
+          "$value": "{tokens.sizes.4x}"
         }
       },
       "text-size": {
@@ -2510,7 +2565,7 @@
           "fontWeight": "{tokens.font.weights.regular}",
           "fontStyle": "{tokens.font.styles.normal}",
           "letterSpacing": "{tokens.font.letter-spacings.wide}",
-          "lineHeight": "{tokens.font.line-heights.default}",
+          "lineHeight": "{tokens.font.line-heights.tall}",
           "textCase": "{tokens.font.cases.original}",
           "textDecoration": "{tokens.font.decorations.none}"
         }
@@ -2531,7 +2586,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-02-18T03:13:18.944Z",
+    "exportedAt": "2026-03-05T19:13:30.550Z",
     "version": "1.0.0"
   }
 }
