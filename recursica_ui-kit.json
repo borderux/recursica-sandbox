@@ -170,7 +170,7 @@
                   "layer-0": {
                     "background": {
                       "$type": "color",
-                      "$value": "{brand.palettes.palette-2.600.color.tone}"
+                      "$value": "{brand.layers.layer-0.elements.interactive.tone}"
                     },
                     "text": {
                       "$type": "color",
@@ -13029,7 +13029,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-09T04:40:40.392Z",
+    "exportedAt": "2026-03-09T05:10:29.841Z",
     "version": "1.0.0"
   }
 }
