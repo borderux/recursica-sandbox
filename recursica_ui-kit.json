@@ -174,7 +174,7 @@
                     },
                     "text": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.on-tone}"
+                      "$value": "{brand.palettes.neutral.200.color.tone}"
                     },
                     "text-hover": {
                       "$type": "color",
@@ -440,6 +440,12 @@
                   "$value": {
                     "value": "{brand.dimensions.icons.default}",
                     "unit": "px"
+                  },
+                  "text": {
+                    "gap": {
+                      "$type": "color",
+                      "$value": "{brand.dimensions.general.sm}"
+                    }
                   }
                 },
                 "height": {
@@ -13029,7 +13035,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-09T04:40:40.392Z",
+    "exportedAt": "2026-03-09T04:49:27.731Z",
     "version": "1.0.0"
   }
 }
