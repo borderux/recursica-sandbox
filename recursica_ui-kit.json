@@ -170,7 +170,7 @@
                   "layer-0": {
                     "background": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.tone}"
+                      "$value": "{brand.palettes.palette-2.600.color.tone}"
                     },
                     "text": {
                       "$type": "color",
@@ -243,7 +243,7 @@
                 "border-size": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 1,
+                    "value": 3,
                     "unit": "px"
                   }
                 },
@@ -360,7 +360,7 @@
                     },
                     "border-color": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.tone}"
+                      "$value": "{brand.palettes.neutral.1000.color.tone}"
                     }
                   },
                   "layer-1": {
@@ -421,7 +421,7 @@
                 "border-size": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 1,
+                    "value": 7,
                     "unit": "px"
                   }
                 },
@@ -445,7 +445,7 @@
                 "height": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 48,
+                    "value": 69,
                     "unit": "px"
                   }
                 },
@@ -13029,7 +13029,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-09T06:43:23.561Z",
+    "exportedAt": "2026-03-09T20:53:14.572Z",
     "version": "1.0.0"
   }
 }
