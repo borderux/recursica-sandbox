@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Specific
  * Transform version: 1.1.0
- * Generated: Mon, 09 Mar 2026 04:40:40 GMT
+ * Generated: Mon, 09 Mar 2026 04:49:27 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -1063,7 +1063,7 @@
   --recursica_ui-kit_components_button_variants_styles_solid_properties_border-size: 1px;
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background: var(--recursica_brand_themes_light_palettes_palette-2_600_color_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_border-color: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone);
-  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_on-tone);
+  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text: var(--recursica_brand_themes_light_palettes_neutral_200_color_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text-hover: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_on-tone-hover);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_background: var(--recursica_brand_themes_light_layers_layer-1_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-1_border-color: var(--recursica_brand_themes_light_layers_layer-1_properties_border-color);
