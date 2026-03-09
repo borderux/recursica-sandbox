@@ -10,7 +10,14 @@
 
       function handleRouting() {
         const path = window.location.pathname;
-        const pathSegments = path.split('/').filter((segment) => segment);
+        let pathSegments = path.split('/').filter((segment) => segment);
+
+        // Handle GitHub Pages base path
+        // If the site is served from /recursica-sandbox/, strip that segment out 
+        // before analyzing where to route
+        if (pathSegments.length > 0 && pathSegments[0] === 'recursica-sandbox') {
+          pathSegments.shift();
+        }
 
         // If we're at the root, serve the main app
         if (pathSegments.length === 0) {
@@ -23,11 +30,12 @@
         // Check if the path is a PR preview
         if (pathSegments[0] === 'pr-preview' && pathSegments.length >= 2) {
           const prFolder = pathSegments[1];
-          buildPath = `/pr-preview/${prFolder}/index.html`;
+          // Use a root-relative path to account for GitHub Pages hosting /recursica-sandbox/...
+          buildPath = `/recursica-sandbox/pr-preview/${prFolder}/index.html`;
         } else {
           // Check if the first segment matches a legacy build folder
           const buildFolder = pathSegments[0];
-          buildPath = `/builds/${buildFolder}/index.html`;
+          buildPath = `/recursica-sandbox/builds/${buildFolder}/index.html`;
         }
 
         // Try to fetch the build's index.html to see if it exists
