@@ -170,11 +170,11 @@
                   "layer-0": {
                     "background": {
                       "$type": "color",
-                      "$value": "{brand.palettes.palette-2.600.color.tone}"
+                      "$value": "{brand.palettes.neutral.900.color.tone}"
                     },
                     "text": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.on-tone}"
+                      "$value": "{brand.palettes.palette-2.300.color.tone}"
                     },
                     "text-hover": {
                       "$type": "color",
@@ -182,7 +182,7 @@
                     },
                     "border-color": {
                       "$type": "color",
-                      "$value": "{brand.layers.layer-0.elements.interactive.tone}"
+                      "$value": "{brand.palettes.palette-1.300.color.tone}"
                     }
                   },
                   "layer-1": {
@@ -243,7 +243,7 @@
                 "border-size": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 1,
+                    "value": 8,
                     "unit": "px"
                   }
                 },
@@ -445,7 +445,7 @@
                 "height": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 48,
+                    "value": 79,
                     "unit": "px"
                   }
                 },
@@ -554,7 +554,7 @@
           "border-radius": {
             "$type": "dimension",
             "$value": {
-              "value": "{brand.dimensions.border-radii.xl}",
+              "value": "{brand.dimensions.border-radii.sm}",
               "unit": "px"
             }
           },
@@ -13029,7 +13029,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-09T04:40:40.392Z",
+    "exportedAt": "2026-03-09T06:18:52.644Z",
     "version": "1.0.0"
   }
 }
