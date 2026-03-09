@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Specific
  * Transform version: 1.1.0
- * Generated: Mon, 09 Mar 2026 06:43:23 GMT
+ * Generated: Mon, 09 Mar 2026 20:53:14 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -1032,7 +1032,7 @@
   --recursica_ui-kit_components_button_properties_text_line-height: var(--recursica_tokens_font_line-heights_default);
   --recursica_ui-kit_components_button_properties_text_text-decoration: none;
   --recursica_ui-kit_components_button_properties_text_text-transform: none;
-  --recursica_ui-kit_components_button_variants_sizes_default_properties_height: 48px;
+  --recursica_ui-kit_components_button_variants_sizes_default_properties_height: 69px;
   --recursica_ui-kit_components_button_variants_sizes_default_properties_horizontal-padding: var(--recursica_brand_dimensions_general_lg);
   --recursica_ui-kit_components_button_variants_sizes_default_properties_icon: var(--recursica_brand_dimensions_icons_default);
   --recursica_ui-kit_components_button_variants_sizes_default_properties_icon-text-gap: var(--recursica_brand_dimensions_general_default);
@@ -1042,9 +1042,9 @@
   --recursica_ui-kit_components_button_variants_sizes_small_properties_icon: var(--recursica_brand_dimensions_icons_sm);
   --recursica_ui-kit_components_button_variants_sizes_small_properties_icon-text-gap: var(--recursica_brand_dimensions_general_sm);
   --recursica_ui-kit_components_button_variants_sizes_small_properties_min-width: 32px;
-  --recursica_ui-kit_components_button_variants_styles_outline_properties_border-size: 1px;
+  --recursica_ui-kit_components_button_variants_styles_outline_properties_border-size: 7px;
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_background: transparent;
-  --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_border-color: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone);
+  --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_border-color: var(--recursica_brand_themes_light_palettes_neutral_1000_color_tone);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_text: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-0_text-hover: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone-hover);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-1_background: transparent;
@@ -1060,8 +1060,8 @@
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text: var(--recursica_brand_themes_light_layers_layer-3_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_colors_layer-3_text-hover: var(--recursica_brand_themes_light_layers_layer-3_elements_interactive_tone-hover);
   --recursica_ui-kit_components_button_variants_styles_outline_properties_elevation: var(--recursica_brand_themes_light_elevations_elevation-0);
-  --recursica_ui-kit_components_button_variants_styles_solid_properties_border-size: 1px;
-  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone);
+  --recursica_ui-kit_components_button_variants_styles_solid_properties_border-size: 3px;
+  --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_background: var(--recursica_brand_themes_light_palettes_palette-2_600_color_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_border-color: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_on-tone);
   --recursica_ui-kit_components_button_variants_styles_solid_properties_colors_layer-0_text-hover: var(--recursica_brand_themes_light_layers_layer-0_elements_interactive_on-tone-hover);
