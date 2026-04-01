@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Layer } from './Layer';
-import { Button } from '../Button/Button';
+import { Layer, Button } from '@recursica/mantine-adapter';
 
 const layerStyle = { padding: 20 };
 

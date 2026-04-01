@@ -1,8 +1,9 @@
 import type { Preview } from '@storybook/react-vite'
 import '@mantine/core/styles.css'
 import '../recursica_variables_scoped.css'
+import '@recursica/mantine-adapter/style.css';
 import { MantineProvider } from '@mantine/core'
-import { RecursicaThemeProvider } from '../src/design-system/RecursicaThemeProvider/RecursicaThemeProvider'
+import { RecursicaThemeProvider } from '@recursica/mantine-adapter'
 import { RecursicaFontLoader } from './RecursicaFontLoader'
 
 const LIGHT_BG = '#ffffff';

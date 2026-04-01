@@ -10,5 +10,9 @@ module.exports = {
         'mantine-breakpoint-xl': '88em',
       },
     },
+    '@recursica/recursica-postcss-vars': {
+      cssPath: './recursica_variables_scoped.css',
+      strict: process.env.NODE_ENV === "production",
+    },
   },
 };
