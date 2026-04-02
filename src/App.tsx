@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import '../recursica_variables_scoped.css';
 import { MantineProvider, Box } from '@mantine/core';
-import { RecursicaThemeProvider } from './design-system/RecursicaThemeProvider/RecursicaThemeProvider';
+import { RecursicaThemeProvider } from '@recursica/mantine-adapter';
 
 const THEME_FORGE_URL = 'https://forge.recursica.com?demo=true';
 
