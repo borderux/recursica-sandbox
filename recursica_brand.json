@@ -65,10 +65,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             }
           },
@@ -165,10 +162,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             },
             "elements": {
@@ -272,10 +266,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             }
           }
@@ -373,7 +364,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black.tone}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -451,7 +442,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.neutral.200.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             },
             "000": {
@@ -517,7 +509,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black.tone}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -621,7 +613,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.palette-1.400.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             },
             "000": {
@@ -791,7 +784,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.palette-2.400.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             },
             "000": {
@@ -998,7 +992,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -1042,7 +1036,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -1086,7 +1080,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -1130,7 +1124,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -1144,13 +1138,21 @@
           "layer-0": {
             "elements": {
               "interactive": {
-                "color": {
+                "tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
-                "hover-color": {
+                "tone-hover": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.default.on-tone}"
+                },
+                "on-tone-hover": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.hover.on-tone}"
                 }
               },
               "text": {
@@ -1195,10 +1197,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             }
           },
@@ -1252,13 +1251,21 @@
                 }
               },
               "interactive": {
-                "color": {
+                "tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
-                "hover-color": {
+                "tone-hover": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.default.on-tone}"
+                },
+                "on-tone-hover": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.hover.on-tone}"
                 }
               }
             }
@@ -1287,10 +1294,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             },
             "elements": {
@@ -1313,13 +1317,21 @@
                 }
               },
               "interactive": {
-                "color": {
+                "tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
-                "hover-color": {
+                "tone-hover": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.default.on-tone}"
+                },
+                "on-tone-hover": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.hover.on-tone}"
                 }
               }
             }
@@ -1345,13 +1357,21 @@
                 }
               },
               "interactive": {
-                "color": {
+                "tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.default.tone}"
                 },
-                "hover-color": {
+                "tone-hover": {
                   "$type": "color",
                   "$value": "{brand.palettes.core-colors.interactive.hover.tone}"
+                },
+                "on-tone": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.default.on-tone}"
+                },
+                "on-tone-hover": {
+                  "$type": "color",
+                  "$value": "{brand.palettes.core-colors.interactive.hover.on-tone}"
                 }
               }
             },
@@ -1378,10 +1398,7 @@
               },
               "border-size": {
                 "$type": "number",
-                "$value": {
-                  "value": 0,
-                  "unit": "px"
-                }
+                "$value": 0
               }
             }
           }
@@ -1466,7 +1483,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black.tone}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1479,7 +1496,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black.tone}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1583,7 +1600,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.neutral.800.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             }
           },
@@ -1753,7 +1771,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.palette-1.600.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             }
           },
@@ -1832,7 +1851,7 @@
                 },
                 "on-tone": {
                   "$type": "color",
-                  "$value": "{brand.palettes.core-colors.black.tone}"
+                  "$value": "{brand.palettes.core-colors.white.tone}"
                 }
               }
             },
@@ -1923,7 +1942,8 @@
                 "on-tone": {
                   "$type": "color",
                   "$value": "{brand.palettes.palette-2.600.color.on-tone}"
-                }
+                },
+                "$type": "color"
               }
             }
           },
@@ -2060,7 +2080,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 0,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -2104,7 +2124,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -2148,7 +2168,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -2192,7 +2212,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -2236,7 +2256,7 @@
               },
               "opacity": {
                 "$value": {
-                  "value": 10,
+                  "value": 84,
                   "unit": "percentage"
                 },
                 "$type": "number"
@@ -2586,7 +2606,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-03-09T06:43:23.558Z",
+    "exportedAt": "2026-04-13T15:33:57.687Z",
     "version": "1.0.0"
   }
 }
