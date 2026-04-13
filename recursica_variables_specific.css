@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Specific
  * Transform version: 1.1.0
- * Generated: Mon, 13 Apr 2026 15:33:57 GMT
+ * Generated: Mon, 13 Apr 2026 16:08:01 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -700,10 +700,10 @@
   --recursica_tokens_sizes_6x: 48px;
   --recursica_tokens_sizes_default: 8px;
   --recursica_tokens_sizes_none: 0px;
-  --recursica_ui-kit_components_accordion_properties_border-radius: var(--recursica_brand_dimensions_border-radii_none);
-  --recursica_ui-kit_components_accordion_properties_border-size: 1px;
-  --recursica_ui-kit_components_accordion_properties_colors_layer-0_background: transparent;
-  --recursica_ui-kit_components_accordion_properties_colors_layer-0_border-color: transparent;
+  --recursica_ui-kit_components_accordion_properties_border-radius: var(--recursica_brand_dimensions_border-radii_sm);
+  --recursica_ui-kit_components_accordion_properties_border-size: 4px;
+  --recursica_ui-kit_components_accordion_properties_colors_layer-0_background: var(--recursica_brand_themes_light_palettes_palette-2_100_color_tone);
+  --recursica_ui-kit_components_accordion_properties_colors_layer-0_border-color: var(--recursica_brand_themes_light_palettes_palette-1_500_color_tone);
   --recursica_ui-kit_components_accordion_properties_colors_layer-1_background: transparent;
   --recursica_ui-kit_components_accordion_properties_colors_layer-1_border-color: transparent;
   --recursica_ui-kit_components_accordion_properties_colors_layer-2_background: transparent;
@@ -711,10 +711,10 @@
   --recursica_ui-kit_components_accordion_properties_colors_layer-3_background: transparent;
   --recursica_ui-kit_components_accordion_properties_colors_layer-3_border-color: transparent;
   --recursica_ui-kit_components_accordion_properties_elevation: var(--recursica_brand_themes_light_elevations_elevation-0);
-  --recursica_ui-kit_components_accordion_properties_item-gap: var(--recursica_brand_dimensions_general_none);
-  --recursica_ui-kit_components_accordion_properties_max-width: 1500px;
+  --recursica_ui-kit_components_accordion_properties_item-gap: var(--recursica_brand_dimensions_general_default);
+  --recursica_ui-kit_components_accordion_properties_max-width: 375px;
   --recursica_ui-kit_components_accordion_properties_min-width: 20px;
-  --recursica_ui-kit_components_accordion_properties_padding: var(--recursica_brand_dimensions_general_none);
+  --recursica_ui-kit_components_accordion_properties_padding: var(--recursica_brand_dimensions_general_default);
   --recursica_ui-kit_components_accordion-item_properties_border-radius: var(--recursica_brand_dimensions_border-radii_none);
   --recursica_ui-kit_components_accordion-item_properties_colors_layer-0_background-collapsed: transparent;
   --recursica_ui-kit_components_accordion-item_properties_colors_layer-0_background-expanded: var(--recursica_brand_themes_light_palettes_neutral_050_color_tone);
