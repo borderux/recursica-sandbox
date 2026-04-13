@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Specific
  * Transform version: 1.1.0
- * Generated: Mon, 13 Apr 2026 15:33:57 GMT
+ * Generated: Mon, 13 Apr 2026 16:06:34 GMT
  *
  * About Recursica:
  * Recursica is a design token system that manages variables across three layers: tokens (primitives),
@@ -702,7 +702,7 @@
   --recursica_tokens_sizes_none: 0px;
   --recursica_ui-kit_components_accordion_properties_border-radius: var(--recursica_brand_dimensions_border-radii_none);
   --recursica_ui-kit_components_accordion_properties_border-size: 1px;
-  --recursica_ui-kit_components_accordion_properties_colors_layer-0_background: transparent;
+  --recursica_ui-kit_components_accordion_properties_colors_layer-0_background: var(--recursica_brand_themes_light_palettes_palette-2_300_color_tone);
   --recursica_ui-kit_components_accordion_properties_colors_layer-0_border-color: transparent;
   --recursica_ui-kit_components_accordion_properties_colors_layer-1_background: transparent;
   --recursica_ui-kit_components_accordion_properties_colors_layer-1_border-color: transparent;
