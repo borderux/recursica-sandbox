@@ -63,6 +63,10 @@ jobs:
           umbrella-dir: pr-preview
           action: auto
 
+      - name: Sleep for 30 seconds to allow CDN propagation
+        if: steps.preview.outputs.deployment-action == 'deploy'
+        run: sleep 30
+
       - name: Update PR description with Storybook preview URL
         if: steps.preview.outputs.deployment-action == 'deploy'
         uses: actions/github-script@v7
