@@ -4586,7 +4586,7 @@
             "layer-0": {
               "background": {
                 "$type": "color",
-                "$value": null
+                "$value": "{brand.palettes.palette-2.300.color.tone}"
               },
               "border-color": {
                 "$type": "color",
@@ -12783,7 +12783,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-04-13T15:33:57.690Z",
+    "exportedAt": "2026-04-13T16:06:34.772Z",
     "version": "1.0.0"
   }
 }
