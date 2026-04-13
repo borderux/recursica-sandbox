@@ -21,8 +21,8 @@
     "@mantine/core": "^8.3.14",
     "@mantine/dates": "^8.3.14",
     "@mantine/hooks": "^8.3.14",
-    "@recursica/adapter-common": "^0.3.0",
-    "@recursica/mantine-adapter": "0.3.0",
+    "@recursica/adapter-common": "^0.4.0",
+    "@recursica/mantine-adapter": "0.7.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
