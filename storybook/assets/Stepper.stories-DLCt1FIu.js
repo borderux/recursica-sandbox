@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-oITrIfRY.js";import{o}from"./index-BzEKUR4w.js";import"./preload-helper-D9Z9MdNV.js";import"./index-C7V98Sh6.js";const r=e=>t.jsx("div",{...e,children:"Stepper"}),a={title:"UI-Kit/🚧 Stepper",component:r,tags:["autodocs"]},i={render:()=>t.jsx(o,{componentName:"Stepper"})},c=["Default"];export{i as Default,c as __namedExportsOrder,a as default};

@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-oITrIfRY.js";import{o}from"./index-BzEKUR4w.js";import"./preload-helper-D9Z9MdNV.js";import"./index-C7V98Sh6.js";const n=e=>t.jsx("div",{...e,children:"Panel"}),i={title:"UI-Kit/🚧 Panel",component:n,tags:["autodocs"]},l={render:()=>t.jsx(o,{componentName:"Panel"})},p=["Default"];export{l as Default,p as __namedExportsOrder,i as default};
