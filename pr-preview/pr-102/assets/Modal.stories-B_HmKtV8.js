@@ -1,1 +1,0 @@
-import{j as o}from"./iframe-r6pDRtka.js";import{o as e}from"./index-DVmjBzvz.js";import"./preload-helper-D9Z9MdNV.js";import"./index-DDnu1YP2.js";const r=t=>o.jsx("div",{...t,children:"Modal"}),d={title:"UI-Kit/🚧 Modal",component:r,tags:["autodocs"]},i={render:()=>o.jsx(e,{componentName:"Modal"})},l=["Default"];export{i as Default,l as __namedExportsOrder,d as default};

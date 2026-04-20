@@ -1,1 +1,0 @@
-import{j as t}from"./iframe-r6pDRtka.js";import{o as s}from"./index-DVmjBzvz.js";import"./preload-helper-D9Z9MdNV.js";import"./index-DDnu1YP2.js";const e=o=>t.jsx("div",{...o,children:"Tabs"}),i={title:"UI-Kit/🚧 Tabs",component:e,tags:["autodocs"]},p={render:()=>t.jsx(s,{componentName:"Tabs"})},c=["Default"];export{p as Default,c as __namedExportsOrder,i as default};
