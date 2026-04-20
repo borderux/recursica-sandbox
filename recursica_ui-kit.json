@@ -4548,13 +4548,13 @@
           "border-size": {
             "$type": "dimension",
             "$value": {
-              "value": 1,
+              "value": 4,
               "unit": "px"
             }
           },
           "border-radius": {
             "$type": "dimension",
-            "$value": "{brand.dimensions.border-radii.none}"
+            "$value": "{brand.dimensions.border-radii.lg}"
           },
           "item-gap": {
             "$type": "dimension",
@@ -4593,11 +4593,11 @@
             "layer-0": {
               "background": {
                 "$type": "color",
-                "$value": null
+                "$value": "{brand.palettes.palette-2.050.color.tone}"
               },
               "border-color": {
                 "$type": "color",
-                "$value": null
+                "$value": "{brand.palettes.palette-1.600.color.tone}"
               },
               "divider": {
                 "$type": "color",
@@ -4681,7 +4681,7 @@
           },
           "content-top-padding": {
             "$type": "dimension",
-            "$value": "{brand.dimensions.general.lg}"
+            "$value": "{brand.dimensions.general.xl}"
           },
           "content-bottom-padding": {
             "$type": "dimension",
@@ -4737,7 +4737,7 @@
               },
               "content-background": {
                 "$type": "color",
-                "$value": null
+                "$value": "{brand.palettes.neutral.400.color.tone}"
               },
               "content-text": {
                 "$type": "color",
@@ -4749,7 +4749,7 @@
               },
               "content-border-color": {
                 "$type": "color",
-                "$value": "{brand.layers.layer-0.properties.border-color}"
+                "$value": "{brand.palettes.palette-1.700.color.tone}"
               }
             },
             "layer-1": {
@@ -4858,11 +4858,11 @@
           "header-text": {
             "font-family": {
               "$type": "string",
-              "$value": "{tokens.font.typefaces.secondary}"
+              "$value": "{tokens.font.typefaces.tertiary}"
             },
             "font-size": {
               "$type": "dimension",
-              "$value": "{tokens.font.sizes.md}"
+              "$value": "{tokens.font.sizes.2xl}"
             },
             "font-weight": {
               "$type": "number",
@@ -4892,11 +4892,11 @@
           "content-text": {
             "font-family": {
               "$type": "string",
-              "$value": "{tokens.font.typefaces.secondary}"
+              "$value": "{tokens.font.typefaces.primary}"
             },
             "font-size": {
               "$type": "dimension",
-              "$value": "{tokens.font.sizes.md}"
+              "$value": "{tokens.font.sizes.xl}"
             },
             "font-weight": {
               "$type": "number",
@@ -12845,7 +12845,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-04-20T04:56:43.719Z",
+    "exportedAt": "2026-04-20T17:24:01.435Z",
     "version": "1.0.0"
   }
 }
