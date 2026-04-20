@@ -1,7 +1,7 @@
 /*
  * Recursica CSS Variables - Scoped
  * Transform version: 1.1.0
- * Generated: Mon, 20 Apr 2026 04:56:43 GMT
+ * Generated: Mon, 20 Apr 2026 17:24:01 GMT
  *
  * --- How to integrate this file ---
  *
@@ -732,8 +732,8 @@
   --recursica_tokens_sizes_6x: 48px;
   --recursica_tokens_sizes_default: 8px;
   --recursica_tokens_sizes_none: 0px;
-  --recursica_ui-kit_components_accordion_properties_border-radius: var(--recursica_brand_dimensions_border-radii_none);
-  --recursica_ui-kit_components_accordion_properties_border-size: 1px;
+  --recursica_ui-kit_components_accordion_properties_border-radius: var(--recursica_brand_dimensions_border-radii_lg);
+  --recursica_ui-kit_components_accordion_properties_border-size: 4px;
   --recursica_ui-kit_components_accordion_properties_divider-size: 1px;
   --recursica_ui-kit_components_accordion_properties_elevation: var(--recursica_brand_themes_light_elevations_elevation-0);
   --recursica_ui-kit_components_accordion_properties_item-gap: var(--recursica_brand_dimensions_general_none);
@@ -746,20 +746,20 @@
   --recursica_ui-kit_components_accordion-item_properties_content-bottom-padding: var(--recursica_brand_dimensions_general_lg);
   --recursica_ui-kit_components_accordion-item_properties_content-horizontal-padding: var(--recursica_brand_dimensions_general_lg);
   --recursica_ui-kit_components_accordion-item_properties_content-margin: var(--recursica_brand_dimensions_general_none);
-  --recursica_ui-kit_components_accordion-item_properties_content-text_font-family: var(--recursica_tokens_font_typefaces_secondary);
-  --recursica_ui-kit_components_accordion-item_properties_content-text_font-size: var(--recursica_tokens_font_sizes_md);
+  --recursica_ui-kit_components_accordion-item_properties_content-text_font-family: var(--recursica_tokens_font_typefaces_primary);
+  --recursica_ui-kit_components_accordion-item_properties_content-text_font-size: var(--recursica_tokens_font_sizes_xl);
   --recursica_ui-kit_components_accordion-item_properties_content-text_font-style: var(--recursica_tokens_font_styles_normal);
   --recursica_ui-kit_components_accordion-item_properties_content-text_font-weight: var(--recursica_tokens_font_weights_regular);
   --recursica_ui-kit_components_accordion-item_properties_content-text_letter-spacing: var(--recursica_tokens_font_letter-spacings_default);
   --recursica_ui-kit_components_accordion-item_properties_content-text_line-height: var(--recursica_tokens_font_line-heights_default);
   --recursica_ui-kit_components_accordion-item_properties_content-text_text-decoration: var(--recursica_tokens_font_decorations_none);
   --recursica_ui-kit_components_accordion-item_properties_content-text_text-transform: var(--recursica_tokens_font_cases_original);
-  --recursica_ui-kit_components_accordion-item_properties_content-top-padding: var(--recursica_brand_dimensions_general_lg);
+  --recursica_ui-kit_components_accordion-item_properties_content-top-padding: var(--recursica_brand_dimensions_general_xl);
   --recursica_ui-kit_components_accordion-item_properties_elevation-content: var(--recursica_brand_themes_light_elevations_elevation-0);
   --recursica_ui-kit_components_accordion-item_properties_elevation-item: var(--recursica_brand_themes_light_elevations_elevation-0);
   --recursica_ui-kit_components_accordion-item_properties_header-horizontal-padding: var(--recursica_brand_dimensions_general_lg);
-  --recursica_ui-kit_components_accordion-item_properties_header-text_font-family: var(--recursica_tokens_font_typefaces_secondary);
-  --recursica_ui-kit_components_accordion-item_properties_header-text_font-size: var(--recursica_tokens_font_sizes_md);
+  --recursica_ui-kit_components_accordion-item_properties_header-text_font-family: var(--recursica_tokens_font_typefaces_tertiary);
+  --recursica_ui-kit_components_accordion-item_properties_header-text_font-size: var(--recursica_tokens_font_sizes_2xl);
   --recursica_ui-kit_components_accordion-item_properties_header-text_font-style: var(--recursica_tokens_font_styles_normal);
   --recursica_ui-kit_components_accordion-item_properties_header-text_font-weight: var(--recursica_tokens_font_weights_regular);
   --recursica_ui-kit_components_accordion-item_properties_header-text_letter-spacing: var(--recursica_tokens_font_letter-spacings_default);
@@ -1603,13 +1603,13 @@
   --recursica_ui-kit_globals_form_properties_label-field-gap-vertical: var(--recursica_brand_dimensions_general_default);
   --recursica_ui-kit_globals_form_properties_vertical-item-gap: var(--recursica_brand_dimensions_general_default);
   --recursica_ui-kit_globals_icon_style: "outline";
-  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion_properties_colors_background: transparent;
-  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion_properties_colors_border-color: transparent;
+  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion_properties_colors_background: var(--recursica_brand_themes_dark_palettes_palette-2_050_color_tone);
+  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion_properties_colors_border-color: var(--recursica_brand_themes_dark_palettes_palette-1_600_color_tone);
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion_properties_colors_divider: var(--recursica_brand_themes_dark_layers_layer-0_properties_border-color);
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_background-collapsed: transparent;
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_background-expanded: var(--recursica_brand_themes_dark_palettes_neutral_050_color_tone);
-  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_content-background: transparent;
-  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_content-border-color: var(--recursica_brand_themes_dark_layers_layer-0_properties_border-color);
+  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_content-background: var(--recursica_brand_themes_dark_palettes_neutral_400_color_tone);
+  --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_content-border-color: var(--recursica_brand_themes_dark_palettes_palette-1_700_color_tone);
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_content-text: var(--recursica_brand_themes_dark_layers_layer-0_elements_text_color);
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_icon: var(--recursica_brand_themes_dark_layers_layer-0_elements_text_color);
   --recursica_ui-kit_themes_dark_layer_0_ui-kit_components_accordion-item_properties_colors_item-border-color: var(--recursica_brand_themes_dark_layers_layer-0_properties_border-color);
@@ -3295,13 +3295,13 @@
   --recursica_ui-kit_themes_dark_layer_3_ui-kit_components_transfer-list_variants_states_focus_properties_colors_background: var(--recursica_brand_themes_dark_palettes_neutral_000_color_tone);
   --recursica_ui-kit_themes_dark_layer_3_ui-kit_components_transfer-list_variants_states_focus_properties_colors_border-color: var(--recursica_brand_themes_dark_palettes_palette-1_600_color_tone);
   --recursica_ui-kit_themes_dark_layer_3_ui-kit_components_transfer-list_variants_states_focus_properties_colors_header-color: var(--recursica_ui-kit_globals_form_field_colors_text-valued);
-  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion_properties_colors_background: transparent;
-  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion_properties_colors_border-color: transparent;
+  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion_properties_colors_background: var(--recursica_brand_themes_light_palettes_palette-2_050_color_tone);
+  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion_properties_colors_border-color: var(--recursica_brand_themes_light_palettes_palette-1_600_color_tone);
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion_properties_colors_divider: var(--recursica_brand_themes_light_layers_layer-0_properties_border-color);
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_background-collapsed: transparent;
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_background-expanded: var(--recursica_brand_themes_light_palettes_neutral_050_color_tone);
-  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_content-background: transparent;
-  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_content-border-color: var(--recursica_brand_themes_light_layers_layer-0_properties_border-color);
+  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_content-background: var(--recursica_brand_themes_light_palettes_neutral_400_color_tone);
+  --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_content-border-color: var(--recursica_brand_themes_light_palettes_palette-1_700_color_tone);
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_content-text: var(--recursica_brand_themes_light_layers_layer-0_elements_text_color);
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_icon: var(--recursica_brand_themes_light_layers_layer-0_elements_text_color);
   --recursica_ui-kit_themes_light_layer_0_ui-kit_components_accordion-item_properties_colors_item-border-color: var(--recursica_brand_themes_light_layers_layer-0_properties_border-color);
