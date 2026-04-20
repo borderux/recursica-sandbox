@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-BHKtwuA2.js";import{o as s}from"./index-CJBKjSyw.js";import"./preload-helper-D9Z9MdNV.js";import"./index-BedX2hpx.js";const e=o=>t.jsx("div",{...o,children:"Toast"}),i={title:"UI-Kit/🚧 Toast",component:e,tags:["autodocs"]},p={render:()=>t.jsx(s,{componentName:"Toast"})},c=["Default"];export{p as Default,c as __namedExportsOrder,i as default};

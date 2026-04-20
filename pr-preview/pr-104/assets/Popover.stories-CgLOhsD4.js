@@ -1,0 +1,1 @@
+import{j as o}from"./iframe-BHKtwuA2.js";import{o as e}from"./index-CJBKjSyw.js";import"./preload-helper-D9Z9MdNV.js";import"./index-BedX2hpx.js";const r=t=>o.jsx("div",{...t,children:"Popover"}),a={title:"UI-Kit/🚧 Popover",component:r,tags:["autodocs"]},i={render:()=>o.jsx(e,{componentName:"Popover"})},c=["Default"];export{i as Default,c as __namedExportsOrder,a as default};

@@ -1,0 +1,1 @@
+import{j as o}from"./iframe-BHKtwuA2.js";import{o as e}from"./index-CJBKjSyw.js";import"./preload-helper-D9Z9MdNV.js";import"./index-BedX2hpx.js";const r=t=>o.jsx("div",{...t,children:"Tooltip"}),m={title:"UI-Kit/🚧 Tooltip",component:r,tags:["autodocs"]},a={render:()=>o.jsx(e,{componentName:"Tooltip"})},l=["Default"];export{a as Default,l as __namedExportsOrder,m as default};
