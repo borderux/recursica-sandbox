@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-BtHpdr-w.js";import{o}from"./index-DwDMvyl-.js";import"./preload-helper-D9Z9MdNV.js";import"./index-2G5hzlcD.js";const n=e=>t.jsx("div",{...e,children:"Menu"}),u={title:"UI-Kit/🚧 Menu",component:n,tags:["autodocs"]},i={render:()=>t.jsx(o,{componentName:"Menu"})},p=["Default"];export{i as Default,p as __namedExportsOrder,u as default};
