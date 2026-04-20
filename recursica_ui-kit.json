@@ -4729,7 +4729,7 @@
               },
               "text": {
                 "$type": "color",
-                "$value": "{brand.layers.layer-0.elements.text.color}"
+                "$value": "{brand.palettes.palette-2.500.color.tone}"
               },
               "icon": {
                 "$type": "color",
@@ -4741,7 +4741,7 @@
               },
               "content-text": {
                 "$type": "color",
-                "$value": "{brand.layers.layer-0.elements.text.color}"
+                "$value": "{brand.palettes.palette-1.400.color.tone}"
               },
               "item-border-color": {
                 "$type": "color",
@@ -4749,7 +4749,7 @@
               },
               "content-border-color": {
                 "$type": "color",
-                "$value": "{brand.layers.layer-0.properties.border-color}"
+                "$value": "{brand.palettes.palette-2.500.color.tone}"
               }
             },
             "layer-1": {
@@ -4858,7 +4858,7 @@
           "header-text": {
             "font-family": {
               "$type": "string",
-              "$value": "{tokens.font.typefaces.secondary}"
+              "$value": "{tokens.font.typefaces.tertiary}"
             },
             "font-size": {
               "$type": "dimension",
@@ -12845,7 +12845,7 @@
     }
   },
   "$metadata": {
-    "exportedAt": "2026-04-20T04:56:43.719Z",
+    "exportedAt": "2026-04-20T16:37:48.152Z",
     "version": "1.0.0"
   }
 }
