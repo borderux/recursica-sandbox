@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-r6pDRtka.js";import{o}from"./index-DVmjBzvz.js";import"./preload-helper-D9Z9MdNV.js";import"./index-DDnu1YP2.js";const r=e=>t.jsx("div",{...e,children:"Search"}),m={title:"UI-Kit/🚧 Search",component:r,tags:["autodocs"]},i={render:()=>t.jsx(o,{componentName:"Search"})},p=["Default"];export{i as Default,p as __namedExportsOrder,m as default};

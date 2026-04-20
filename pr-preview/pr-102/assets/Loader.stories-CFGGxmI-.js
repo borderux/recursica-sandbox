@@ -1,0 +1,1 @@
+import{j as o}from"./iframe-r6pDRtka.js";import{o as e}from"./index-DVmjBzvz.js";import"./preload-helper-D9Z9MdNV.js";import"./index-DDnu1YP2.js";const r=t=>o.jsx("div",{...t,children:"Loader"}),d={title:"UI-Kit/🚧 Loader",component:r,tags:["autodocs"]},i={render:()=>o.jsx(e,{componentName:"Loader"})},p=["Default"];export{i as Default,p as __namedExportsOrder,d as default};
