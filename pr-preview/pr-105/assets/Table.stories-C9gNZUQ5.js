@@ -1,0 +1,1 @@
+import{j as t}from"./iframe-BQs8iX8w.js";import{o}from"./index-B_AjyVL4.js";import"./preload-helper-D9Z9MdNV.js";import"./index-gjap1xA-.js";const r=e=>t.jsx("div",{...e,children:"Table"}),i={title:"UI-Kit/🚧 Table",component:r,tags:["autodocs"]},l={render:()=>t.jsx(o,{componentName:"Table"})},p=["Default"];export{l as Default,p as __namedExportsOrder,i as default};

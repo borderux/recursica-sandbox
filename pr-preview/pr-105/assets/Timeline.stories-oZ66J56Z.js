@@ -1,0 +1,1 @@
+import{j as e}from"./iframe-BQs8iX8w.js";import{o}from"./index-B_AjyVL4.js";import"./preload-helper-D9Z9MdNV.js";import"./index-gjap1xA-.js";const i=t=>e.jsx("div",{...t,children:"Timeline"}),a={title:"UI-Kit/🚧 Timeline",component:i,tags:["autodocs"]},l={render:()=>e.jsx(o,{componentName:"Timeline"})},p=["Default"];export{l as Default,p as __namedExportsOrder,a as default};
