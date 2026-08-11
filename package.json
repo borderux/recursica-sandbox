@@ -21,15 +21,14 @@
     "@mantine/core": "^8.3.14",
     "@mantine/dates": "^8.3.14",
     "@mantine/hooks": "^8.3.14",
-    "@recursica/adapter-common": "^0.4.0",
-    "@recursica/mantine-adapter": "^0.9.0",
+    "@recursica/mantine-adapter": "^0.38.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
-    "@recursica/recursica-postcss-vars": "^1.1.0",
-    "@recursica/storybook-template": "^0.4.0",
+    "@recursica/recursica-postcss-vars": "^1.5.0",
+    "@recursica/storybook-template": "^0.7.0",
     "@storybook/addon-a11y": "^10.2.9",
     "@storybook/addon-docs": "^10.2.9",
     "@storybook/addon-mcp": "^0.2.2",
