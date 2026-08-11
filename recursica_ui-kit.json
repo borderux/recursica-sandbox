@@ -5960,7 +5960,7 @@
           "border-size": {
             "$type": "dimension",
             "$value": {
-              "value": 1,
+              "value": 8,
               "unit": "px"
             }
           },
@@ -6011,7 +6011,7 @@
               },
               "border-color": {
                 "$type": "color",
-                "$value": null
+                "$value": "{brand.palettes.core-colors.success.tone}"
               },
               "divider-color": {
                 "$type": "color",
@@ -14974,7 +14974,7 @@
   },
   "$extensions": {
     "recursica.metadata": {
-      "exportedAt": "2026-08-11T17:06:46.075Z",
+      "exportedAt": "2026-08-11T17:28:14.824Z",
       "version": "0.24.4"
     }
   }
