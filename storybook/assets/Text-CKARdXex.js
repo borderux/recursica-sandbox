@@ -1,0 +1,1 @@
+import{l as m,r as i,j as l,X as x}from"./iframe-B2rOdtrB.js";import{f}from"./filterStylingProps-Dc62mC8D.js";const o=i.forwardRef(function({overStyled:r=!1,variant:e="body",...c},n){const s=f(c,r),t=s.className,a=`recursica_brand_typography_${e}`,p=t?`${a} ${t}`:a;return l.jsx(x,{ref:n,...s,className:p})});o.displayName="Text";const N=m(o);export{N as T};
